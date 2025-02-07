@@ -1,0 +1,3459 @@
+==== start log session Thu Jan 30 13:55:53 2025 ====
+  0.003756570 : setting timeout timer to 2 sec 0 nsec
+  0.004732262 : setting timeout timer to 2 sec 0 nsec
+  0.014045987 : SafeState: Start triggering
+  0.015013679 : looking for messages on channels
+  0.015266777 : SafeState: back to waiting, triggering SafeStateAgain
+  0.015628774 : invoking timer callback <SNR>77_ReceiveMessages
+  0.016156270 : timer callback finished
+  0.103550867 : invoking timer callback (null)
+  0.103964264 : timer callback finished
+  0.204433755 : invoking timer callback (null)
+  0.204970949 : timer callback finished
+  0.297479616 : invoking timer callback <SNR>60_Lint
+  1.311119611 : timer callback finished
+  1.318593020 : invoking timer callback (null)
+  1.319206312 : timer callback finished
+  1.333856633 : looking for messages on channels
+  1.334355927 : SafeState: back to waiting, triggering SafeStateAgain
+  1.334826421 : SafeState: reset: key typed
+  1.335471013 : SafeState: Start triggering
+  1.335841409 : looking for messages on channels
+  1.336158805 : SafeState: back to waiting, triggering SafeStateAgain
+  1.419680183 : invoking timer callback (null)
+  1.420253376 : timer callback finished
+  1.520954845 : invoking timer callback (null)
+  1.521625137 : timer callback finished
+  1.624332380 : invoking timer callback (null)
+  1.624957773 : timer callback finished
+  1.640405484 : looking for messages on channels
+  1.640837378 : SafeState: back to waiting, triggering SafeStateAgain
+  1.725412344 : invoking timer callback (null)
+  1.726032236 : timer callback finished
+  1.827750792 : invoking timer callback (null)
+  1.828334085 : timer callback finished
+  1.928964754 : invoking timer callback (null)
+  1.929619146 : timer callback finished
+  1.943635675 : raw key input: "H"
+  1.944090669 : SafeState: reset: key typed
+  1.945182056 : setting timeout timer to 2 sec 0 nsec
+  1.959501281 : SafeState: Start triggering
+  1.960038374 : looking for messages on channels
+  1.960456869 : SafeState: back to waiting, triggering SafeStateAgain
+  2.030023518 : invoking timer callback (null)
+  2.030891408 : timer callback finished
+  2.132633463 : invoking timer callback (null)
+  2.133218156 : timer callback finished
+  2.199912540 : raw key input: "e"
+  2.200511933 : SafeState: reset: key typed
+  2.201724418 : setting timeout timer to 2 sec 0 nsec
+  2.203853492 : SafeState: Start triggering
+  2.204256587 : looking for messages on channels
+  2.204555384 : SafeState: back to waiting, triggering SafeStateAgain
+  2.231450955 : raw key input: "l"
+  2.231936649 : SafeState: reset: key typed
+  2.233080135 : setting timeout timer to 2 sec 0 nsec
+  2.234668916 : SafeState: Start triggering
+  2.235201209 : looking for messages on channels
+  2.235541505 : SafeState: back to waiting, triggering SafeStateAgain
+  2.235878301 : invoking timer callback (null)
+  2.236192697 : timer callback finished
+  2.336775068 : invoking timer callback (null)
+  2.337354560 : timer callback finished
+  2.359605688 : raw key input: "l"
+  2.360104982 : SafeState: reset: key typed
+  2.361195669 : setting timeout timer to 2 sec 0 nsec
+  2.362668351 : SafeState: Start triggering
+  2.363043846 : looking for messages on channels
+  2.363364943 : SafeState: back to waiting, triggering SafeStateAgain
+  2.437906431 : invoking timer callback (null)
+  2.438477324 : timer callback finished
+  2.528322626 : raw key input: "o"
+  2.528793421 : SafeState: reset: key typed
+  2.529933207 : setting timeout timer to 2 sec 0 nsec
+  2.531434788 : SafeState: Start triggering
+  2.531820484 : looking for messages on channels
+  2.532120180 : SafeState: back to waiting, triggering SafeStateAgain
+  2.538700599 : invoking timer callback (null)
+  2.539230193 : timer callback finished
+  2.639842363 : invoking timer callback (null)
+  2.640447256 : timer callback finished
+  2.741052426 : invoking timer callback (null)
+  2.741658919 : timer callback finished
+  2.836386061 : looking for messages on channels
+  2.836922854 : SafeState: back to waiting, triggering SafeStateAgain
+  2.837364249 : SafeState: reset: key typed
+  2.837982141 : SafeState: Start triggering
+  2.838377637 : looking for messages on channels
+  2.838775932 : SafeState: back to waiting, triggering SafeStateAgain
+  2.842222490 : invoking timer callback (null)
+  2.842643084 : timer callback finished
+  2.943305554 : invoking timer callback (null)
+  2.943970046 : timer callback finished
+  3.045754702 : invoking timer callback (null)
+  3.046412194 : timer callback finished
+  3.087382293 : raw key input: " "
+  3.087905887 : SafeState: reset: key typed
+  3.089158171 : setting timeout timer to 2 sec 0 nsec
+  3.090654853 : SafeState: Start triggering
+  3.091023949 : looking for messages on channels
+  3.091338645 : SafeState: back to waiting, triggering SafeStateAgain
+  3.146801367 : invoking timer callback (null)
+  3.147436759 : timer callback finished
+  3.249183916 : invoking timer callback (null)
+  3.249787109 : timer callback finished
+  3.350426679 : invoking timer callback (null)
+  3.351500566 : timer callback finished
+  3.396067822 : looking for messages on channels
+  3.396628715 : SafeState: back to waiting, triggering SafeStateAgain
+  3.397088909 : SafeState: reset: key typed
+  3.397740801 : SafeState: Start triggering
+  3.398072897 : looking for messages on channels
+  3.398465493 : SafeState: back to waiting, triggering SafeStateAgain
+  3.451995839 : invoking timer callback (null)
+  3.452576832 : timer callback finished
+  3.555361376 : invoking timer callback (null)
+  3.555985769 : timer callback finished
+  3.657685326 : invoking timer callback (null)
+  3.658358818 : timer callback finished
+  3.703132371 : looking for messages on channels
+  3.703645465 : SafeState: back to waiting, triggering SafeStateAgain
+  3.758237198 : invoking timer callback (null)
+  3.758849891 : timer callback finished
+  3.766883793 : raw key input: "d"
+  3.767380186 : SafeState: reset: key typed
+  3.768578172 : setting timeout timer to 2 sec 0 nsec
+  3.770164652 : SafeState: Start triggering
+  3.770588347 : looking for messages on channels
+  3.770927743 : SafeState: back to waiting, triggering SafeStateAgain
+  3.859562361 : invoking timer callback (null)
+  3.860172853 : timer callback finished
+  3.950963944 : raw key input: "e"
+  3.951454038 : SafeState: reset: key typed
+  3.952597324 : setting timeout timer to 2 sec 0 nsec
+  3.954126405 : SafeState: Start triggering
+  3.954587000 : looking for messages on channels
+  3.954972495 : SafeState: back to waiting, triggering SafeStateAgain
+  3.960445228 : invoking timer callback (null)
+  3.960809024 : timer callback finished
+  4.061559093 : invoking timer callback (null)
+  4.062110286 : timer callback finished
+  4.127275791 : raw key input: "e"
+  4.127824184 : SafeState: reset: key typed
+  4.129038869 : setting timeout timer to 2 sec 0 nsec
+  4.130583650 : SafeState: Start triggering
+  4.130956746 : looking for messages on channels
+  4.131240642 : SafeState: back to waiting, triggering SafeStateAgain
+  4.162660758 : invoking timer callback (null)
+  4.163270251 : timer callback finished
+  4.263392229 : raw key input: "p"
+  4.263843823 : SafeState: reset: key typed
+  4.264917310 : setting timeout timer to 2 sec 0 nsec
+  4.266526190 : SafeState: Start triggering
+  4.266963785 : looking for messages on channels
+  4.267303981 : SafeState: back to waiting, triggering SafeStateAgain
+  4.267612377 : invoking timer callback (null)
+  4.267951273 : timer callback finished
+  4.368517045 : invoking timer callback (null)
+  4.369078639 : timer callback finished
+  4.469730710 : invoking timer callback (null)
+  4.470298203 : timer callback finished
+  4.487443494 : raw key input: "."
+  4.488016287 : SafeState: reset: key typed
+  4.489184873 : setting timeout timer to 2 sec 0 nsec
+  4.490675254 : SafeState: Start triggering
+  4.491044450 : looking for messages on channels
+  4.491373146 : SafeState: back to waiting, triggering SafeStateAgain
+  4.571966562 : invoking timer callback (null)
+  4.572593554 : timer callback finished
+  4.674347912 : invoking timer callback (null)
+  4.674970705 : timer callback finished
+  4.776736463 : invoking timer callback (null)
+  4.777342755 : timer callback finished
+  4.795957328 : looking for messages on channels
+  4.796482722 : SafeState: back to waiting, triggering SafeStateAgain
+  4.796911016 : SafeState: reset: key typed
+  4.797629508 : SafeState: Start triggering
+  4.797935504 : looking for messages on channels
+  4.798188101 : SafeState: back to waiting, triggering SafeStateAgain
+  4.877655331 : invoking timer callback (null)
+  4.878275123 : timer callback finished
+  4.979945187 : invoking timer callback (null)
+  4.980586579 : timer callback finished
+  5.031630059 : raw key input: ""
+  5.032060753 : SafeState: reset: ins_typebuf()
+  5.032693546 : setting timeout timer to 2 sec 0 nsec
+  5.034320026 : SafeState: Start triggering
+  5.034769821 : looking for messages on channels
+  5.035100617 : SafeState: back to waiting, triggering SafeStateAgain
+  5.080588964 : invoking timer callback (null)
+  5.081211856 : timer callback finished
+  5.144631186 : raw key input: "s"
+  5.145349877 : SafeState: reset: key typed
+  5.147707748 : setting timeout timer to 2 sec 0 nsec
+  5.149332929 : SafeState: Start triggering
+  5.149901622 : looking for messages on channels
+  5.151445603 : SafeState: back to waiting, triggering SafeStateAgain
+  5.181032343 : invoking timer callback (null)
+  5.181662736 : timer callback finished
+  5.283325001 : invoking timer callback (null)
+  5.283906994 : timer callback finished
+  5.359386578 : raw key input: "e"
+  5.359826873 : SafeState: reset: key typed
+  5.361093357 : setting timeout timer to 2 sec 0 nsec
+  5.362782737 : SafeState: Start triggering
+  5.363221231 : looking for messages on channels
+  5.363546527 : SafeState: back to waiting, triggering SafeStateAgain
+  5.383983779 : invoking timer callback (null)
+  5.384640371 : timer callback finished
+  5.486360736 : invoking timer callback (null)
+  5.487025628 : timer callback finished
+  5.511438232 : raw key input: "e"
+  5.511862127 : SafeState: reset: key typed
+  5.512983113 : setting timeout timer to 2 sec 0 nsec
+  5.514526294 : SafeState: Start triggering
+  5.514856090 : looking for messages on channels
+  5.515166686 : SafeState: back to waiting, triggering SafeStateAgain
+  5.587998002 : invoking timer callback (null)
+  5.588627694 : timer callback finished
+  5.690435258 : invoking timer callback (null)
+  5.691022251 : timer callback finished
+  5.791398032 : raw key input: "k"
+  5.791857927 : SafeState: reset: key typed
+  5.792987013 : setting timeout timer to 2 sec 0 nsec
+  5.794553694 : SafeState: Start triggering
+  5.794983189 : looking for messages on channels
+  5.795351384 : SafeState: back to waiting, triggering SafeStateAgain
+  5.795721480 : invoking timer callback (null)
+  5.796059276 : timer callback finished
+  5.831256048 : raw key input: "l"
+  5.831813042 : SafeState: reset: key typed
+  5.833051127 : setting timeout timer to 2 sec 0 nsec
+  5.834588808 : SafeState: Start triggering
+  5.834941304 : looking for messages on channels
+  5.835259900 : SafeState: back to waiting, triggering SafeStateAgain
+  5.895765865 : invoking timer callback (null)
+  5.896410657 : timer callback finished
+  5.998210021 : invoking timer callback (null)
+  5.998841814 : timer callback finished
+  6.100576978 : invoking timer callback (null)
+  6.101237770 : timer callback finished
+  6.139975400 : looking for messages on channels
+  6.140621692 : SafeState: back to waiting, triggering SafeStateAgain
+  6.141097786 : SafeState: reset: key typed
+  6.141828477 : SafeState: Start triggering
+  6.142166373 : looking for messages on channels
+  6.142487569 : SafeState: back to waiting, triggering SafeStateAgain
+  6.200960160 : invoking timer callback (null)
+  6.201588252 : timer callback finished
+  6.302230531 : invoking timer callback (null)
+  6.302729725 : timer callback finished
+  6.403348404 : invoking timer callback (null)
+  6.403928597 : timer callback finished
+  6.431538062 : raw key input: ""
+  6.431956457 : SafeState: reset: ins_typebuf()
+  6.432532950 : setting timeout timer to 2 sec 0 nsec
+  6.434138530 : SafeState: Start triggering
+  6.434564825 : looking for messages on channels
+  6.434887421 : SafeState: back to waiting, triggering SafeStateAgain
+  6.504396478 : invoking timer callback (null)
+  6.505000071 : timer callback finished
+  6.598985230 : raw key input: "."
+  6.599531524 : SafeState: reset: key typed
+  6.602042893 : setting timeout timer to 2 sec 0 nsec
+  6.603557775 : SafeState: Start triggering
+  6.603955470 : looking for messages on channels
+  6.604291066 : SafeState: back to waiting, triggering SafeStateAgain
+  6.604743560 : invoking timer callback (null)
+  6.605105356 : timer callback finished
+  6.705670636 : invoking timer callback (null)
+  6.706251129 : timer callback finished
+  6.727313173 : raw key input: " "
+  6.727773867 : SafeState: reset: key typed
+  6.728879754 : setting timeout timer to 2 sec 0 nsec
+  6.730410035 : SafeState: Start triggering
+  6.730778031 : looking for messages on channels
+  6.731162026 : SafeState: back to waiting, triggering SafeStateAgain
+  6.806624911 : invoking timer callback (null)
+  6.807222503 : timer callback finished
+  6.908981469 : invoking timer callback (null)
+  6.909583061 : timer callback finished
+  7.011318027 : invoking timer callback (null)
+  7.011963419 : timer callback finished
+  7.035780030 : looking for messages on channels
+  7.036222625 : SafeState: back to waiting, triggering SafeStateAgain
+  7.036655820 : SafeState: reset: key typed
+  7.037296012 : SafeState: Start triggering
+  7.037626508 : looking for messages on channels
+  7.037963704 : SafeState: back to waiting, triggering SafeStateAgain
+  7.112517299 : invoking timer callback (null)
+  7.113095492 : timer callback finished
+  7.214995256 : invoking timer callback (null)
+  7.215744147 : timer callback finished
+  7.317552612 : invoking timer callback (null)
+  7.318249304 : timer callback finished
+  7.342904905 : looking for messages on channels
+  7.343467898 : SafeState: back to waiting, triggering SafeStateAgain
+  7.418190192 : invoking timer callback (null)
+  7.418763085 : timer callback finished
+  7.520511851 : invoking timer callback (null)
+  7.521171443 : timer callback finished
+  7.623955897 : invoking timer callback (null)
+  7.624567090 : timer callback finished
+  7.726302756 : invoking timer callback (null)
+  7.726899049 : timer callback finished
+  7.828692414 : invoking timer callback (null)
+  7.829289507 : timer callback finished
+  7.931049373 : invoking timer callback (null)
+  7.931719665 : timer callback finished
+  8.033534331 : invoking timer callback (null)
+  8.034223222 : timer callback finished
+  8.135910589 : invoking timer callback (null)
+  8.136607181 : timer callback finished
+  8.238378347 : invoking timer callback (null)
+  8.239050839 : timer callback finished
+  8.340835206 : invoking timer callback (null)
+  8.341343200 : timer callback finished
+  8.415552200 : raw key input: "C"
+  8.415929196 : SafeState: reset: key typed
+  8.417532876 : setting timeout timer to 2 sec 0 nsec
+  8.419008858 : SafeState: Start triggering
+  8.419394354 : looking for messages on channels
+  8.419645251 : SafeState: back to waiting, triggering SafeStateAgain
+  8.441031692 : invoking timer callback (null)
+  8.441636784 : timer callback finished
+  8.544375439 : invoking timer callback (null)
+  8.544937532 : timer callback finished
+  8.646717799 : invoking timer callback (null)
+  8.647325692 : timer callback finished
+  8.671272102 : raw key input: "a"
+  8.671697796 : SafeState: reset: key typed
+  8.672802683 : setting timeout timer to 2 sec 0 nsec
+  8.674367964 : SafeState: Start triggering
+  8.674825659 : looking for messages on channels
+  8.675144955 : SafeState: back to waiting, triggering SafeStateAgain
+  8.735214827 : raw key input: "n"
+  8.735741820 : SafeState: reset: key typed
+  8.736836207 : setting timeout timer to 2 sec 0 nsec
+  8.738925482 : SafeState: Start triggering
+  8.739417676 : looking for messages on channels
+  8.739752072 : SafeState: back to waiting, triggering SafeStateAgain
+  8.747232381 : invoking timer callback (null)
+  8.747762475 : timer callback finished
+  8.848369856 : invoking timer callback (null)
+  8.849006048 : timer callback finished
+  8.855013675 : raw key input: " "
+  8.855533969 : SafeState: reset: key typed
+  8.856639255 : setting timeout timer to 2 sec 0 nsec
+  8.858241236 : SafeState: Start triggering
+  8.858623131 : looking for messages on channels
+  8.858919728 : SafeState: back to waiting, triggering SafeStateAgain
+  8.949411031 : invoking timer callback (null)
+  8.950136322 : timer callback finished
+  9.052075187 : invoking timer callback (null)
+  9.052655780 : timer callback finished
+  9.072633138 : raw key input: "y"
+  9.073009034 : SafeState: reset: key typed
+  9.074059521 : setting timeout timer to 2 sec 0 nsec
+  9.075455404 : SafeState: Start triggering
+  9.075811000 : looking for messages on channels
+  9.076052497 : SafeState: back to waiting, triggering SafeStateAgain
+  9.152475871 : invoking timer callback (null)
+  9.153094063 : timer callback finished
+  9.254795631 : invoking timer callback (null)
+  9.255382824 : timer callback finished
+  9.263237229 : raw key input: "o"
+  9.263612125 : SafeState: reset: key typed
+  9.264697611 : setting timeout timer to 2 sec 0 nsec
+  9.266181794 : SafeState: Start triggering
+  9.266624588 : looking for messages on channels
+  9.266917185 : SafeState: back to waiting, triggering SafeStateAgain
+  9.335585053 : raw key input: "u"
+  9.336093947 : SafeState: reset: key typed
+  9.337279633 : setting timeout timer to 2 sec 0 nsec
+  9.338825714 : SafeState: Start triggering
+  9.339220209 : looking for messages on channels
+  9.339546005 : SafeState: back to waiting, triggering SafeStateAgain
+  9.355046117 : invoking timer callback (null)
+  9.355625210 : timer callback finished
+  9.400290370 : raw key input: " "
+  9.401071560 : SafeState: reset: key typed
+  9.402305145 : setting timeout timer to 2 sec 0 nsec
+  9.403869926 : SafeState: Start triggering
+  9.404291021 : looking for messages on channels
+  9.404589017 : SafeState: back to waiting, triggering SafeStateAgain
+  9.456154293 : invoking timer callback (null)
+  9.456829485 : timer callback finished
+  9.559524141 : invoking timer callback (null)
+  9.560201133 : timer callback finished
+  9.661918001 : invoking timer callback (null)
+  9.662543494 : timer callback finished
+  9.709281828 : looking for messages on channels
+  9.709789822 : SafeState: back to waiting, triggering SafeStateAgain
+  9.710296416 : SafeState: reset: key typed
+  9.710991507 : SafeState: Start triggering
+  9.711408702 : looking for messages on channels
+  9.711852797 : SafeState: back to waiting, triggering SafeStateAgain
+  9.718932211 : raw key input: "t"
+  9.719517804 : SafeState: reset: key typed
+  9.720693790 : setting timeout timer to 2 sec 0 nsec
+  9.722222771 : SafeState: Start triggering
+  9.722659766 : looking for messages on channels
+  9.723044861 : SafeState: back to waiting, triggering SafeStateAgain
+  9.762678581 : invoking timer callback (null)
+  9.763277774 : timer callback finished
+  9.865033442 : invoking timer callback (null)
+  9.865668634 : timer callback finished
+  9.887023476 : raw key input: "e"
+  9.887430771 : SafeState: reset: key typed
+  9.888498958 : setting timeout timer to 2 sec 0 nsec
+  9.889893941 : SafeState: Start triggering
+  9.890204437 : looking for messages on channels
+  9.890503733 : SafeState: back to waiting, triggering SafeStateAgain
+  9.935218692 : raw key input: "l"
+  9.935749085 : SafeState: reset: key typed
+  9.936986171 : setting timeout timer to 2 sec 0 nsec
+  9.938506552 : SafeState: Start triggering
+  9.938912047 : looking for messages on channels
+  9.939154844 : SafeState: back to waiting, triggering SafeStateAgain
+  9.965709223 : invoking timer callback (null)
+  9.966298316 : timer callback finished
+ 10.066972096 : invoking timer callback (null)
+ 10.067571289 : timer callback finished
+ 10.079443445 : raw key input: "l"
+ 10.079885240 : SafeState: reset: key typed
+ 10.081045526 : setting timeout timer to 2 sec 0 nsec
+ 10.082890304 : SafeState: Start triggering
+ 10.083242199 : looking for messages on channels
+ 10.083481997 : SafeState: back to waiting, triggering SafeStateAgain
+ 10.167433080 : raw key input: " "
+ 10.167861675 : SafeState: reset: key typed
+ 10.169045560 : setting timeout timer to 2 sec 0 nsec
+ 10.170955237 : SafeState: Start triggering
+ 10.171371232 : looking for messages on channels
+ 10.171703228 : SafeState: back to waiting, triggering SafeStateAgain
+ 10.171993725 : invoking timer callback (null)
+ 10.172312221 : timer callback finished
+ 10.272880704 : invoking timer callback (null)
+ 10.273431797 : timer callback finished
+ 10.287265230 : raw key input: "m"
+ 10.287662825 : SafeState: reset: key typed
+ 10.288813211 : setting timeout timer to 2 sec 0 nsec
+ 10.290292193 : SafeState: Start triggering
+ 10.290688188 : looking for messages on channels
+ 10.291021384 : SafeState: back to waiting, triggering SafeStateAgain
+ 10.367963353 : raw key input: "e"
+ 10.368525246 : SafeState: reset: key typed
+ 10.369615933 : setting timeout timer to 2 sec 0 nsec
+ 10.371497610 : SafeState: Start triggering
+ 10.371921905 : looking for messages on channels
+ 10.372263501 : SafeState: back to waiting, triggering SafeStateAgain
+ 10.372570397 : invoking timer callback (null)
+ 10.372931593 : timer callback finished
+ 10.455238297 : raw key input: " "
+ 10.455677192 : SafeState: reset: key typed
+ 10.456776378 : setting timeout timer to 2 sec 0 nsec
+ 10.458259160 : SafeState: Start triggering
+ 10.458685355 : looking for messages on channels
+ 10.459021051 : SafeState: back to waiting, triggering SafeStateAgain
+ 10.473468976 : invoking timer callback (null)
+ 10.473950671 : timer callback finished
+ 10.575661940 : invoking timer callback (null)
+ 10.576239333 : timer callback finished
+ 10.615308160 : raw key input: "a"
+ 10.615796754 : SafeState: reset: key typed
+ 10.617094438 : setting timeout timer to 2 sec 0 nsec
+ 10.618687219 : SafeState: Start triggering
+ 10.619111314 : looking for messages on channels
+ 10.619476210 : SafeState: back to waiting, triggering SafeStateAgain
+ 10.676565919 : invoking timer callback (null)
+ 10.677298710 : timer callback finished
+ 10.779087578 : invoking timer callback (null)
+ 10.779678771 : timer callback finished
+ 10.879340665 : raw key input: "b"
+ 10.879821059 : SafeState: reset: key typed
+ 10.880989245 : setting timeout timer to 2 sec 0 nsec
+ 10.882537626 : SafeState: Start triggering
+ 10.883055920 : looking for messages on channels
+ 10.883361716 : SafeState: back to waiting, triggering SafeStateAgain
+ 10.883653913 : invoking timer callback (null)
+ 10.883923609 : timer callback finished
+ 10.984345694 : invoking timer callback (null)
+ 10.984883888 : timer callback finished
+ 11.023694518 : raw key input: "o"
+ 11.024205012 : SafeState: reset: key typed
+ 11.025456797 : setting timeout timer to 2 sec 0 nsec
+ 11.027052077 : SafeState: Start triggering
+ 11.027513572 : looking for messages on channels
+ 11.027861768 : SafeState: back to waiting, triggering SafeStateAgain
+ 11.085441371 : invoking timer callback (null)
+ 11.086243861 : timer callback finished
+ 11.152217363 : raw key input: "u"
+ 11.152701757 : SafeState: reset: key typed
+ 11.153838443 : setting timeout timer to 2 sec 0 nsec
+ 11.155431024 : SafeState: Start triggering
+ 11.155846919 : looking for messages on channels
+ 11.156260014 : SafeState: back to waiting, triggering SafeStateAgain
+ 11.186738445 : invoking timer callback (null)
+ 11.187287738 : timer callback finished
+ 11.287981121 : invoking timer callback (null)
+ 11.288603313 : timer callback finished
+ 11.303259236 : raw key input: "t"
+ 11.303764930 : SafeState: reset: key typed
+ 11.304832217 : setting timeout timer to 2 sec 0 nsec
+ 11.306430998 : SafeState: Start triggering
+ 11.306914892 : looking for messages on channels
+ 11.307323887 : SafeState: back to waiting, triggering SafeStateAgain
+ 11.388901800 : invoking timer callback (null)
+ 11.389482493 : timer callback finished
+ 11.400340862 : raw key input: " "
+ 11.401067853 : SafeState: reset: key typed
+ 11.402179240 : setting timeout timer to 2 sec 0 nsec
+ 11.403712321 : SafeState: Start triggering
+ 11.404130416 : looking for messages on channels
+ 11.404507812 : SafeState: back to waiting, triggering SafeStateAgain
+ 11.490006978 : invoking timer callback (null)
+ 11.490652970 : timer callback finished
+ 11.593435027 : invoking timer callback (null)
+ 11.594042819 : timer callback finished
+ 11.695780989 : invoking timer callback (null)
+ 11.696373082 : timer callback finished
+ 11.709057729 : looking for messages on channels
+ 11.709565822 : SafeState: back to waiting, triggering SafeStateAgain
+ 11.710027517 : SafeState: reset: key typed
+ 11.710617310 : SafeState: Start triggering
+ 11.710963306 : looking for messages on channels
+ 11.711267202 : SafeState: back to waiting, triggering SafeStateAgain
+ 11.796739868 : invoking timer callback (null)
+ 11.797329861 : timer callback finished
+ 11.899070331 : invoking timer callback (null)
+ 11.899755322 : timer callback finished
+ 12.001489592 : invoking timer callback (null)
+ 12.002158984 : timer callback finished
+ 12.015880018 : looking for messages on channels
+ 12.016310913 : SafeState: back to waiting, triggering SafeStateAgain
+ 12.071337347 : raw key input: "O"
+ 12.071830542 : SafeState: reset: key typed
+ 12.072954628 : setting timeout timer to 2 sec 0 nsec
+ 12.074456910 : SafeState: Start triggering
+ 12.074877805 : looking for messages on channels
+ 12.075487997 : SafeState: back to waiting, triggering SafeStateAgain
+ 12.101988177 : invoking timer callback (null)
+ 12.102661969 : timer callback finished
+ 12.199257101 : raw key input: "C"
+ 12.200284088 : SafeState: reset: key typed
+ 12.201616172 : setting timeout timer to 2 sec 0 nsec
+ 12.203225653 : SafeState: Start triggering
+ 12.203660947 : looking for messages on channels
+ 12.203990043 : SafeState: back to waiting, triggering SafeStateAgain
+ 12.204302840 : invoking timer callback (null)
+ 12.204651335 : timer callback finished
+ 12.305201020 : invoking timer callback (null)
+ 12.305850712 : timer callback finished
+ 12.359303166 : raw key input: "a"
+ 12.359777361 : SafeState: reset: key typed
+ 12.360961146 : setting timeout timer to 2 sec 0 nsec
+ 12.362460628 : SafeState: Start triggering
+ 12.362870423 : looking for messages on channels
+ 12.363247919 : SafeState: back to waiting, triggering SafeStateAgain
+ 12.405895603 : invoking timer callback (null)
+ 12.406530596 : timer callback finished
+ 12.431206398 : raw key input: "m"
+ 12.431707791 : SafeState: reset: key typed
+ 12.432862278 : setting timeout timer to 2 sec 0 nsec
+ 12.434552757 : SafeState: Start triggering
+ 12.434902153 : looking for messages on channels
+ 12.435269648 : SafeState: back to waiting, triggering SafeStateAgain
+ 12.506791784 : invoking timer callback (null)
+ 12.507392777 : timer callback finished
+ 12.591314763 : raw key input: "l"
+ 12.591897256 : SafeState: reset: key typed
+ 12.593070141 : setting timeout timer to 2 sec 0 nsec
+ 12.594594523 : SafeState: Start triggering
+ 12.594938919 : looking for messages on channels
+ 12.595276015 : SafeState: back to waiting, triggering SafeStateAgain
+ 12.607069272 : invoking timer callback (null)
+ 12.607600266 : timer callback finished
+ 12.679187001 : raw key input: " "
+ 12.679699994 : SafeState: reset: key typed
+ 12.680863780 : setting timeout timer to 2 sec 0 nsec
+ 12.682464861 : SafeState: Start triggering
+ 12.682873956 : looking for messages on channels
+ 12.683342350 : SafeState: back to waiting, triggering SafeStateAgain
+ 12.707805955 : invoking timer callback (null)
+ 12.708324049 : timer callback finished
+ 12.751977521 : raw key input: "r"
+ 12.752476015 : SafeState: reset: key typed
+ 12.753711600 : setting timeout timer to 2 sec 0 nsec
+ 12.755312481 : SafeState: Start triggering
+ 12.755678076 : looking for messages on channels
+ 12.756045572 : SafeState: back to waiting, triggering SafeStateAgain
+ 12.808564837 : invoking timer callback (null)
+ 12.809186030 : timer callback finished
+ 12.872908360 : raw key input: "e"
+ 12.873327154 : SafeState: reset: key typed
+ 12.874359942 : setting timeout timer to 2 sec 0 nsec
+ 12.875829824 : SafeState: Start triggering
+ 12.876164420 : looking for messages on channels
+ 12.876499316 : SafeState: back to waiting, triggering SafeStateAgain
+ 12.909002623 : invoking timer callback (null)
+ 12.909565817 : timer callback finished
+ 13.011392606 : invoking timer callback (null)
+ 13.011967099 : timer callback finished
+ 13.016070550 : raw key input: "f"
+ 13.016654144 : SafeState: reset: key typed
+ 13.017804730 : raw key input: "g"
+ 13.018816918 : setting timeout timer to 2 sec 0 nsec
+ 13.020397999 : SafeState: Start triggering
+ 13.020757395 : looking for messages on channels
+ 13.021110091 : SafeState: back to waiting, triggering SafeStateAgain
+ 13.112651803 : invoking timer callback (null)
+ 13.113310395 : timer callback finished
+ 13.152882724 : raw key input: "e"
+ 13.153358019 : SafeState: reset: key typed
+ 13.154585604 : setting timeout timer to 2 sec 0 nsec
+ 13.156195485 : SafeState: Start triggering
+ 13.156635480 : looking for messages on channels
+ 13.157029275 : SafeState: back to waiting, triggering SafeStateAgain
+ 13.213541704 : invoking timer callback (null)
+ 13.214224996 : timer callback finished
+ 13.316047786 : invoking timer callback (null)
+ 13.316748678 : timer callback finished
+ 13.418527569 : invoking timer callback (null)
+ 13.419070463 : timer callback finished
+ 13.455346332 : raw key input: ""
+ 13.455811026 : SafeState: reset: ins_typebuf()
+ 13.456365720 : setting timeout timer to 2 sec 0 nsec
+ 13.457900102 : SafeState: Start triggering
+ 13.458321797 : looking for messages on channels
+ 13.458642093 : SafeState: back to waiting, triggering SafeStateAgain
+ 13.519094075 : invoking timer callback (null)
+ 13.519704367 : timer callback finished
+ 13.575010211 : raw key input: ""
+ 13.575419506 : SafeState: reset: ins_typebuf()
+ 13.575969999 : setting timeout timer to 2 sec 0 nsec
+ 13.577456082 : SafeState: Start triggering
+ 13.577787278 : looking for messages on channels
+ 13.578125874 : SafeState: back to waiting, triggering SafeStateAgain
+ 13.619620781 : invoking timer callback (null)
+ 13.620246873 : timer callback finished
+ 13.647670048 : raw key input: "s"
+ 13.648154642 : SafeState: reset: key typed
+ 13.650737811 : setting timeout timer to 2 sec 0 nsec
+ 13.652510490 : SafeState: Start triggering
+ 13.652916085 : looking for messages on channels
+ 13.653227082 : SafeState: back to waiting, triggering SafeStateAgain
+ 13.720683480 : invoking timer callback (null)
+ 13.721289973 : timer callback finished
+ 13.821982377 : invoking timer callback (null)
+ 13.822610070 : timer callback finished
+ 13.903404210 : raw key input: ">"
+ 13.903735806 : SafeState: reset: key typed
+ 13.904726495 : raw key input: "?"
+ 13.905559885 : setting timeout timer to 2 sec 0 nsec
+ 13.907110466 : SafeState: Start triggering
+ 13.907370363 : looking for messages on channels
+ 13.907596360 : SafeState: back to waiting, triggering SafeStateAgain
+ 13.922985378 : invoking timer callback (null)
+ 13.923553971 : timer callback finished
+ 14.007308876 : raw key input: ""
+ 14.008093467 : SafeState: reset: ins_typebuf()
+ 14.008682960 SEND on 13(in): 'Hello deepseek. Can you tell me about OCaml refs>?
+'
+ 14.009069555 : setting timeout timer to 2 sec 0 nsec
+ 14.021602506 : SafeState: Start triggering
+ 14.022052801 : looking for messages on channels
+ 14.022333798 : SafeState: back to waiting, triggering SafeStateAgain
+ 14.022601295 : invoking timer callback (null)
+ 14.023320486 : timer callback finished
+ 14.123763593 : invoking timer callback (null)
+ 14.124304487 : timer callback finished
+ 14.224841793 : invoking timer callback (null)
+ 14.225705983 : timer callback finished
+ 14.326402487 : looking for messages on channels
+ 14.326836482 : SafeState: back to waiting, triggering SafeStateAgain
+ 14.327821571 : SafeState: reset: key typed
+ 14.328473163 : SafeState: Start triggering
+ 14.328740060 : looking for messages on channels
+ 14.328989257 : SafeState: back to waiting, triggering SafeStateAgain
+ 14.329224354 : invoking timer callback (null)
+ 14.329473851 : timer callback finished
+ 14.430004758 : invoking timer callback (null)
+ 14.430519752 : timer callback finished
+ 14.532151645 : invoking timer callback (null)
+ 14.532677839 : timer callback finished
+ 14.632267957 : looking for messages on channels
+ 14.632702852 : SafeState: back to waiting, triggering SafeStateAgain
+ 14.633136247 : invoking timer callback (null)
+ 14.633833038 : timer callback finished
+ 14.735408133 : invoking timer callback (null)
+ 14.735926527 : timer callback finished
+ 14.836512433 : invoking timer callback (null)
+ 14.836858729 : timer callback finished
+ 14.937325536 : invoking timer callback (null)
+ 14.937828430 : timer callback finished
+ 15.038406537 : invoking timer callback (null)
+ 15.038837331 : timer callback finished
+ 15.139371338 : invoking timer callback (null)
+ 15.139931532 : timer callback finished
+ 15.240539538 : invoking timer callback (null)
+ 15.241117331 : timer callback finished
+ 15.342800025 : invoking timer callback (null)
+ 15.343388418 : timer callback finished
+ 15.445216110 : invoking timer callback (null)
+ 15.445838903 : timer callback finished
+ 15.548517485 : invoking timer callback (null)
+ 15.549452674 : timer callback finished
+ 15.651080269 : invoking timer callback (null)
+ 15.651691861 : timer callback finished
+ 15.753346456 : invoking timer callback (null)
+ 15.753920749 : timer callback finished
+ 15.854594455 : invoking timer callback (null)
+ 15.854976650 : timer callback finished
+ 15.955426759 : invoking timer callback (null)
+ 15.955933253 : timer callback finished
+ 16.056535559 : invoking timer callback (null)
+ 16.056956654 : timer callback finished
+ 16.157557061 : invoking timer callback (null)
+ 16.158102155 : timer callback finished
+ 16.258825961 : invoking timer callback (null)
+ 16.259297355 : timer callback finished
+ 16.359832064 : invoking timer callback (null)
+ 16.360409357 : timer callback finished
+ 16.461011464 : invoking timer callback (null)
+ 16.461480559 : timer callback finished
+ 16.563058955 : invoking timer callback (null)
+ 16.563606548 : timer callback finished
+ 16.664092557 : invoking timer callback (null)
+ 16.665190444 : timer callback finished
+ 16.766791240 : invoking timer callback (null)
+ 16.767537031 : timer callback finished
+ 16.869097827 : invoking timer callback (null)
+ 16.869614121 : timer callback finished
+ 16.970215729 : invoking timer callback (null)
+ 16.970783422 : timer callback finished
+ 17.071351030 : invoking timer callback (null)
+ 17.071936323 : timer callback finished
+ 17.172424032 : invoking timer callback (null)
+ 17.172960026 : timer callback finished
+ 17.273444035 : invoking timer callback (null)
+ 17.273907330 : timer callback finished
+ 17.374524638 : invoking timer callback (null)
+ 17.374986232 : timer callback finished
+ 17.475578941 : invoking timer callback (null)
+ 17.476094935 : timer callback finished
+ 17.577803730 : invoking timer callback (null)
+ 17.578205025 : timer callback finished
+ 17.678701635 : invoking timer callback (null)
+ 17.679174729 : timer callback finished
+ 17.779746338 : invoking timer callback (null)
+ 17.780106234 : timer callback finished
+ 17.880615043 : invoking timer callback (null)
+ 17.881105638 : timer callback finished
+ 17.981765345 : invoking timer callback (null)
+ 17.982197140 : timer callback finished
+ 18.082658950 : invoking timer callback (null)
+ 18.083240143 : timer callback finished
+ 18.183755353 : invoking timer callback (null)
+ 18.185944327 : timer callback finished
+ 18.288720110 : invoking timer callback (null)
+ 18.289293903 : timer callback finished
+ 18.389850613 : invoking timer callback (null)
+ 18.390482206 : timer callback finished
+ 18.490872017 : invoking timer callback (null)
+ 18.491216713 : timer callback finished
+ 18.592763311 : invoking timer callback (null)
+ 18.593369904 : timer callback finished
+ 18.695101800 : invoking timer callback (null)
+ 18.695747892 : timer callback finished
+ 18.797385289 : invoking timer callback (null)
+ 18.800592651 : timer callback finished
+ 18.904204125 : invoking timer callback (null)
+ 18.904708819 : timer callback finished
+ 19.005264529 : invoking timer callback (null)
+ 19.005864921 : timer callback finished
+ 19.106585729 : invoking timer callback (null)
+ 19.107064924 : timer callback finished
+ 19.207649833 : invoking timer callback (null)
+ 19.208085728 : timer callback finished
+ 19.308493040 : invoking timer callback (null)
+ 19.310658915 : timer callback finished
+ 19.312369894 RECV on 13(out): '<think>'
+ 19.312693691 : looking for messages on channels
+ 19.312943888 : SafeState: back to waiting, triggering SafeStateAgain
+ 19.361156217 RECV on 13(out): '
+'
+ 19.362258104 on 13: Invoking channel callback GotOutput
+ 19.363077595 : setting timeout timer to 2 sec 0 nsec
+ 19.364822574 : SafeState: back to waiting, triggering SafeStateAgain
+ 19.410205737 : invoking timer callback (null)
+ 19.410738731 : timer callback finished
+ 19.417500451 RECV on 13(out): 'Okay'
+ 19.420504815 : looking for messages on channels
+ 19.420728813 : SafeState: back to waiting, triggering SafeStateAgain
+ 19.453898920 RECV on 13(out): ','
+ 19.496239019 RECV on 13(out): ' so'
+ 19.511008845 : invoking timer callback (null)
+ 19.511494639 : timer callback finished
+ 19.518815452 : looking for messages on channels
+ 19.519193048 : SafeState: back to waiting, triggering SafeStateAgain
+ 19.529808822 RECV on 13(out): ' I'
+ 19.569437554 RECV on 13(out): ''m'
+ 19.611099361 : invoking timer callback (null)
+ 19.611552755 : timer callback finished
+ 19.614300323 RECV on 13(out): ' trying'
+ 19.614854316 : looking for messages on channels
+ 19.616399698 : SafeState: back to waiting, triggering SafeStateAgain
+ 19.647994124 RECV on 13(out): ' to'
+ 19.674893406 RECV on 13(out): ' understand'
+ 19.703124572 RECV on 13(out): ' what'
+ 19.711384474 : invoking timer callback (null)
+ 19.712013367 : timer callback finished
+ 19.717625201 : looking for messages on channels
+ 19.729662058 : SafeState: back to waiting, triggering SafeStateAgain
+ 19.735111294 RECV on 13(out): ' OC'
+ 19.769468887 RECV on 13(out): 'aml'
+ 19.803263088 RECV on 13(out): ' is'
+ 19.812295881 : invoking timer callback (null)
+ 19.812719876 : timer callback finished
+ 19.815070948 : looking for messages on channels
+ 19.815343845 : SafeState: back to waiting, triggering SafeStateAgain
+ 19.836178098 RECV on 13(out): ' and'
+ 19.860602409 RECV on 13(out): ' how'
+ 19.891702242 RECV on 13(out): ' it'
+ 19.912292098 : invoking timer callback (null)
+ 19.912715893 : timer callback finished
+ 19.921852685 RECV on 13(out): ''s'
+ 19.922468678 : looking for messages on channels
+ 19.922737674 : SafeState: back to waiting, triggering SafeStateAgain
+ 19.943382030 RECV on 13(out): ' used'
+ 19.974746959 RECV on 13(out): '.'
+ 20.005408896 RECV on 13(out): ' From'
+ 20.012844809 : invoking timer callback (null)
+ 20.013275003 : timer callback finished
+ 20.016628064 : looking for messages on channels
+ 20.017022359 : SafeState: back to waiting, triggering SafeStateAgain
+ 20.038052910 RECV on 13(out): ' what'
+ 20.070353828 RECV on 13(out): ' I'
+ 20.096651817 RECV on 13(out): ' know'
+ 20.112712027 : invoking timer callback (null)
+ 20.113073323 : timer callback finished
+ 20.118488459 : looking for messages on channels
+ 20.118827855 : SafeState: back to waiting, triggering SafeStateAgain
+ 20.164363916 RECV on 13(out): ','
+ 20.205373431 RECV on 13(out): ' OC'
+ 20.213152339 : invoking timer callback (null)
+ 20.214626022 : timer callback finished
+ 20.218313278 : looking for messages on channels
+ 20.218903871 : SafeState: back to waiting, triggering SafeStateAgain
+ 20.238080045 RECV on 13(out): 'aml'
+ 20.270435862 RECV on 13(out): ' is'
+ 20.293796886 RECV on 13(out): ' a'
+ 20.315134834 : invoking timer callback (null)
+ 20.316888813 : timer callback finished
+ 20.321531558 RECV on 13(out): ' programming'
+ 20.327437488 : looking for messages on channels
+ 20.327708285 : SafeState: back to waiting, triggering SafeStateAgain
+ 20.353693678 RECV on 13(out): ' language'
+ 20.387015484 RECV on 13(out): ' that'
+ 20.416186439 : invoking timer callback (null)
+ 20.417300826 : timer callback finished
+ 20.421791073 RECV on 13(out): ' runs'
+ 20.422375466 : looking for messages on channels
+ 20.422582764 : SafeState: back to waiting, triggering SafeStateAgain
+ 20.466190648 RECV on 13(out): ' on'
+ 20.500627741 RECV on 13(out): ' the'
+ 20.516734151 : invoking timer callback (null)
+ 20.519276321 : timer callback finished
+ 20.525803844 : looking for messages on channels
+ 20.526149039 : SafeState: back to waiting, triggering SafeStateAgain
+ 20.530436489 RECV on 13(out): ' JVM'
+ 20.570570414 RECV on 13(out): ','
+ 20.598597383 RECV on 13(out): ' right'
+ 20.620295827 : invoking timer callback (null)
+ 20.621749509 : timer callback finished
+ 20.624044582 : looking for messages on channels
+ 20.624248980 : SafeState: back to waiting, triggering SafeStateAgain
+ 20.626362955 RECV on 13(out): '?'
+ 20.656365600 RECV on 13(out): ' It'
+ 20.685108960 RECV on 13(out): ' seems'
+ 20.716282392 RECV on 13(out): ' like'
+ 20.726153575 : invoking timer callback (null)
+ 20.727225362 : timer callback finished
+ 20.737560240 : looking for messages on channels
+ 20.738157033 : SafeState: back to waiting, triggering SafeStateAgain
+ 20.744022064 RECV on 13(out): ' it'
+ 20.776759277 RECV on 13(out): ' combines'
+ 20.805253540 RECV on 13(out): ' features'
+ 20.827186981 : invoking timer callback (null)
+ 20.827568276 : timer callback finished
+ 20.828906161 : looking for messages on channels
+ 20.829071459 : SafeState: back to waiting, triggering SafeStateAgain
+ 20.842513100 RECV on 13(out): ' from'
+ 20.886049585 RECV on 13(out): ' other'
+ 20.925496619 RECV on 13(out): ' languages'
+ 20.940415596 : invoking timer callback (null)
+ 20.941620914 : timer callback finished
+ 20.947229394 RECV on 13(out): ' or'
+ 20.948286609 : looking for messages on channels
+ 20.948484212 : SafeState: back to waiting, triggering SafeStateAgain
+ 20.967779889 RECV on 13(out): ' maybe'
+ 21.007882563 RECV on 13(out): ' even'
+ 21.038283799 RECV on 13(out): ' JavaScript'
+ 21.041728048 : invoking timer callback (null)
+ 21.041961651 : timer callback finished
+ 21.049235156 : looking for messages on channels
+ 21.049415858 : SafeState: back to waiting, triggering SafeStateAgain
+ 21.065911895 RECV on 13(out): '.'
+ 21.088596920 RECV on 13(out): ' But'
+ 21.125059442 RECV on 13(out): ' wait'
+ 21.141879683 : invoking timer callback (null)
+ 21.142327589 : timer callback finished
+ 21.147887169 : looking for messages on channels
+ 21.148817182 : SafeState: back to waiting, triggering SafeStateAgain
+ 21.155250374 RECV on 13(out): ','
+ 21.177228489 RECV on 13(out): ' I'
+ 21.200255719 RECV on 13(out): ' think'
+ 21.233279793 RECV on 13(out): ' it'
+ 21.242650027 : invoking timer callback (null)
+ 21.242970932 : timer callback finished
+ 21.253326180 : looking for messages on channels
+ 21.253730186 : SafeState: back to waiting, triggering SafeStateAgain
+ 21.273667972 RECV on 13(out): ''s'
+ 21.299936848 RECV on 13(out): ' more'
+ 21.337162882 RECV on 13(out): ' than'
+ 21.347934836 : invoking timer callback (null)
+ 21.348229441 : timer callback finished
+ 21.358595389 : looking for messages on channels
+ 21.362978452 : SafeState: back to waiting, triggering SafeStateAgain
+ 21.378012868 RECV on 13(out): ' that'
+ 21.407694793 RECV on 13(out): ' because'
+ 21.436298403 RECV on 13(out): ' I'
+ 21.448488278 : invoking timer callback (null)
+ 21.448967685 : timer callback finished
+ 21.454380962 : looking for messages on channels
+ 21.459879741 : SafeState: back to waiting, triggering SafeStateAgain
+ 21.464843712 RECV on 13(out): ''ve'
+ 21.496687569 RECV on 13(out): ' seen'
+ 21.531355966 RECV on 13(out): ' people'
+ 21.549116520 : invoking timer callback (null)
+ 21.549603827 : timer callback finished
+ 21.553016876 : looking for messages on channels
+ 21.553733987 : SafeState: back to waiting, triggering SafeStateAgain
+ 21.578477941 RECV on 13(out): ' use'
+ 21.617061494 RECV on 13(out): ' it'
+ 21.656837165 RECV on 13(out): ' for'
+ 21.658145083 : invoking timer callback (null)
+ 21.658583390 : timer callback finished
+ 21.669426145 : looking for messages on channels
+ 21.669773350 : SafeState: back to waiting, triggering SafeStateAgain
+ 21.675574533 RECV on 13(out): ' things'
+ 21.700770894 RECV on 13(out): ' like'
+ 21.732579550 RECV on 13(out): ' web'
+ 21.758245318 : invoking timer callback (null)
+ 21.758612224 : timer callback finished
+ 21.759900442 RECV on 13(out): ' development'
+ 21.760178246 : looking for messages on channels
+ 21.760616352 : SafeState: back to waiting, triggering SafeStateAgain
+ 21.810812172 RECV on 13(out): ' or'
+ 21.846146178 RECV on 13(out): ' some'
+ 21.856924633 : invoking timer callback (null)
+ 21.857881547 : timer callback finished
+ 21.868137894 RECV on 13(out): ' kinds'
+ 21.868688702 : looking for messages on channels
+ 21.869093307 : SafeState: back to waiting, triggering SafeStateAgain
+ 21.893678460 RECV on 13(out): ' of'
+ 21.922656675 RECV on 13(out): ' game'
+ 21.943195870 RECV on 13(out): ' development'
+ 21.957835279 : invoking timer callback (null)
+ 21.958201885 : timer callback finished
+ 21.964506675 : looking for messages on channels
+ 21.964697578 : SafeState: back to waiting, triggering SafeStateAgain
+ 21.975906239 RECV on 13(out): '.
+
+'
+ 21.976416446 on 13: Invoking channel callback GotOutput
+ 21.976985454 on 13: Invoking channel callback GotOutput
+ 21.977349159 : setting timeout timer to 2 sec 0 nsec
+ 21.978956382 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.010646937 RECV on 13(out): 'I'
+ 22.020498578 : looking for messages on channels
+ 22.022146901 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.050738211 RECV on 13(out): ' remember'
+ 22.058025416 : invoking timer callback (null)
+ 22.058347920 : timer callback finished
+ 22.062644182 : looking for messages on channels
+ 22.063056488 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.086734727 RECV on 13(out): ' reading'
+ 22.114706528 RECV on 13(out): ' about'
+ 22.142571028 RECV on 13(out): ' O'
+ 22.158335054 : invoking timer callback (null)
+ 22.158686659 : timer callback finished
+ 22.163970834 : looking for messages on channels
+ 22.164160837 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.178303540 RECV on 13(out): 'CL'
+ 22.219782835 RECV on 13(out): ' in'
+ 22.250936282 RECV on 13(out): ' JavaScript'
+ 22.258767294 : invoking timer callback (null)
+ 22.259175600 : timer callback finished
+ 22.263412361 : looking for messages on channels
+ 22.265330988 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.278727880 RECV on 13(out): ' before'
+ 22.304908856 RECV on 13(out): '.'
+ 22.334909186 RECV on 13(out): ' Oh'
+ 22.358695427 : invoking timer callback (null)
+ 22.359155934 : timer callback finished
+ 22.366545440 : looking for messages on channels
+ 22.367331551 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.368664070 RECV on 13(out): ' right'
+ 22.396014263 RECV on 13(out): ','
+ 22.428125523 RECV on 13(out): ' Object'
+ 22.457822849 : invoking timer callback (null)
+ 22.458233855 : timer callback finished
+ 22.465342457 RECV on 13(out): '-C'
+ 22.476078711 : looking for messages on channels
+ 22.477050125 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.488920995 RECV on 13(out): 'ame'
+ 22.516617792 RECV on 13(out): 'on'
+ 22.545060600 RECV on 13(out): '!'
+ 22.557726382 : invoking timer callback (null)
+ 22.559013700 : timer callback finished
+ 22.567498122 : looking for messages on channels
+ 22.568282933 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.584754970 RECV on 13(out): ' That'
+ 22.612169763 RECV on 13(out): ' was'
+ 22.645647543 RECV on 13(out): ' popular'
+ 22.658769531 : invoking timer callback (null)
+ 22.659183337 : timer callback finished
+ 22.666541643 : looking for messages on channels
+ 22.668131866 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.681730161 RECV on 13(out): ' back'
+ 22.711184183 RECV on 13(out): ' in'
+ 22.743608248 RECV on 13(out): ' the'
+ 22.759526776 : invoking timer callback (null)
+ 22.760373689 : timer callback finished
+ 22.765809267 : looking for messages on channels
+ 22.766124171 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.775603507 RECV on 13(out): ' day'
+ 22.800942070 RECV on 13(out): ' for'
+ 22.837310392 RECV on 13(out): ' '
+ 22.860245221 : invoking timer callback (null)
+ 22.860614926 : timer callback finished
+ 22.868966146 : looking for messages on channels
+ 22.869298551 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.870676271 RECV on 13(out): '3'
+ 22.897139050 RECV on 13(out): 'D'
+ 22.931120638 RECV on 13(out): ' graphics'
+ 22.959971251 : invoking timer callback (null)
+ 22.960383357 : timer callback finished
+ 22.962762091 : looking for messages on channels
+ 22.962977995 : SafeState: back to waiting, triggering SafeStateAgain
+ 22.970940209 RECV on 13(out): '.'
+ 22.997186585 RECV on 13(out): ' So'
+ 23.023581364 RECV on 13(out): ' maybe'
+ 23.053168688 RECV on 13(out): ' OC'
+ 23.060641795 : invoking timer callback (null)
+ 23.061771812 : timer callback finished
+ 23.065157160 : looking for messages on channels
+ 23.065925371 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.075594910 RECV on 13(out): 'aml'
+ 23.102322193 RECV on 13(out): ' has'
+ 23.137012591 RECV on 13(out): ' its'
+ 23.161798546 : invoking timer callback (null)
+ 23.162147651 : timer callback finished
+ 23.168487642 : looking for messages on channels
+ 23.169503557 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.183837262 RECV on 13(out): ' own'
+ 23.207739205 RECV on 13(out): ' version'
+ 23.237224029 RECV on 13(out): ' of'
+ 23.261632849 : invoking timer callback (null)
+ 23.262008244 : timer callback finished
+ 23.266753088 RECV on 13(out): ' this'
+ 23.277264262 : looking for messages on channels
+ 23.277900954 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.297688817 RECV on 13(out): '?'
+ 23.337378341 RECV on 13(out): ' Maybe'
+ 23.362311942 : invoking timer callback (null)
+ 23.362943934 : timer callback finished
+ 23.369417857 : looking for messages on channels
+ 23.370103648 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.379828632 RECV on 13(out): ' a'
+ 23.393887963 RECV on 13(out): ' newer'
+ 23.428961143 RECV on 13(out): ' framework'
+ 23.460142669 RECV on 13(out): ' that'
+ 23.474108301 : invoking timer callback (null)
+ 23.474726394 : timer callback finished
+ 23.485153669 : looking for messages on channels
+ 23.485462065 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.488374030 RECV on 13(out): ''s'
+ 23.522347223 RECV on 13(out): ' better'
+ 23.549603396 RECV on 13(out): ' today'
+ 23.574399799 : invoking timer callback (null)
+ 23.574816294 : timer callback finished
+ 23.577179565 RECV on 13(out): '.'
+ 23.577618660 : looking for messages on channels
+ 23.577855857 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.603263553 RECV on 13(out): ' I'
+ 23.632782499 RECV on 13(out): ' should'
+ 23.670638245 RECV on 13(out): ' look'
+ 23.674587797 : invoking timer callback (null)
+ 23.675007692 : timer callback finished
+ 23.682374904 : looking for messages on channels
+ 23.682691700 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.706957309 RECV on 13(out): ' into'
+ 23.736395156 RECV on 13(out): ' that'
+ 23.771259338 RECV on 13(out): '.
+
+'
+ 23.771862431 on 13: Invoking channel callback GotOutput
+ 23.775189691 on 13: Invoking channel callback GotOutput
+ 23.775595886 : setting timeout timer to 2 sec 0 nsec
+ 23.777443164 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.777674961 : invoking timer callback (null)
+ 23.778063457 : timer callback finished
+ 23.804304742 RECV on 13(out): 'OC'
+ 23.804881635 : looking for messages on channels
+ 23.805121532 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.823665210 RECV on 13(out): 'aml'
+ 23.854204544 RECV on 13(out): ' uses'
+ 23.877930259 : invoking timer callback (null)
+ 23.878289955 : timer callback finished
+ 23.885638167 : looking for messages on channels
+ 23.887856440 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.891332099 RECV on 13(out): ' something'
+ 23.920656447 RECV on 13(out): ' called'
+ 23.940593608 RECV on 13(out): ' Common'
+ 23.960917664 RECV on 13(out): 'JS'
+ 23.978518153 : invoking timer callback (null)
+ 23.978880649 : timer callback finished
+ 23.982248008 : looking for messages on channels
+ 23.985729367 : SafeState: back to waiting, triggering SafeStateAgain
+ 23.990187513 RECV on 13(out): ','
+ 24.033517594 RECV on 13(out): ' which'
+ 24.060762167 RECV on 13(out): ' is'
+ 24.078418155 : invoking timer callback (null)
+ 24.078791751 : timer callback finished
+ 24.082392208 : looking for messages on channels
+ 24.082640705 : SafeState: back to waiting, triggering SafeStateAgain
+ 24.091009804 RECV on 13(out): ' Java'
+ 24.120168255 RECV on 13(out): 'Beans'
+ 24.165833607 RECV on 13(out): ','
+ 24.178582354 : invoking timer callback (null)
+ 24.178937150 : timer callback finished
+ 24.186495459 RECV on 13(out): ' right'
+ 24.188204139 : looking for messages on channels
+ 24.189213527 : SafeState: back to waiting, triggering SafeStateAgain
+ 24.208249499 RECV on 13(out): '?'
+ 24.240901807 RECV on 13(out): ' So'
+ 24.278904752 : invoking timer callback (null)
+ 24.279485545 : timer callback finished
+ 24.281419122 RECV on 13(out): ' it'
+ 24.282646207 : looking for messages on channels
+ 24.285677571 : SafeState: back to waiting, triggering SafeStateAgain
+ 24.310446974 RECV on 13(out): ''s'
+ 24.354552746 RECV on 13(out): ' built'
+ 24.381365824 : invoking timer callback (null)
+ 24.384541586 : timer callback finished
+ 24.389192131 : looking for messages on channels
+ 24.389757524 : SafeState: back to waiting, triggering SafeStateAgain
+ 24.391489803 RECV on 13(out): ' on'
+ 24.414950522 RECV on 13(out): ' top'
+ 24.440541315 RECV on 13(out): ' of'
+ 24.463777737 RECV on 13(out): ' Java'
+ 24.483441401 RECV on 13(out): ''s'
+ 24.487077658 : invoking timer callback (null)
+ 24.487925547 : timer callback finished
+ 24.501005491 : looking for messages on channels
+ 24.501641283 : SafeState: back to waiting, triggering SafeStateAgain
+ 24.506521525 RECV on 13(out): ' architecture'
+ 24.530601636 RECV on 13(out): '.'
+ 24.572872430 RECV on 13(out): ' That'
+ 24.589611129 : invoking timer callback (null)
+ 24.590124523 : timer callback finished
+ 24.596480047 : looking for messages on channels
+ 24.596759943 : SafeState: back to waiting, triggering SafeStateAgain
+ 24.603320265 RECV on 13(out): ' means'
+ 24.651093292 RECV on 13(out): ' I'
+ 24.677096681 RECV on 13(out): ' can'
+ 24.689806228 : invoking timer callback (null)
+ 24.690116225 : timer callback finished
+ 24.698438925 : looking for messages on channels
+ 24.699059417 : SafeState: back to waiting, triggering SafeStateAgain
+ 24.699276915 RECV on 13(out): ' use'
+ 24.725948295 RECV on 13(out): ' Java'
+ 24.760627080 RECV on 13(out): ' classes'
+ 24.790361123 : invoking timer callback (null)
+ 24.790780418 : timer callback finished
+ 24.792174902 : looking for messages on channels
+ 24.792547397 : SafeState: back to waiting, triggering SafeStateAgain
+ 24.793395987 RECV on 13(out): ' and'
+ 24.830201746 RECV on 13(out): ' components'
+ 24.881953826 RECV on 13(out): ' in'
+ 24.890406125 : invoking timer callback (null)
+ 24.890805120 : timer callback finished
+ 24.893146392 : looking for messages on channels
+ 24.893367189 : SafeState: back to waiting, triggering SafeStateAgain
+ 24.904495356 RECV on 13(out): ' my'
+ 24.925880800 RECV on 13(out): ' code'
+ 24.949776513 RECV on 13(out): '.'
+ 24.974012523 RECV on 13(out): ' That'
+ 24.990629724 : invoking timer callback (null)
+ 24.990970820 : timer callback finished
+ 24.995287668 : looking for messages on channels
+ 24.996044659 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.008582009 RECV on 13(out): ' sounds'
+ 25.028933565 RECV on 13(out): ' useful'
+ 25.057532122 RECV on 13(out): ' for'
+ 25.077248686 RECV on 13(out): ' building'
+ 25.090875522 : invoking timer callback (null)
+ 25.091273718 : timer callback finished
+ 25.098617530 : looking for messages on channels
+ 25.099900814 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.104601758 RECV on 13(out): ' custom'
+ 25.165855224 RECV on 13(out): ' widgets'
+ 25.190517929 RECV on 13(out): ' or'
+ 25.190920024 : invoking timer callback (null)
+ 25.191189321 : timer callback finished
+ 25.201829393 : looking for messages on channels
+ 25.202123390 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.221236361 RECV on 13(out): ' integrating'
+ 25.271860655 RECV on 13(out): ' third'
+ 25.291467220 : invoking timer callback (null)
+ 25.291927014 : timer callback finished
+ 25.293341197 : looking for messages on channels
+ 25.293692193 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.309762101 RECV on 13(out): '-party'
+ 25.336112885 RECV on 13(out): ' libraries'
+ 25.355563252 RECV on 13(out): '.'
+ 25.389677344 RECV on 13(out): ' But'
+ 25.392269713 : invoking timer callback (null)
+ 25.392535009 : timer callback finished
+ 25.401592901 : looking for messages on channels
+ 25.404604465 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.420805971 RECV on 13(out): ' how'
+ 25.443701797 RECV on 13(out): ' does'
+ 25.463445360 RECV on 13(out): ' that'
+ 25.486454985 RECV on 13(out): ' work'
+ 25.492584811 : invoking timer callback (null)
+ 25.492882208 : timer callback finished
+ 25.499646327 : looking for messages on channels
+ 25.500401318 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.511376386 RECV on 13(out): ' exactly'
+ 25.550756815 RECV on 13(out): '?
+
+'
+ 25.551674304 on 13: Invoking channel callback GotOutput
+ 25.553545981 on 13: Invoking channel callback GotOutput
+ 25.554075075 : setting timeout timer to 2 sec 0 nsec
+ 25.555749555 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.593173207 : invoking timer callback (null)
+ 25.593559802 : timer callback finished
+ 25.598579742 RECV on 13(out): 'I'
+ 25.598912738 : looking for messages on channels
+ 25.599145935 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.625600919 RECV on 13(out): ' also'
+ 25.651016714 RECV on 13(out): ' heard'
+ 25.675919916 RECV on 13(out): ' about'
+ 25.693664503 : invoking timer callback (null)
+ 25.694043499 : timer callback finished
+ 25.697362659 : looking for messages on channels
+ 25.697596056 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.698637844 RECV on 13(out): ' the'
+ 25.724587033 RECV on 13(out): ' OC'
+ 25.743798403 RECV on 13(out): 'aml'
+ 25.764411656 RECV on 13(out): ' ecosystem'
+ 25.794071001 : invoking timer callback (null)
+ 25.794407897 : timer callback finished
+ 25.795678382 : looking for messages on channels
+ 25.795833380 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.798643746 RECV on 13(out): ' being'
+ 25.819678495 RECV on 13(out): ' growing'
+ 25.838868565 RECV on 13(out): '.'
+ 25.862932877 RECV on 13(out): ' There'
+ 25.893660809 : invoking timer callback (null)
+ 25.894021904 : timer callback finished
+ 25.899622237 RECV on 13(out): ' are'
+ 25.899973933 : looking for messages on channels
+ 25.900172731 : SafeState: back to waiting, triggering SafeStateAgain
+ 25.925040833 RECV on 13(out): ' tools'
+ 25.951529116 RECV on 13(out): ' like'
+ 25.987585984 RECV on 13(out): ' the'
+ 25.994055806 : invoking timer callback (null)
+ 25.994293904 : timer callback finished
+ 25.998584852 : looking for messages on channels
+ 25.998869449 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.014725059 RECV on 13(out): ' AST'
+ 26.052004212 RECV on 13(out): ' parser'
+ 26.078824391 RECV on 13(out): ' generator'
+ 26.094487904 : invoking timer callback (null)
+ 26.094873799 : timer callback finished
+ 26.100171136 : looking for messages on channels
+ 26.100560531 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.114915359 RECV on 13(out): ','
+ 26.137594088 RECV on 13(out): ' which'
+ 26.181935757 RECV on 13(out): ' might'
+ 26.194631405 : invoking timer callback (null)
+ 26.195031500 : timer callback finished
+ 26.203362300 : looking for messages on channels
+ 26.203712696 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.216093948 RECV on 13(out): ' help'
+ 26.245594695 RECV on 13(out): ' with'
+ 26.269634407 RECV on 13(out): ' code'
+ 26.294543109 : invoking timer callback (null)
+ 26.295101502 : timer callback finished
+ 26.295426198 RECV on 13(out): ' analysis'
+ 26.298512661 : looking for messages on channels
+ 26.299948544 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.319911305 RECV on 13(out): '.'
+ 26.362362497 RECV on 13(out): ' Maybe'
+ 26.383531444 RECV on 13(out): ' it'
+ 26.394249916 : invoking timer callback (null)
+ 26.396160093 : timer callback finished
+ 26.406893965 : looking for messages on channels
+ 26.407881353 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.408063751 RECV on 13(out): ''s'
+ 26.435834218 RECV on 13(out): ' used'
+ 26.461562310 RECV on 13(out): ' to'
+ 26.495844200 : invoking timer callback (null)
+ 26.496223096 : timer callback finished
+ 26.504553396 : looking for messages on channels
+ 26.504861592 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.524083562 RECV on 13(out): ' automatically'
+ 26.545172610 RECV on 13(out): ' find'
+ 26.573540870 RECV on 13(out): ' bugs'
+ 26.593208435 RECV on 13(out): ' or'
+ 26.595655306 : invoking timer callback (null)
+ 26.598163876 : timer callback finished
+ 26.606623774 : looking for messages on channels
+ 26.606949470 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.629063706 RECV on 13(out): ' optimize'
+ 26.663137298 RECV on 13(out): ' performance'
+ 26.697865982 : invoking timer callback (null)
+ 26.698217478 : timer callback finished
+ 26.704527403 RECV on 13(out): '.'
+ 26.704853399 : looking for messages on channels
+ 26.705056596 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.731048085 RECV on 13(out): ' That'
+ 26.756105786 RECV on 13(out): ' could'
+ 26.778981412 RECV on 13(out): ' be'
+ 26.798042484 : invoking timer callback (null)
+ 26.798582177 : timer callback finished
+ 26.801686440 : looking for messages on channels
+ 26.801944437 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.804295209 RECV on 13(out): ' really'
+ 26.831061789 RECV on 13(out): ' helpful'
+ 26.866959759 RECV on 13(out): ' for'
+ 26.890938672 RECV on 13(out): ' developers'
+ 26.897665291 : invoking timer callback (null)
+ 26.904284512 : timer callback finished
+ 26.910355240 RECV on 13(out): '.
+
+'
+ 26.912157918 : looking for messages on channels
+ 26.912383815 on 13: Invoking channel callback GotOutput
+ 26.912781811 on 13: Invoking channel callback GotOutput
+ 26.913074207 : setting timeout timer to 2 sec 0 nsec
+ 26.914572889 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.952847131 RECV on 13(out): 'Speaking'
+ 26.953595522 : looking for messages on channels
+ 26.954061417 : SafeState: back to waiting, triggering SafeStateAgain
+ 26.974505172 RECV on 13(out): ' of'
+ 26.994674331 RECV on 13(out): ' tools'
+ 27.004397614 : invoking timer callback (null)
+ 27.005100706 : timer callback finished
+ 27.008511065 : looking for messages on channels
+ 27.008968960 : SafeState: back to waiting, triggering SafeStateAgain
+ 27.014717391 RECV on 13(out): ','
+ 27.055523002 RECV on 13(out): ' there'
+ 27.091549071 RECV on 13(out): ''s'
+ 27.103749825 : invoking timer callback (null)
+ 27.104171220 : timer callback finished
+ 27.114538296 : looking for messages on channels
+ 27.114771993 : SafeState: back to waiting, triggering SafeStateAgain
+ 27.117820857 RECV on 13(out): ' a'
+ 27.138874805 RECV on 13(out): ' plugin'
+ 27.164902393 RECV on 13(out): ' system'
+ 27.187930018 RECV on 13(out): ' for'
+ 27.204144624 : invoking timer callback (null)
+ 27.204623718 : timer callback finished
+ 27.210532448 : looking for messages on channels
+ 27.210856444 : SafeState: back to waiting, triggering SafeStateAgain
+ 27.212569823 RECV on 13(out): ' managing'
+ 27.247085111 RECV on 13(out): ' extensions'
+ 27.278815831 RECV on 13(out): ' and'
+ 27.304700821 : invoking timer callback (null)
+ 27.305495712 : timer callback finished
+ 27.310862148 : looking for messages on channels
+ 27.311207344 : SafeState: back to waiting, triggering SafeStateAgain
+ 27.315378194 RECV on 13(out): ' packages'
+ 27.337301232 RECV on 13(out): '.'
+ 27.359797463 RECV on 13(out): ' This'
+ 27.381385204 RECV on 13(out): ' would'
+ 27.404767325 RECV on 13(out): ' make'
+ 27.406795001 : invoking timer callback (null)
+ 27.408730677 : timer callback finished
+ 27.420286339 : looking for messages on channels
+ 27.421039130 : SafeState: back to waiting, triggering SafeStateAgain
+ 27.423883596 RECV on 13(out): ' it'
+ 27.459853466 RECV on 13(out): ' easier'
+ 27.480043525 RECV on 13(out): ' to'
+ 27.500044485 RECV on 13(out): ' add'
+ 27.510239163 : invoking timer callback (null)
+ 27.511045954 : timer callback finished
+ 27.515258003 : looking for messages on channels
+ 27.515568600 : SafeState: back to waiting, triggering SafeStateAgain
+ 27.520771137 RECV on 13(out): ' new'
+ 27.547114422 RECV on 13(out): ' features'
+ 27.568498267 RECV on 13(out): ' or'
+ 27.593839764 RECV on 13(out): ' libraries'
+ 27.613473729 : invoking timer callback (null)
+ 27.613802925 : timer callback finished
+ 27.615081710 : looking for messages on channels
+ 27.615241508 : SafeState: back to waiting, triggering SafeStateAgain
+ 27.617679079 RECV on 13(out): ' to'
+ 27.643714967 RECV on 13(out): ' OC'
+ 27.667730080 RECV on 13(out): 'aml'
+ 27.701926771 RECV on 13(out): '.'
+ 27.713081538 : invoking timer callback (null)
+ 27.713347934 : timer callback finished
+ 27.715834605 : looking for messages on channels
+ 27.716351699 : SafeState: back to waiting, triggering SafeStateAgain
+ 27.722363527 RECV on 13(out): ' But'
+ 27.749832198 RECV on 13(out): ' I'
+ 27.773143019 RECV on 13(out): ' wonder'
+ 27.793294978 RECV on 13(out): ' if'
+ 27.814731822 : invoking timer callback (null)
+ 27.815171917 : timer callback finished
+ 27.816532000 : looking for messages on channels
+ 27.816739998 : SafeState: back to waiting, triggering SafeStateAgain
+ 27.846842338 RECV on 13(out): ' that'
+ 27.877302774 RECV on 13(out): ''s'
+ 27.900686294 RECV on 13(out): ' just'
+ 27.914687427 : invoking timer callback (null)
+ 27.915259520 : timer callback finished
+ 27.922851129 : looking for messages on channels
+ 27.923404722 : SafeState: back to waiting, triggering SafeStateAgain
+ 27.928458662 RECV on 13(out): ' about'
+ 27.948061727 RECV on 13(out): ' the'
+ 27.991860804 RECV on 13(out): ' language'
+ 28.015074726 RECV on 13(out): ' itself'
+ 28.016557508 : invoking timer callback (null)
+ 28.018748282 : timer callback finished
+ 28.029299056 : looking for messages on channels
+ 28.029623152 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.042641096 RECV on 13(out): ' or'
+ 28.079848551 RECV on 13(out): ' also'
+ 28.099758113 RECV on 13(out): ' includes'
+ 28.118597788 : invoking timer callback (null)
+ 28.118972984 : timer callback finished
+ 28.121630052 : looking for messages on channels
+ 28.121876149 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.125288108 RECV on 13(out): ' other'
+ 28.168834987 RECV on 13(out): ' tools'
+ 28.214428842 RECV on 13(out): ' related'
+ 28.219128786 : invoking timer callback (null)
+ 28.219492582 : timer callback finished
+ 28.225862006 : looking for messages on channels
+ 28.227869582 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.239465643 RECV on 13(out): ' to'
+ 28.259810700 RECV on 13(out): ' development'
+ 28.296915356 RECV on 13(out): '.
+
+'
+ 28.297268852 on 13: Invoking channel callback GotOutput
+ 28.297658248 on 13: Invoking channel callback GotOutput
+ 28.298068943 : setting timeout timer to 2 sec 0 nsec
+ 28.299528625 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.318901694 : invoking timer callback (null)
+ 28.319383788 : timer callback finished
+ 28.321864858 RECV on 13(out): 'Performance'
+ 28.322185954 : looking for messages on channels
+ 28.322349952 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.377897589 RECV on 13(out): '-wise'
+ 28.397918349 RECV on 13(out): ','
+ 28.418136908 RECV on 13(out): ' OC'
+ 28.418697601 : invoking timer callback (null)
+ 28.419072197 : timer callback finished
+ 28.429451772 : looking for messages on channels
+ 28.429689770 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.469737291 RECV on 13(out): 'aml'
+ 28.490356745 RECV on 13(out): ' is'
+ 28.513910263 RECV on 13(out): ' known'
+ 28.518634107 : invoking timer callback (null)
+ 28.519034902 : timer callback finished
+ 28.526385314 : looking for messages on channels
+ 28.526701810 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.574108144 RECV on 13(out): ' for'
+ 28.597284167 RECV on 13(out): ' its'
+ 28.618207417 : invoking timer callback (null)
+ 28.618674911 : timer callback finished
+ 28.621762074 RECV on 13(out): ' speed'
+ 28.622115770 : looking for messages on channels
+ 28.622334567 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.652529006 RECV on 13(out): '.'
+ 28.681893655 RECV on 13(out): ' It'
+ 28.706449962 RECV on 13(out): ' uses'
+ 28.717129134 : invoking timer callback (null)
+ 28.718822014 : timer callback finished
+ 28.727843906 RECV on 13(out): ' JVM'
+ 28.728217302 : looking for messages on channels
+ 28.728408100 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.764523768 RECV on 13(out): ' bytecode'
+ 28.785469018 RECV on 13(out): ' for'
+ 28.819270214 : invoking timer callback (null)
+ 28.819861607 : timer callback finished
+ 28.827205919 : looking for messages on channels
+ 28.827503015 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.831166671 RECV on 13(out): ' compiled'
+ 28.859660231 RECV on 13(out): ' code'
+ 28.888210390 RECV on 13(out): ','
+ 28.909340737 RECV on 13(out): ' which'
+ 28.919979410 : invoking timer callback (null)
+ 28.920395605 : timer callback finished
+ 28.933345450 : looking for messages on channels
+ 28.933631747 : SafeState: back to waiting, triggering SafeStateAgain
+ 28.937601999 RECV on 13(out): ' should'
+ 28.957021670 RECV on 13(out): ' be'
+ 28.990834151 RECV on 13(out): ' faster'
+ 29.019092102 RECV on 13(out): ' than'
+ 29.023346825 : invoking timer callback (null)
+ 29.023651427 : timer callback finished
+ 29.031735570 : looking for messages on channels
+ 29.031941871 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.038780808 RECV on 13(out): ' traditional'
+ 29.076207908 RECV on 13(out): ' Java'
+ 29.099722534 RECV on 13(out): ' implementations'
+ 29.123457962 : invoking timer callback (null)
+ 29.123806764 : timer callback finished
+ 29.131092303 : looking for messages on channels
+ 29.131335804 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.136664932 RECV on 13(out): '.'
+ 29.156753840 RECV on 13(out): ' That'
+ 29.180291066 RECV on 13(out): ' makes'
+ 29.221979490 RECV on 13(out): ' sense'
+ 29.224399303 : invoking timer callback (null)
+ 29.224731705 : timer callback finished
+ 29.235423462 : looking for messages on channels
+ 29.235852864 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.248860634 RECV on 13(out): ' because'
+ 29.285463031 RECV on 13(out): ' performance'
+ 29.306120142 RECV on 13(out): ' is'
+ 29.325370545 : invoking timer callback (null)
+ 29.325898248 : timer callback finished
+ 29.326174649 RECV on 13(out): ' a'
+ 29.326416051 : looking for messages on channels
+ 29.326673452 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.364770756 RECV on 13(out): ' big'
+ 29.391285299 RECV on 13(out): ' deal'
+ 29.426076085 : invoking timer callback (null)
+ 29.426434087 : timer callback finished
+ 29.429009601 RECV on 13(out): ' in'
+ 29.439176056 : looking for messages on channels
+ 29.439457457 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.467240706 RECV on 13(out): ' today'
+ 29.487376914 RECV on 13(out): ''s'
+ 29.507162521 RECV on 13(out): ' applications'
+ 29.526452624 : invoking timer callback (null)
+ 29.526826126 : timer callback finished
+ 29.531171549 : looking for messages on channels
+ 29.531376451 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.546686133 RECV on 13(out): ','
+ 29.582741826 RECV on 13(out): ' especially'
+ 29.604275542 RECV on 13(out): ' in'
+ 29.625210554 : invoking timer callback (null)
+ 29.626028659 : timer callback finished
+ 29.631013385 RECV on 13(out): ' real'
+ 29.638165024 : looking for messages on channels
+ 29.638631526 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.674554019 RECV on 13(out): '-time'
+ 29.694896128 RECV on 13(out): ' systems'
+ 29.719157358 RECV on 13(out): ' or'
+ 29.730424519 : invoking timer callback (null)
+ 29.730828621 : timer callback finished
+ 29.739816569 RECV on 13(out): ' web'
+ 29.741489478 : looking for messages on channels
+ 29.743489089 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.759548775 RECV on 13(out): ' apps'
+ 29.779844684 RECV on 13(out): '.
+
+'
+ 29.780295887 on 13: Invoking channel callback GotOutput
+ 29.781767894 on 13: Invoking channel callback GotOutput
+ 29.783180402 : setting timeout timer to 2 sec 0 nsec
+ 29.786837122 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.802136604 RECV on 13(out): 'Looking'
+ 29.803994914 : looking for messages on channels
+ 29.804721018 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.830541156 : invoking timer callback (null)
+ 29.830887158 : timer callback finished
+ 29.836283487 : looking for messages on channels
+ 29.836913190 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.846011239 RECV on 13(out): ' at'
+ 29.882339534 RECV on 13(out): ' the'
+ 29.903124146 RECV on 13(out): ' references'
+ 29.922287749 RECV on 13(out): ' provided'
+ 29.931220397 : invoking timer callback (null)
+ 29.931718799 : timer callback finished
+ 29.934209013 : looking for messages on channels
+ 29.935060117 : SafeState: back to waiting, triggering SafeStateAgain
+ 29.948863791 RECV on 13(out): ' earlier'
+ 29.969961505 RECV on 13(out): ','
+ 30.006408000 RECV on 13(out): ' I'
+ 30.031127333 : invoking timer callback (null)
+ 30.031455135 : timer callback finished
+ 30.037787569 : looking for messages on channels
+ 30.038184671 : SafeState: back to waiting, triggering SafeStateAgain
+ 30.042860796 RECV on 13(out): ' see'
+ 30.078915189 RECV on 13(out): ' mentions'
+ 30.102488916 RECV on 13(out): ' of'
+ 30.131209270 : invoking timer callback (null)
+ 30.132297776 : timer callback finished
+ 30.134603788 : looking for messages on channels
+ 30.134919190 : SafeState: back to waiting, triggering SafeStateAgain
+ 30.136930301 RECV on 13(out): ' common'
+ 30.181926242 RECV on 13(out): ' js'
+ 30.205039166 RECV on 13(out): ' and'
+ 30.230138201 RECV on 13(out): ' O'
+ 30.231029306 : invoking timer callback (null)
+ 30.231364808 : timer callback finished
+ 30.243121671 : looking for messages on channels
+ 30.243775675 : SafeState: back to waiting, triggering SafeStateAgain
+ 30.256512543 RECV on 13(out): 'CL'
+ 30.279918769 RECV on 13(out): ','
+ 30.332329651 RECV on 13(out): ' plus'
+ 30.332703753 : invoking timer callback (null)
+ 30.332966854 : timer callback finished
+ 30.343346610 : looking for messages on channels
+ 30.343636411 : SafeState: back to waiting, triggering SafeStateAgain
+ 30.367364139 RECV on 13(out): ' OC'
+ 30.399629712 RECV on 13(out): 'aml'
+ 30.431240682 RECV on 13(out): ' itself'
+ 30.431826185 : invoking timer callback (null)
+ 30.432707190 : timer callback finished
+ 30.450373585 : looking for messages on channels
+ 30.452174195 : SafeState: back to waiting, triggering SafeStateAgain
+ 30.460112537 RECV on 13(out): ' with'
+ 30.491839808 RECV on 13(out): ' plugins'
+ 30.512638320 RECV on 13(out): ' like'
+ 30.539411164 : invoking timer callback (null)
+ 30.539802166 : timer callback finished
+ 30.544138189 : looking for messages on channels
+ 30.544375690 : SafeState: back to waiting, triggering SafeStateAgain
+ 30.546827803 RECV on 13(out): ' the'
+ 30.566808011 RECV on 13(out): ' AST'
+ 30.588479327 RECV on 13(out): ' parser'
+ 30.612034354 RECV on 13(out): ' generator'
+ 30.639802303 : invoking timer callback (null)
+ 30.640200605 : timer callback finished
+ 30.643515723 : looking for messages on channels
+ 30.643706424 : SafeState: back to waiting, triggering SafeStateAgain
+ 30.648087848 RECV on 13(out): ' and'
+ 30.671351073 RECV on 13(out): ' extension'
+ 30.705850858 RECV on 13(out): ' management'
+ 30.736614324 RECV on 13(out): ' system'
+ 30.739756040 : invoking timer callback (null)
+ 30.741287449 : timer callback finished
+ 30.750726299 : looking for messages on channels
+ 30.751920806 : SafeState: back to waiting, triggering SafeStateAgain
+ 30.757291135 RECV on 13(out): '.'
+ 30.789362107 RECV on 13(out): ' These'
+ 30.832816941 RECV on 13(out): ' tools'
+ 30.842424392 : invoking timer callback (null)
+ 30.843133496 : timer callback finished
+ 30.844507003 : looking for messages on channels
+ 30.846554114 : SafeState: back to waiting, triggering SafeStateAgain
+ 30.855473662 RECV on 13(out): ' help'
+ 30.891374855 RECV on 13(out): ' developers'
+ 30.912239367 RECV on 13(out): ' build'
+ 30.938826010 RECV on 13(out): ' better'
+ 30.943324835 : invoking timer callback (null)
+ 30.944801543 : timer callback finished
+ 30.952448784 : looking for messages on channels
+ 30.952865886 : SafeState: back to waiting, triggering SafeStateAgain
+ 30.960367526 RECV on 13(out): ' software'
+ 30.980620835 RECV on 13(out): '.'
+ 31.001946050 RECV on 13(out): ' But'
+ 31.022748561 RECV on 13(out): ' how'
+ 31.045092882 : invoking timer callback (null)
+ 31.045775485 : timer callback finished
+ 31.055500038 RECV on 13(out): ' do'
+ 31.055873240 : looking for messages on channels
+ 31.056091641 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.076846252 RECV on 13(out): ' these'
+ 31.097294962 RECV on 13(out): ' specific'
+ 31.119659082 RECV on 13(out): ' components'
+ 31.146435226 : invoking timer callback (null)
+ 31.146773128 : timer callback finished
+ 31.150355347 RECV on 13(out): ' interact'
+ 31.150678049 : looking for messages on channels
+ 31.150873250 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.173016369 RECV on 13(out): '?'
+ 31.193779981 RECV on 13(out): ' Maybe'
+ 31.241037835 RECV on 13(out): ' the'
+ 31.246426564 : invoking timer callback (null)
+ 31.246701766 : timer callback finished
+ 31.252043194 : looking for messages on channels
+ 31.252437897 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.277243230 RECV on 13(out): ' plugin'
+ 31.310124307 RECV on 13(out): ' allows'
+ 31.339450565 RECV on 13(out): ' you'
+ 31.346070701 : invoking timer callback (null)
+ 31.346322202 : timer callback finished
+ 31.350635725 : looking for messages on channels
+ 31.352321534 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.381368691 RECV on 13(out): ' to'
+ 31.404762517 RECV on 13(out): ' add'
+ 31.438924400 RECV on 13(out): ' features'
+ 31.446424341 : invoking timer callback (null)
+ 31.446701142 : timer callback finished
+ 31.449982360 : looking for messages on channels
+ 31.450146461 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.476053000 RECV on 13(out): ' via'
+ 31.499330926 RECV on 13(out): ' a'
+ 31.536709991 RECV on 13(out): ' plug'
+ 31.546329676 : invoking timer callback (null)
+ 31.546729271 : timer callback finished
+ 31.548111755 : looking for messages on channels
+ 31.548307052 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.563880167 RECV on 13(out): '-in'
+ 31.597499566 RECV on 13(out): ' system'
+ 31.618390016 RECV on 13(out): ','
+ 31.643009823 RECV on 13(out): ' which'
+ 31.646672979 : invoking timer callback (null)
+ 31.647030475 : timer callback finished
+ 31.654335088 : looking for messages on channels
+ 31.654821182 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.670218798 RECV on 13(out): ' is'
+ 31.698729958 RECV on 13(out): ' great'
+ 31.720808395 RECV on 13(out): ' for'
+ 31.746568888 : invoking timer callback (null)
+ 31.746912484 : timer callback finished
+ 31.752244520 : looking for messages on channels
+ 31.752516217 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.757411559 RECV on 13(out): ' custom'
+ 31.787217403 RECV on 13(out): 'izing'
+ 31.823902366 RECV on 13(out): ' the'
+ 31.846018502 : invoking timer callback (null)
+ 31.848330574 : timer callback finished
+ 31.854508101 RECV on 13(out): ' language'
+ 31.855004495 : looking for messages on channels
+ 31.855276391 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.877265629 RECV on 13(out): '.
+
+'
+ 31.877648125 on 13: Invoking channel callback GotOutput
+ 31.878175218 on 13: Invoking channel callback GotOutput
+ 31.878485215 : setting timeout timer to 2 sec 0 nsec
+ 31.880005797 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.914342287 RECV on 13(out): 'I'
+ 31.914810981 : looking for messages on channels
+ 31.914981079 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.944145732 RECV on 13(out): ''m'
+ 31.948103684 : invoking timer callback (null)
+ 31.948397181 : timer callback finished
+ 31.956162188 : looking for messages on channels
+ 31.956654282 : SafeState: back to waiting, triggering SafeStateAgain
+ 31.974482270 RECV on 13(out): ' also'
+ 32.011016934 RECV on 13(out): ' thinking'
+ 32.031878485 RECV on 13(out): ' about'
+ 32.047823995 : invoking timer callback (null)
+ 32.048292190 : timer callback finished
+ 32.053746825 : looking for messages on channels
+ 32.054066321 : SafeState: back to waiting, triggering SafeStateAgain
+ 32.057460080 RECV on 13(out): ' how'
+ 32.080922800 RECV on 13(out): ' OC'
+ 32.108682469 RECV on 13(out): 'aml'
+ 32.136866633 RECV on 13(out): ' compares'
+ 32.148185498 : invoking timer callback (null)
+ 32.149336285 : timer callback finished
+ 32.151013265 : looking for messages on channels
+ 32.151673257 : SafeState: back to waiting, triggering SafeStateAgain
+ 32.163537715 RECV on 13(out): ' to'
+ 32.188702615 RECV on 13(out): ' other'
+ 32.218126665 RECV on 13(out): ' languages'
+ 32.238768918 RECV on 13(out): ' like'
+ 32.249005196 : invoking timer callback (null)
+ 32.249327893 : timer callback finished
+ 32.252162659 : looking for messages on channels
+ 32.253625641 : SafeState: back to waiting, triggering SafeStateAgain
+ 32.265237403 RECV on 13(out): ' JavaScript'
+ 32.291301392 RECV on 13(out): ' or'
+ 32.314439317 RECV on 13(out): ' Ruby'
+ 32.338004236 RECV on 13(out): '.'
+ 32.349251702 : invoking timer callback (null)
+ 32.349509399 : timer callback finished
+ 32.350849583 : looking for messages on channels
+ 32.352130767 : SafeState: back to waiting, triggering SafeStateAgain
+ 32.368251775 RECV on 13(out): ' Since'
+ 32.398523415 RECV on 13(out): ' it'
+ 32.435468474 RECV on 13(out): ''s'
+ 32.448277922 : invoking timer callback (null)
+ 32.449250010 : timer callback finished
+ 32.459706185 : looking for messages on channels
+ 32.460007582 : SafeState: back to waiting, triggering SafeStateAgain
+ 32.461854760 RECV on 13(out): ' based'
+ 32.502007381 RECV on 13(out): ' on'
+ 32.532518518 RECV on 13(out): ' Common'
+ 32.549148919 : invoking timer callback (null)
+ 32.549528115 : timer callback finished
+ 32.553881263 : looking for messages on channels
+ 32.554182459 : SafeState: back to waiting, triggering SafeStateAgain
+ 32.569198880 RECV on 13(out): 'JS'
+ 32.594811375 RECV on 13(out): ','
+ 32.649002829 : invoking timer callback (null)
+ 32.649513223 : timer callback finished
+ 32.649987218 RECV on 13(out): ' it'
+ 32.650300114 : looking for messages on channels
+ 32.650640610 : SafeState: back to waiting, triggering SafeStateAgain
+ 32.682307632 RECV on 13(out): ' might'
+ 32.704874263 RECV on 13(out): ' have'
+ 32.749839228 : invoking timer callback (null)
+ 32.750264423 : timer callback finished
+ 32.753709681 RECV on 13(out): ' some'
+ 32.754171576 : looking for messages on channels
+ 32.754388073 : SafeState: back to waiting, triggering SafeStateAgain
+ 32.786381592 RECV on 13(out): ' similarities'
+ 32.824273940 RECV on 13(out): ' but'
+ 32.845193591 RECV on 13(out): ' with'
+ 32.849751337 : invoking timer callback (null)
+ 32.850098433 : timer callback finished
+ 32.856421257 : looking for messages on channels
+ 32.856803353 : SafeState: back to waiting, triggering SafeStateAgain
+ 32.873909949 RECV on 13(out): ' its'
+ 32.910863809 RECV on 13(out): ' own'
+ 32.933366140 RECV on 13(out): ' set'
+ 32.949993042 : invoking timer callback (null)
+ 32.950387137 : timer callback finished
+ 32.954745486 : looking for messages on channels
+ 32.955059282 : SafeState: back to waiting, triggering SafeStateAgain
+ 32.984635029 RECV on 13(out): ' of'
+ 33.030291785 RECV on 13(out): ' features'
+ 33.050051750 : invoking timer callback (null)
+ 33.050497844 : timer callback finished
+ 33.052020226 : looking for messages on channels
+ 33.052448921 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.054376298 RECV on 13(out): '.'
+ 33.118363236 RECV on 13(out): ' For'
+ 33.141160364 RECV on 13(out): ' example'
+ 33.150123957 : invoking timer callback (null)
+ 33.150546152 : timer callback finished
+ 33.155923288 : looking for messages on channels
+ 33.159119050 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.166576661 RECV on 13(out): ','
+ 33.187747909 RECV on 13(out): ' using'
+ 33.207154678 RECV on 13(out): ' generics'
+ 33.231879483 RECV on 13(out): ' and'
+ 33.250635960 : invoking timer callback (null)
+ 33.251205953 : timer callback finished
+ 33.253576125 : looking for messages on channels
+ 33.253808622 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.257641376 RECV on 13(out): ' interfaces'
+ 33.291231376 RECV on 13(out): ' could'
+ 33.321751013 RECV on 13(out): ' make'
+ 33.351081963 : invoking timer callback (null)
+ 33.355489411 : timer callback finished
+ 33.359079668 : looking for messages on channels
+ 33.359353265 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.361949134 RECV on 13(out): ' code'
+ 33.387169334 RECV on 13(out): ' more'
+ 33.409911863 RECV on 13(out): ' flexible'
+ 33.432023099 RECV on 13(out): ' than'
+ 33.456773205 : invoking timer callback (null)
+ 33.458289986 : timer callback finished
+ 33.463362226 RECV on 13(out): ' in'
+ 33.464008118 : looking for messages on channels
+ 33.464257115 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.484779871 RECV on 13(out): ' traditional'
+ 33.515774802 RECV on 13(out): ' JS'
+ 33.556744714 : invoking timer callback (null)
+ 33.557226708 : timer callback finished
+ 33.567616684 : looking for messages on channels
+ 33.568176878 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.577407368 RECV on 13(out): ','
+ 33.603860053 RECV on 13(out): ' but'
+ 33.625309697 RECV on 13(out): ' I'
+ 33.653053167 RECV on 13(out): ' don'
+ 33.656581225 : invoking timer callback (null)
+ 33.656933121 : timer callback finished
+ 33.664292233 : looking for messages on channels
+ 33.664570130 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.677352877 RECV on 13(out): ''t'
+ 33.710631181 RECV on 13(out): ' know'
+ 33.743550589 RECV on 13(out): ' if'
+ 33.756149539 : invoking timer callback (null)
+ 33.756541334 : timer callback finished
+ 33.767004710 : looking for messages on channels
+ 33.767326906 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.770296470 RECV on 13(out): ' that'
+ 33.806670037 RECV on 13(out): ''s'
+ 33.834548805 RECV on 13(out): ' the'
+ 33.855356757 RECV on 13(out): ' case'
+ 33.855863751 : invoking timer callback (null)
+ 33.857089337 : timer callback finished
+ 33.869339391 : looking for messages on channels
+ 33.869703886 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.880601057 RECV on 13(out): '.
+
+'
+ 33.881090751 on 13: Invoking channel callback GotOutput
+ 33.882701032 on 13: Invoking channel callback GotOutput
+ 33.884021116 : setting timeout timer to 2 sec 0 nsec
+ 33.887333377 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.914455653 RECV on 13(out): 'I'
+ 33.914873149 : looking for messages on channels
+ 33.915256644 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.937895174 RECV on 13(out): ' should'
+ 33.959215820 : invoking timer callback (null)
+ 33.959586416 : timer callback finished
+ 33.969985692 : looking for messages on channels
+ 33.970386287 : SafeState: back to waiting, triggering SafeStateAgain
+ 33.975844622 RECV on 13(out): ' also'
+ 34.013806370 RECV on 13(out): ' consider'
+ 34.038286379 RECV on 13(out): ' how'
+ 34.059066431 : invoking timer callback (null)
+ 34.059560025 : timer callback finished
+ 34.060339316 RECV on 13(out): ' OC'
+ 34.060632313 : looking for messages on channels
+ 34.060815410 : SafeState: back to waiting, triggering SafeStateAgain
+ 34.094026715 RECV on 13(out): 'aml'
+ 34.132377258 RECV on 13(out): ' is'
+ 34.154949989 RECV on 13(out): ' used'
+ 34.159324737 : invoking timer callback (null)
+ 34.162255702 : timer callback finished
+ 34.170890299 : looking for messages on channels
+ 34.171249595 : SafeState: back to waiting, triggering SafeStateAgain
+ 34.193488030 RECV on 13(out): ' in'
+ 34.232086071 RECV on 13(out): ' different'
+ 34.250396353 RECV on 13(out): ' industries'
+ 34.262011615 : invoking timer callback (null)
+ 34.271553101 : timer callback finished
+ 34.274206870 : looking for messages on channels
+ 34.274588065 : SafeState: back to waiting, triggering SafeStateAgain
+ 34.289027493 RECV on 13(out): '.'
+ 34.324747968 RECV on 13(out): ' If'
+ 34.354640412 RECV on 13(out): ' it'
+ 34.371427612 : invoking timer callback (null)
+ 34.371869007 : timer callback finished
+ 34.376394153 : looking for messages on channels
+ 34.376703450 : SafeState: back to waiting, triggering SafeStateAgain
+ 34.387935016 RECV on 13(out): ''s'
+ 34.411002541 RECV on 13(out): ' widely'
+ 34.433670472 RECV on 13(out): ' adopted'
+ 34.456472500 RECV on 13(out): ' for'
+ 34.472031015 : invoking timer callback (null)
+ 34.472844505 : timer callback finished
+ 34.480650112 RECV on 13(out): ' web'
+ 34.481445603 : looking for messages on channels
+ 34.481666800 : SafeState: back to waiting, triggering SafeStateAgain
+ 34.503323342 RECV on 13(out): ' development'
+ 34.533540483 RECV on 13(out): ','
+ 34.561922845 RECV on 13(out): ' maybe'
+ 34.575718081 : invoking timer callback (null)
+ 34.576090376 : timer callback finished
+ 34.583444089 : looking for messages on channels
+ 34.583776185 : SafeState: back to waiting, triggering SafeStateAgain
+ 34.587716038 RECV on 13(out): ' there'
+ 34.626238879 RECV on 13(out): ' are'
+ 34.660086777 RECV on 13(out): ' specific'
+ 34.674752402 RECV on 13(out): ' tools'
+ 34.682900805 : invoking timer callback (null)
+ 34.686293465 : timer callback finished
+ 34.697013537 : looking for messages on channels
+ 34.697319033 : SafeState: back to waiting, triggering SafeStateAgain
+ 34.707503412 RECV on 13(out): ' or'
+ 34.738613842 RECV on 13(out): ' frameworks'
+ 34.777981973 RECV on 13(out): ' built'
+ 34.786479272 : invoking timer callback (null)
+ 34.786814468 : timer callback finished
+ 34.789138641 : looking for messages on channels
+ 34.789421637 : SafeState: back to waiting, triggering SafeStateAgain
+ 34.817044608 RECV on 13(out): ' on'
+ 34.848937229 RECV on 13(out): ' top'
+ 34.875670811 RECV on 13(out): ' of'
+ 34.886524381 : invoking timer callback (null)
+ 34.886943076 : timer callback finished
+ 34.897325053 : looking for messages on channels
+ 34.898174143 : SafeState: back to waiting, triggering SafeStateAgain
+ 34.913757457 RECV on 13(out): ' OC'
+ 34.939467151 RECV on 13(out): 'aml'
+ 34.977242302 RECV on 13(out): ' for'
+ 34.986951386 : invoking timer callback (null)
+ 34.989671554 : timer callback finished
+ 34.991196836 : looking for messages on channels
+ 34.991440033 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.005550765 RECV on 13(out): ' managing'
+ 35.033519032 RECV on 13(out): ' websites'
+ 35.063399876 RECV on 13(out): '.'
+ 35.089433066 : invoking timer callback (null)
+ 35.089837862 : timer callback finished
+ 35.094315008 RECV on 13(out): ' For'
+ 35.094694604 : looking for messages on channels
+ 35.095041700 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.123108566 RECV on 13(out): ' game'
+ 35.170522001 RECV on 13(out): ' development'
+ 35.189157979 : invoking timer callback (null)
+ 35.189550975 : timer callback finished
+ 35.191851747 : looking for messages on channels
+ 35.192025445 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.193730225 RECV on 13(out): ','
+ 35.228272514 RECV on 13(out): ' perhaps'
+ 35.268963830 RECV on 13(out): ' it'
+ 35.288998992 : invoking timer callback (null)
+ 35.289384387 : timer callback finished
+ 35.290756971 : looking for messages on channels
+ 35.290992568 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.310844132 RECV on 13(out): ''s'
+ 35.352666035 RECV on 13(out): ' used'
+ 35.379858111 RECV on 13(out): ' alongside'
+ 35.391422074 : invoking timer callback (null)
+ 35.395622324 : timer callback finished
+ 35.397037807 : looking for messages on channels
+ 35.397459202 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.425666466 RECV on 13(out): ' other'
+ 35.463117621 RECV on 13(out): ' languages'
+ 35.473765894 RECV on 13(out): ' to'
+ 35.495255039 : invoking timer callback (null)
+ 35.496366825 : timer callback finished
+ 35.501706662 RECV on 13(out): ' create'
+ 35.502324454 : looking for messages on channels
+ 35.502894348 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.548731602 RECV on 13(out): ' more'
+ 35.578114553 RECV on 13(out): ' complex'
+ 35.596664532 : invoking timer callback (null)
+ 35.598530610 : timer callback finished
+ 35.602776560 : looking for messages on channels
+ 35.605789224 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.616185800 RECV on 13(out): ' systems'
+ 35.665280416 RECV on 13(out): ' with'
+ 35.686574663 RECV on 13(out): ' better'
+ 35.699284312 : invoking timer callback (null)
+ 35.699647607 : timer callback finished
+ 35.707993908 : looking for messages on channels
+ 35.711127371 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.716550806 RECV on 13(out): ' type'
+ 35.755875339 RECV on 13(out): ' safety'
+ 35.789520738 RECV on 13(out): ' and'
+ 35.798998926 : invoking timer callback (null)
+ 35.800899003 : timer callback finished
+ 35.803448073 : looking for messages on channels
+ 35.805805045 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.819322584 RECV on 13(out): ' performance'
+ 35.859976100 RECV on 13(out): '.
+
+'
+ 35.860462295 on 13: Invoking channel callback GotOutput
+ 35.861075387 on 13: Invoking channel callback GotOutput
+ 35.861577081 : setting timeout timer to 2 sec 0 nsec
+ 35.863604157 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.898062447 RECV on 13(out): 'Another'
+ 35.899889026 : looking for messages on channels
+ 35.900240121 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.900493818 : invoking timer callback (null)
+ 35.900814215 : timer callback finished
+ 35.911614486 : looking for messages on channels
+ 35.913910959 : SafeState: back to waiting, triggering SafeStateAgain
+ 35.939901750 RECV on 13(out): ' point'
+ 35.975557226 RECV on 13(out): ' is'
+ 36.000902524 : invoking timer callback (null)
+ 36.001314719 : timer callback finished
+ 36.009688120 : looking for messages on channels
+ 36.009952616 : SafeState: back to waiting, triggering SafeStateAgain
+ 36.014394064 RECV on 13(out): ' the'
+ 36.040649251 RECV on 13(out): ' learning'
+ 36.064737665 RECV on 13(out): ' curve'
+ 36.089617069 RECV on 13(out): '.'
+ 36.101500427 : invoking timer callback (null)
+ 36.102029521 : timer callback finished
+ 36.109424633 : looking for messages on channels
+ 36.109661330 : SafeState: back to waiting, triggering SafeStateAgain
+ 36.121776386 RECV on 13(out): ' Since'
+ 36.151296935 RECV on 13(out): ' it'
+ 36.182137468 RECV on 13(out): ''s'
+ 36.201875334 : invoking timer callback (null)
+ 36.203021920 : timer callback finished
+ 36.210564930 : looking for messages on channels
+ 36.210870927 : SafeState: back to waiting, triggering SafeStateAgain
+ 36.220486912 RECV on 13(out): ' built'
+ 36.256692782 RECV on 13(out): ' on'
+ 36.287314818 RECV on 13(out): ' Common'
+ 36.302919233 : invoking timer callback (null)
+ 36.303302828 : timer callback finished
+ 36.308655464 : looking for messages on channels
+ 36.308975761 : SafeState: back to waiting, triggering SafeStateAgain
+ 36.323151892 RECV on 13(out): 'JS'
+ 36.365860084 RECV on 13(out): ','
+ 36.396517920 RECV on 13(out): ' I'
+ 36.402789645 : invoking timer callback (null)
+ 36.403182941 : timer callback finished
+ 36.408552877 : looking for messages on channels
+ 36.408893173 : SafeState: back to waiting, triggering SafeStateAgain
+ 36.426350565 RECV on 13(out): ' might'
+ 36.460833055 RECV on 13(out): ' have'
+ 36.501687270 : invoking timer callback (null)
+ 36.502102865 : timer callback finished
+ 36.507508701 RECV on 13(out): ' some'
+ 36.508034394 : looking for messages on channels
+ 36.508268292 : SafeState: back to waiting, triggering SafeStateAgain
+ 36.530136632 RECV on 13(out): ' existing'
+ 36.571502340 RECV on 13(out): ' knowledge'
+ 36.603295362 : invoking timer callback (null)
+ 36.603731857 : timer callback finished
+ 36.605150640 : looking for messages on channels
+ 36.605373337 : SafeState: back to waiting, triggering SafeStateAgain
+ 36.608294003 RECV on 13(out): ' from'
+ 36.641003114 RECV on 13(out): ' JavaScript'
+ 36.673220531 RECV on 13(out): ' and'
+ 36.699734816 RECV on 13(out): ' Java'
+ 36.703581370 : invoking timer callback (null)
+ 36.703970265 : timer callback finished
+ 36.711345678 : looking for messages on channels
+ 36.711583875 : SafeState: back to waiting, triggering SafeStateAgain
+ 36.730774747 RECV on 13(out): ' that'
+ 36.765441735 RECV on 13(out): ' can'
+ 36.787195676 RECV on 13(out): ' help'
+ 36.804466671 : invoking timer callback (null)
+ 36.804813667 : timer callback finished
+ 36.809190215 : looking for messages on channels
+ 36.810286402 : SafeState: back to waiting, triggering SafeStateAgain
+ 36.815458940 RECV on 13(out): '.'
+ 36.856431153 RECV on 13(out): ' But'
+ 36.883662129 RECV on 13(out): ' if'
+ 36.904680079 : invoking timer callback (null)
+ 36.905016575 : timer callback finished
+ 36.907355448 : looking for messages on channels
+ 36.907537746 : SafeState: back to waiting, triggering SafeStateAgain
+ 36.912613285 RECV on 13(out): ' there'
+ 36.942316032 RECV on 13(out): ' are'
+ 37.003531861 : invoking timer callback (null)
+ 37.005941989 : timer callback finished
+ 37.011897859 RECV on 13(out): ' specific'
+ 37.012414865 : looking for messages on channels
+ 37.012706469 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.038848976 RECV on 13(out): ' libraries'
+ 37.079039247 RECV on 13(out): ' or'
+ 37.106503770 : invoking timer callback (null)
+ 37.107664383 : timer callback finished
+ 37.112442439 : looking for messages on channels
+ 37.112772843 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.119257319 RECV on 13(out): ' plugins'
+ 37.153614623 RECV on 13(out): ' that'
+ 37.198440849 RECV on 13(out): ' require'
+ 37.207889260 : invoking timer callback (null)
+ 37.208381366 : timer callback finished
+ 37.209713181 : looking for messages on channels
+ 37.209893183 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.222760634 RECV on 13(out): ' additional'
+ 37.264346923 RECV on 13(out): ' time'
+ 37.308418140 : invoking timer callback (null)
+ 37.308785345 : timer callback finished
+ 37.310175561 RECV on 13(out): ' to'
+ 37.310835969 : looking for messages on channels
+ 37.311129872 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.351718549 RECV on 13(out): ' learn'
+ 37.391941521 RECV on 13(out): ','
+ 37.408729319 : invoking timer callback (null)
+ 37.409082123 : timer callback finished
+ 37.413461774 : looking for messages on channels
+ 37.413763078 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.435353131 RECV on 13(out): ' that'
+ 37.471531756 RECV on 13(out): ' could'
+ 37.508471790 : invoking timer callback (null)
+ 37.508816194 : timer callback finished
+ 37.513228646 : looking for messages on channels
+ 37.514063756 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.519081215 RECV on 13(out): ' be'
+ 37.544936518 RECV on 13(out): ' a'
+ 37.583410970 RECV on 13(out): ' hurdle'
+ 37.609085272 : invoking timer callback (null)
+ 37.609494976 : timer callback finished
+ 37.613831127 RECV on 13(out): ' for'
+ 37.614408134 : looking for messages on channels
+ 37.616957564 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.649324044 RECV on 13(out): ' new'
+ 37.684665459 RECV on 13(out): ' developers'
+ 37.709604652 : invoking timer callback (null)
+ 37.710026857 : timer callback finished
+ 37.716380532 : looking for messages on channels
+ 37.717473645 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.736993474 RECV on 13(out): '.
+
+'
+ 37.737700982 on 13: Invoking channel callback GotOutput
+ 37.738807095 on 13: Invoking channel callback GotOutput
+ 37.739140699 : setting timeout timer to 2 sec 0 nsec
+ 37.740802119 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.784211628 RECV on 13(out): 'In'
+ 37.786444655 : looking for messages on channels
+ 37.787445366 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.808326512 : invoking timer callback (null)
+ 37.808725016 : timer callback finished
+ 37.813277270 RECV on 13(out): ' terms'
+ 37.813697775 : looking for messages on channels
+ 37.813896677 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.843692327 RECV on 13(out): ' of'
+ 37.894552324 RECV on 13(out): ' community'
+ 37.908724791 : invoking timer callback (null)
+ 37.909110095 : timer callback finished
+ 37.917482694 : looking for messages on channels
+ 37.919488317 : SafeState: back to waiting, triggering SafeStateAgain
+ 37.930366745 RECV on 13(out): ' support'
+ 37.976446786 RECV on 13(out): ','
+ 38.007337349 : invoking timer callback (null)
+ 38.007805554 : timer callback finished
+ 38.014713535 RECV on 13(out): ' OC'
+ 38.016521857 : looking for messages on channels
+ 38.017567269 : SafeState: back to waiting, triggering SafeStateAgain
+ 38.040608540 RECV on 13(out): 'aml'
+ 38.071602904 RECV on 13(out): ' has'
+ 38.093373459 RECV on 13(out): ' an'
+ 38.107884330 : invoking timer callback (null)
+ 38.109268646 : timer callback finished
+ 38.114924012 RECV on 13(out): ' active'
+ 38.115256316 : looking for messages on channels
+ 38.115470419 : SafeState: back to waiting, triggering SafeStateAgain
+ 38.138071184 RECV on 13(out): ' developer'
+ 38.167271427 RECV on 13(out): ' community'
+ 38.208391210 : invoking timer callback (null)
+ 38.208789415 : timer callback finished
+ 38.213043265 RECV on 13(out): ','
+ 38.213425769 : looking for messages on channels
+ 38.213632172 : SafeState: back to waiting, triggering SafeStateAgain
+ 38.279401445 RECV on 13(out): ' which'
+ 38.308814590 : invoking timer callback (null)
+ 38.309195395 : timer callback finished
+ 38.311531622 : looking for messages on channels
+ 38.311701524 : SafeState: back to waiting, triggering SafeStateAgain
+ 38.319746919 RECV on 13(out): ' is'
+ 38.348888061 RECV on 13(out): ' helpful'
+ 38.377025892 RECV on 13(out): ' when'
+ 38.407966156 : invoking timer callback (null)
+ 38.408461462 : timer callback finished
+ 38.419105687 : looking for messages on channels
+ 38.419403390 : SafeState: back to waiting, triggering SafeStateAgain
+ 38.431191329 RECV on 13(out): ' troubleshooting'
+ 38.492630774 RECV on 13(out): ' or'
+ 38.508511787 : invoking timer callback (null)
+ 38.509150079 : timer callback finished
+ 38.515157008 : looking for messages on channels
+ 38.515542004 : SafeState: back to waiting, triggering SafeStateAgain
+ 38.520882541 RECV on 13(out): ' contributing'
+ 38.560864470 RECV on 13(out): ' to'
+ 38.587612855 RECV on 13(out): ' projects'
+ 38.608547408 : invoking timer callback (null)
+ 38.609044202 : timer callback finished
+ 38.619509179 : looking for messages on channels
+ 38.619890774 : SafeState: back to waiting, triggering SafeStateAgain
+ 38.620088672 RECV on 13(out): '.'
+ 38.652366692 RECV on 13(out): ' However'
+ 38.682349539 RECV on 13(out): ','
+ 38.709234822 : invoking timer callback (null)
+ 38.709733816 : timer callback finished
+ 38.714068865 : looking for messages on channels
+ 38.714268362 : SafeState: back to waiting, triggering SafeStateAgain
+ 38.723388755 RECV on 13(out): ' since'
+ 38.749880243 RECV on 13(out): ' it'
+ 38.800865342 RECV on 13(out): ''s'
+ 38.809648339 : invoking timer callback (null)
+ 38.810073534 : timer callback finished
+ 38.812567504 : looking for messages on channels
+ 38.812796102 : SafeState: back to waiting, triggering SafeStateAgain
+ 38.827367630 RECV on 13(out): ' based'
+ 38.866721366 RECV on 13(out): ' on'
+ 38.908221277 RECV on 13(out): ' JVM'
+ 38.908700372 : invoking timer callback (null)
+ 38.909201766 : timer callback finished
+ 38.919633343 : looking for messages on channels
+ 38.920158737 : SafeState: back to waiting, triggering SafeStateAgain
+ 38.930386416 RECV on 13(out): ' bytecode'
+ 38.963158330 RECV on 13(out): ','
+ 38.983688588 RECV on 13(out): ' some'
+ 39.008710893 : invoking timer callback (null)
+ 39.009118588 : timer callback finished
+ 39.010265375 RECV on 13(out): ' features'
+ 39.010632671 : looking for messages on channels
+ 39.010877268 : SafeState: back to waiting, triggering SafeStateAgain
+ 39.042084100 RECV on 13(out): ' might'
+ 39.071816950 RECV on 13(out): ' not'
+ 39.101563699 RECV on 13(out): ' be'
+ 39.109015511 : invoking timer callback (null)
+ 39.109721003 : timer callback finished
+ 39.115679133 : looking for messages on channels
+ 39.117112316 : SafeState: back to waiting, triggering SafeStateAgain
+ 39.125710915 RECV on 13(out): ' cross'
+ 39.162222685 RECV on 13(out): '-platform'
+ 39.191330142 RECV on 13(out): ' like'
+ 39.209986022 : invoking timer callback (null)
+ 39.210460616 : timer callback finished
+ 39.214608968 : looking for messages on channels
+ 39.215704855 : SafeState: back to waiting, triggering SafeStateAgain
+ 39.220719796 RECV on 13(out): ' in'
+ 39.246357994 RECV on 13(out): ' Java'
+ 39.286212224 RECV on 13(out): ' EE'
+ 39.310931133 : invoking timer callback (null)
+ 39.311293129 : timer callback finished
+ 39.317608255 : looking for messages on channels
+ 39.317920551 : SafeState: back to waiting, triggering SafeStateAgain
+ 39.329906810 RECV on 13(out): '.'
+ 39.355336311 RECV on 13(out): ' So'
+ 39.396246329 RECV on 13(out): ' tools'
+ 39.410983155 : invoking timer callback (null)
+ 39.411379651 : timer callback finished
+ 39.420203147 : looking for messages on channels
+ 39.422627818 : SafeState: back to waiting, triggering SafeStateAgain
+ 39.428927944 RECV on 13(out): ' and'
+ 39.449775299 RECV on 13(out): ' frameworks'
+ 39.494302974 RECV on 13(out): ' built'
+ 39.511941767 : invoking timer callback (null)
+ 39.512352162 : timer callback finished
+ 39.515932920 : looking for messages on channels
+ 39.517220704 : SafeState: back to waiting, triggering SafeStateAgain
+ 39.530040653 RECV on 13(out): ' around'
+ 39.563346861 RECV on 13(out): ' OC'
+ 39.591277332 RECV on 13(out): 'aml'
+ 39.612562782 : invoking timer callback (null)
+ 39.613657969 : timer callback finished
+ 39.618282514 RECV on 13(out): ' would'
+ 39.622675363 : looking for messages on channels
+ 39.624585340 : SafeState: back to waiting, triggering SafeStateAgain
+ 39.666419048 RECV on 13(out): ' have'
+ 39.711382418 RECV on 13(out): ' to'
+ 39.712062810 : invoking timer callback (null)
+ 39.712339707 : timer callback finished
+ 39.722656185 : looking for messages on channels
+ 39.722959882 : SafeState: back to waiting, triggering SafeStateAgain
+ 39.746790401 RECV on 13(out): ' work'
+ 39.773131291 RECV on 13(out): ' on'
+ 39.812462728 : invoking timer callback (null)
+ 39.812925023 : timer callback finished
+ 39.813349518 RECV on 13(out): ' a'
+ 39.813579915 : looking for messages on channels
+ 39.813799712 : SafeState: back to waiting, triggering SafeStateAgain
+ 39.856118514 RECV on 13(out): ' local'
+ 39.896483639 RECV on 13(out): ' machine'
+ 39.913124743 : invoking timer callback (null)
+ 39.913470539 : timer callback finished
+ 39.917788588 : looking for messages on channels
+ 39.918132984 : SafeState: back to waiting, triggering SafeStateAgain
+ 39.945365363 RECV on 13(out): ' for'
+ 39.993619795 RECV on 13(out): ' cross'
+ 40.013257564 : invoking timer callback (null)
+ 40.013702459 : timer callback finished
+ 40.015049943 : looking for messages on channels
+ 40.015277840 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.034643112 RECV on 13(out): '-platform'
+ 40.057879938 RECV on 13(out): ' compatibility'
+ 40.079289286 RECV on 13(out): '.
+
+'
+ 40.079761381 on 13: Invoking channel callback GotOutput
+ 40.080409373 on 13: Invoking channel callback GotOutput
+ 40.084085530 : setting timeout timer to 2 sec 0 nsec
+ 40.087876685 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.108830838 RECV on 13(out): 'I'
+ 40.109401132 : looking for messages on channels
+ 40.109591229 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.113855379 : invoking timer callback (null)
+ 40.114092576 : timer callback finished
+ 40.120395302 : looking for messages on channels
+ 40.120922596 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.149801656 RECV on 13(out): ''m'
+ 40.171515700 RECV on 13(out): ' curious'
+ 40.212416419 : invoking timer callback (null)
+ 40.212762115 : timer callback finished
+ 40.223545788 : looking for messages on channels
+ 40.224460277 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.229243621 RECV on 13(out): ' about'
+ 40.259198469 RECV on 13(out): ' the'
+ 40.295606140 RECV on 13(out): ' future'
+ 40.312451442 : invoking timer callback (null)
+ 40.313012635 : timer callback finished
+ 40.316034400 RECV on 13(out): ' of'
+ 40.316338696 : looking for messages on channels
+ 40.316559294 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.337527947 RECV on 13(out): ' OC'
+ 40.372163639 RECV on 13(out): 'aml'
+ 40.396275056 RECV on 13(out): '.'
+ 40.412885760 : invoking timer callback (null)
+ 40.413217156 : timer callback finished
+ 40.417517906 : looking for messages on channels
+ 40.417694504 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.433711315 RECV on 13(out): ' As'
+ 40.453996176 RECV on 13(out): ' technology'
+ 40.493548611 RECV on 13(out): ' evolves'
+ 40.513019382 : invoking timer callback (null)
+ 40.513334778 : timer callback finished
+ 40.515617051 : looking for messages on channels
+ 40.515828349 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.523021464 RECV on 13(out): ','
+ 40.563657986 RECV on 13(out): ' new'
+ 40.593728432 RECV on 13(out): ' tools'
+ 40.613328002 : invoking timer callback (null)
+ 40.613796096 : timer callback finished
+ 40.614246191 RECV on 13(out): ' and'
+ 40.614444288 : looking for messages on channels
+ 40.614799984 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.648407689 RECV on 13(out): ' libraries'
+ 40.686369442 RECV on 13(out): ' will'
+ 40.713107827 : invoking timer callback (null)
+ 40.713558422 : timer callback finished
+ 40.717862071 : looking for messages on channels
+ 40.718057269 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.726415771 RECV on 13(out): ' likely'
+ 40.751475576 RECV on 13(out): ' emerge'
+ 40.773898612 RECV on 13(out): ','
+ 40.812889153 : invoking timer callback (null)
+ 40.813477646 : timer callback finished
+ 40.814413735 RECV on 13(out): ' making'
+ 40.815288225 : looking for messages on channels
+ 40.815684920 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.833778107 RECV on 13(out): ' the'
+ 40.886438988 RECV on 13(out): ' language'
+ 40.914094462 : invoking timer callback (null)
+ 40.914469158 : timer callback finished
+ 40.917811619 : looking for messages on channels
+ 40.918129815 : SafeState: back to waiting, triggering SafeStateAgain
+ 40.930893165 RECV on 13(out): ' even'
+ 40.971411088 RECV on 13(out): ' more'
+ 40.997362883 RECV on 13(out): ' powerful'
+ 41.014553180 : invoking timer callback (null)
+ 41.015839365 : timer callback finished
+ 41.020137515 : looking for messages on channels
+ 41.020578109 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.020807607 RECV on 13(out): ' or'
+ 41.053488122 RECV on 13(out): ' easier'
+ 41.093710849 RECV on 13(out): ' to'
+ 41.114374806 : invoking timer callback (null)
+ 41.114732102 : timer callback finished
+ 41.125108879 : looking for messages on channels
+ 41.125446875 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.134093974 RECV on 13(out): ' use'
+ 41.161817547 RECV on 13(out): '.'
+ 41.205815030 RECV on 13(out): ' Maybe'
+ 41.214344130 : invoking timer callback (null)
+ 41.214725525 : timer callback finished
+ 41.217262695 : looking for messages on channels
+ 41.218115185 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.230910935 RECV on 13(out): ' advancements'
+ 41.252807677 RECV on 13(out): ' in'
+ 41.275686008 RECV on 13(out): ' compiler'
+ 41.304235573 RECV on 13(out): ' optimizations'
+ 41.314748749 : invoking timer callback (null)
+ 41.315089645 : timer callback finished
+ 41.326262214 : looking for messages on channels
+ 41.326585410 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.345113892 RECV on 13(out): ' could'
+ 41.385819213 RECV on 13(out): ' make'
+ 41.415848660 : invoking timer callback (null)
+ 41.416216256 : timer callback finished
+ 41.420543105 : looking for messages on channels
+ 41.420798502 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.427772020 RECV on 13(out): ' it'
+ 41.468766538 RECV on 13(out): ' faster'
+ 41.495865319 RECV on 13(out): ' without'
+ 41.515559288 : invoking timer callback (null)
+ 41.515888784 : timer callback finished
+ 41.517191568 : looking for messages on channels
+ 41.517372966 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.531295903 RECV on 13(out): ' changing'
+ 41.559827167 RECV on 13(out): ' much'
+ 41.580294026 RECV on 13(out): ' of'
+ 41.600858085 RECV on 13(out): ' its'
+ 41.615903808 : invoking timer callback (null)
+ 41.616676098 : timer callback finished
+ 41.621585441 RECV on 13(out): ' syntax'
+ 41.622937725 : looking for messages on channels
+ 41.626826379 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.646377449 RECV on 13(out): ','
+ 41.673293633 RECV on 13(out): ' which'
+ 41.712270074 RECV on 13(out): ' is'
+ 41.715140241 : invoking timer callback (null)
+ 41.716191428 : timer callback finished
+ 41.728322086 : looking for messages on channels
+ 41.728667082 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.738660464 RECV on 13(out): ' something'
+ 41.768569512 RECV on 13(out): ' I'
+ 41.807814051 RECV on 13(out): ''ve'
+ 41.817522137 : invoking timer callback (null)
+ 41.818793122 : timer callback finished
+ 41.821826986 : looking for messages on channels
+ 41.823526966 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.838427191 RECV on 13(out): ' heard'
+ 41.872392291 RECV on 13(out): ' about'
+ 41.919515137 : invoking timer callback (null)
+ 41.919930232 : timer callback finished
+ 41.924687276 : looking for messages on channels
+ 41.925181771 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.925706865 RECV on 13(out): ' before'
+ 41.965957891 RECV on 13(out): '.
+
+'
+ 41.974599790 on 13: Invoking channel callback GotOutput
+ 41.975137383 on 13: Invoking channel callback GotOutput
+ 41.975734276 : setting timeout timer to 2 sec 0 nsec
+ 41.977752052 : SafeState: back to waiting, triggering SafeStateAgain
+ 41.991889786 RECV on 13(out): 'Overall'
+ 41.992478079 : looking for messages on channels
+ 41.992700277 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.020346252 : invoking timer callback (null)
+ 42.020691648 : timer callback finished
+ 42.022109331 RECV on 13(out): ','
+ 42.022467727 : looking for messages on channels
+ 42.022731924 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.043786076 RECV on 13(out): ' OC'
+ 42.081676730 RECV on 13(out): 'aml'
+ 42.120717571 : invoking timer callback (null)
+ 42.121335764 : timer callback finished
+ 42.121707960 RECV on 13(out): ' seems'
+ 42.122113055 : looking for messages on channels
+ 42.122305253 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.163966163 RECV on 13(out): ' like'
+ 42.185827106 RECV on 13(out): ' a'
+ 42.220764195 : invoking timer callback (null)
+ 42.221118491 : timer callback finished
+ 42.227616615 : looking for messages on channels
+ 42.227798912 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.230419582 RECV on 13(out): ' versatile'
+ 42.269796419 RECV on 13(out): ' language'
+ 42.290169480 RECV on 13(out): ' with'
+ 42.316918665 RECV on 13(out): ' strong'
+ 42.320890618 : invoking timer callback (null)
+ 42.321245914 : timer callback finished
+ 42.329341519 : looking for messages on channels
+ 42.329914212 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.339138804 RECV on 13(out): ' performance'
+ 42.371553023 RECV on 13(out): ' benefits'
+ 42.411828550 RECV on 13(out): '.'
+ 42.421412537 : invoking timer callback (null)
+ 42.421963531 : timer callback finished
+ 42.423387914 : looking for messages on channels
+ 42.423959107 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.440792809 RECV on 13(out): ' Its'
+ 42.467278698 RECV on 13(out): ' ecosystem'
+ 42.509673000 RECV on 13(out): ' includes'
+ 42.520853069 : invoking timer callback (null)
+ 42.521395162 : timer callback finished
+ 42.531765040 : looking for messages on channels
+ 42.531977138 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.542745911 RECV on 13(out): ' both'
+ 42.563846663 RECV on 13(out): ' built'
+ 42.590344052 RECV on 13(out): '-in'
+ 42.621098391 : invoking timer callback (null)
+ 42.625949434 : timer callback finished
+ 42.636509009 : looking for messages on channels
+ 42.637140202 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.637327700 RECV on 13(out): ' features'
+ 42.661893511 RECV on 13(out): ' and'
+ 42.689940482 RECV on 13(out): ' customizable'
+ 42.721431611 RECV on 13(out): ' tools'
+ 42.725992858 : invoking timer callback (null)
+ 42.726315954 : timer callback finished
+ 42.732699379 : looking for messages on channels
+ 42.733022375 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.764745102 RECV on 13(out): ','
+ 42.798313608 RECV on 13(out): ' which'
+ 42.825183892 RECV on 13(out): ' makes'
+ 42.825717586 : invoking timer callback (null)
+ 42.832048412 : timer callback finished
+ 42.843392778 : looking for messages on channels
+ 42.843793174 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.850363396 RECV on 13(out): ' it'
+ 42.921904256 RECV on 13(out): ' appealing'
+ 42.932392732 : invoking timer callback (null)
+ 42.932701529 : timer callback finished
+ 42.943052707 : looking for messages on channels
+ 42.944016196 : SafeState: back to waiting, triggering SafeStateAgain
+ 42.956349251 RECV on 13(out): ' for'
+ 42.986484097 RECV on 13(out): ' developers'
+ 43.022687471 RECV on 13(out): ' looking'
+ 43.032625554 : invoking timer callback (null)
+ 43.032931251 : timer callback finished
+ 43.034323734 : looking for messages on channels
+ 43.034692630 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.091964057 RECV on 13(out): ' to'
+ 43.117274360 RECV on 13(out): ' create'
+ 43.132936576 : invoking timer callback (null)
+ 43.133307071 : timer callback finished
+ 43.138653408 : looking for messages on channels
+ 43.138901505 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.157814983 RECV on 13(out): ' fast'
+ 43.198701803 RECV on 13(out): ' and'
+ 43.222391525 RECV on 13(out): ' perform'
+ 43.233194098 : invoking timer callback (null)
+ 43.233747691 : timer callback finished
+ 43.235253474 : looking for messages on channels
+ 43.235650469 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.253113764 RECV on 13(out): 'ant'
+ 43.279518554 RECV on 13(out): ' applications'
+ 43.314079448 RECV on 13(out): ' across'
+ 43.333918015 : invoking timer callback (null)
+ 43.334454709 : timer callback finished
+ 43.334779805 RECV on 13(out): ' various'
+ 43.335689994 : looking for messages on channels
+ 43.336245088 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.356238853 RECV on 13(out): ' domains'
+ 43.396191884 RECV on 13(out): '.
+'
+ 43.396784477 on 13: Invoking channel callback GotOutput
+ 43.399346246 : setting timeout timer to 2 sec 0 nsec
+ 43.413744777 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.418247425 RECV on 13(out): '</think>'
+ 43.421629385 : looking for messages on channels
+ 43.422027380 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.434488934 : invoking timer callback (null)
+ 43.436278213 : timer callback finished
+ 43.442064845 RECV on 13(out): '
+
+'
+ 43.442546639 : looking for messages on channels
+ 43.442739937 on 13: Invoking channel callback GotOutput
+ 43.443263231 on 13: Invoking channel callback GotOutput
+ 43.443551127 : setting timeout timer to 2 sec 0 nsec
+ 43.444687414 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.466868153 RECV on 13(out): 'OC'
+ 43.467290949 : looking for messages on channels
+ 43.476372142 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.492973747 RECV on 13(out): 'aml'
+ 43.531609893 RECV on 13(out): ' is'
+ 43.536190239 : invoking timer callback (null)
+ 43.536936631 : timer callback finished
+ 43.543747851 : looking for messages on channels
+ 43.544196645 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.555911008 RECV on 13(out): ' a'
+ 43.584136476 RECV on 13(out): ' modern'
+ 43.637414351 : invoking timer callback (null)
+ 43.637847346 : timer callback finished
+ 43.639457127 RECV on 13(out): ','
+ 43.639998220 : looking for messages on channels
+ 43.640356916 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.659572090 RECV on 13(out): ' high'
+ 43.700294412 RECV on 13(out): '-performance'
+ 43.727353394 RECV on 13(out): ' programming'
+ 43.737298378 : invoking timer callback (null)
+ 43.737736672 : timer callback finished
+ 43.739201955 : looking for messages on channels
+ 43.739861447 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.756131356 RECV on 13(out): ' language'
+ 43.788661974 RECV on 13(out): ' developed'
+ 43.818179828 RECV on 13(out): ' by'
+ 43.837416102 : invoking timer callback (null)
+ 43.837795597 : timer callback finished
+ 43.840158270 : looking for messages on channels
+ 43.840404267 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.857342968 RECV on 13(out): ' In'
+ 43.921250217 RECV on 13(out): 'ari'
+ 43.937518626 : invoking timer callback (null)
+ 43.938500415 : timer callback finished
+ 43.943385757 RECV on 13(out): ' Software'
+ 43.943848352 : looking for messages on channels
+ 43.944087349 : SafeState: back to waiting, triggering SafeStateAgain
+ 43.975566479 RECV on 13(out): ' that'
+ 44.020480352 RECV on 13(out): ' runs'
+ 44.038747037 : invoking timer callback (null)
+ 44.039183032 : timer callback finished
+ 44.044515170 : looking for messages on channels
+ 44.044814366 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.046643945 RECV on 13(out): ' on'
+ 44.071129157 RECV on 13(out): ' the'
+ 44.097716545 RECV on 13(out): ' JVM'
+ 44.122105358 RECV on 13(out): '.'
+ 44.138662964 : invoking timer callback (null)
+ 44.139045359 : timer callback finished
+ 44.144406996 : looking for messages on channels
+ 44.144641794 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.167575124 RECV on 13(out): ' It'
+ 44.192431633 RECV on 13(out): ' extends'
+ 44.223522068 RECV on 13(out): ' Common'
+ 44.239130384 : invoking timer callback (null)
+ 44.239540080 : timer callback finished
+ 44.244898117 : looking for messages on channels
+ 44.245184513 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.256532080 RECV on 13(out): 'JS'
+ 44.297621498 RECV on 13(out): ' ('
+ 44.327650146 RECV on 13(out): 'Java'
+ 44.338270821 : invoking timer callback (null)
+ 44.338697216 : timer callback finished
+ 44.349072694 : looking for messages on channels
+ 44.349939284 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.378636647 RECV on 13(out): 'Beans'
+ 44.404154548 RECV on 13(out): ')'
+ 44.424258112 RECV on 13(out): ' with'
+ 44.439017038 : invoking timer callback (null)
+ 44.439825829 : timer callback finished
+ 44.446198254 : looking for messages on channels
+ 44.446882746 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.456800230 RECV on 13(out): ' additional'
+ 44.486046987 RECV on 13(out): ' features'
+ 44.511420689 RECV on 13(out): ' such'
+ 44.534855114 RECV on 13(out): ' as'
+ 44.550995224 : invoking timer callback (null)
+ 44.553379896 : timer callback finished
+ 44.560373514 RECV on 13(out): ':
+
+'
+ 44.560779309 : looking for messages on channels
+ 44.561037306 on 13: Invoking channel callback GotOutput
+ 44.561642499 on 13: Invoking channel callback GotOutput
+ 44.562018595 : setting timeout timer to 2 sec 0 nsec
+ 44.563132582 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.583662341 RECV on 13(out): '1'
+ 44.584072136 : looking for messages on channels
+ 44.584362533 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.618557331 RECV on 13(out): '.'
+ 44.645709013 RECV on 13(out): ' **'
+ 44.654261512 : invoking timer callback (null)
+ 44.654617208 : timer callback finished
+ 44.656948181 : looking for messages on channels
+ 44.657681972 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.678153732 RECV on 13(out): 'Object'
+ 44.719863342 RECV on 13(out): '-C'
+ 44.754739933 : invoking timer callback (null)
+ 44.755189328 : timer callback finished
+ 44.761576753 : looking for messages on channels
+ 44.762095047 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.762403743 RECV on 13(out): 'ame'
+ 44.811414368 RECV on 13(out): 'on'
+ 44.856238542 : invoking timer callback (null)
+ 44.856826935 : timer callback finished
+ 44.862731866 RECV on 13(out): ' ('
+ 44.863108961 : looking for messages on channels
+ 44.864178549 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.874213331 RECV on 13(out): 'O'
+ 44.905007669 RECV on 13(out): 'CL'
+ 44.931398260 RECV on 13(out): ')**'
+ 44.956714263 : invoking timer callback (null)
+ 44.957241156 : timer callback finished
+ 44.963569882 : looking for messages on channels
+ 44.964081376 : SafeState: back to waiting, triggering SafeStateAgain
+ 44.969341414 RECV on 13(out): ':'
+ 45.031793893 RECV on 13(out): ' A'
+ 45.056809113 : invoking timer callback (null)
+ 45.057161417 : timer callback finished
+ 45.063501598 : looking for messages on channels
+ 45.063676100 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.067636551 RECV on 13(out): ' popular'
+ 45.089399728 RECV on 13(out): ' '
+ 45.132518378 RECV on 13(out): '3'
+ 45.157395796 : invoking timer callback (null)
+ 45.157752500 : timer callback finished
+ 45.164066781 : looking for messages on channels
+ 45.164390785 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.169135046 RECV on 13(out): 'D'
+ 45.197076602 RECV on 13(out): ' graphics'
+ 45.221675916 RECV on 13(out): ' framework'
+ 45.257852278 : invoking timer callback (null)
+ 45.258808290 : timer callback finished
+ 45.259509499 RECV on 13(out): ' widely'
+ 45.260981918 : looking for messages on channels
+ 45.262726640 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.284048612 RECV on 13(out): ' used'
+ 45.348710538 RECV on 13(out): ' in'
+ 45.359350774 : invoking timer callback (null)
+ 45.359741479 : timer callback finished
+ 45.370249313 : looking for messages on channels
+ 45.370596017 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.372844846 RECV on 13(out): ' industries'
+ 45.394340220 RECV on 13(out): ' like'
+ 45.432857912 RECV on 13(out): ' video'
+ 45.459454551 : invoking timer callback (null)
+ 45.459920357 : timer callback finished
+ 45.462946096 RECV on 13(out): ' games'
+ 45.463295900 : looking for messages on channels
+ 45.463558104 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.495159207 RECV on 13(out): ' and'
+ 45.536649137 RECV on 13(out): ' virtual'
+ 45.559309726 : invoking timer callback (null)
+ 45.559643330 : timer callback finished
+ 45.567936036 : looking for messages on channels
+ 45.568175139 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.574269617 RECV on 13(out): ' reality'
+ 45.605712218 RECV on 13(out): '.
+
+'
+ 45.620446906 on 13: Invoking channel callback GotOutput
+ 45.621147715 on 13: Invoking channel callback GotOutput
+ 45.621550020 : setting timeout timer to 2 sec 0 nsec
+ 45.623010939 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.631073842 RECV on 13(out): '2'
+ 45.631533048 : looking for messages on channels
+ 45.632872865 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.653108823 RECV on 13(out): '.'
+ 45.659618206 : invoking timer callback (null)
+ 45.659969911 : timer callback finished
+ 45.664325367 : looking for messages on channels
+ 45.664573670 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.682345697 RECV on 13(out): ' **'
+ 45.702303451 RECV on 13(out): 'AST'
+ 45.744972896 RECV on 13(out): ' Parser'
+ 45.759618283 : invoking timer callback (null)
+ 45.760271391 : timer callback finished
+ 45.764741848 RECV on 13(out): ' Generator'
+ 45.765036452 : looking for messages on channels
+ 45.765228555 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.806089476 RECV on 13(out): '**:'
+ 45.838501690 RECV on 13(out): ' A'
+ 45.859121053 : invoking timer callback (null)
+ 45.859920463 : timer callback finished
+ 45.869433385 RECV on 13(out): ' tool'
+ 45.872088919 : looking for messages on channels
+ 45.873890642 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.889961247 RECV on 13(out): ' for'
+ 45.913698550 RECV on 13(out): ' generating'
+ 45.954941376 RECV on 13(out): ' optimized'
+ 45.960496447 : invoking timer callback (null)
+ 45.960961953 : timer callback finished
+ 45.966380722 : looking for messages on channels
+ 45.966738927 : SafeState: back to waiting, triggering SafeStateAgain
+ 45.980638604 RECV on 13(out): ' bytecode'
+ 46.022332436 RECV on 13(out): ' from'
+ 46.061183032 : invoking timer callback (null)
+ 46.061572737 : timer callback finished
+ 46.064070169 : looking for messages on channels
+ 46.064267772 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.075806419 RECV on 13(out): ' Java'
+ 46.102522360 RECV on 13(out): ' classes'
+ 46.124921446 RECV on 13(out): ','
+ 46.161168309 : invoking timer callback (null)
+ 46.161669615 : timer callback finished
+ 46.161976219 RECV on 13(out): ' enhancing'
+ 46.162249022 : looking for messages on channels
+ 46.162550126 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.218759044 RECV on 13(out): ' code'
+ 46.240572523 RECV on 13(out): ' performance'
+ 46.261069384 : invoking timer callback (null)
+ 46.262189299 : timer callback finished
+ 46.263558216 : looking for messages on channels
+ 46.263867620 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.268655781 RECV on 13(out): '.
+
+'
+ 46.273804147 on 13: Invoking channel callback GotOutput
+ 46.274995462 on 13: Invoking channel callback GotOutput
+ 46.275815073 : setting timeout timer to 2 sec 0 nsec
+ 46.277354792 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.304135335 RECV on 13(out): '3'
+ 46.304546540 : looking for messages on channels
+ 46.304836444 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.336091643 RECV on 13(out): '.'
+ 46.358388427 RECV on 13(out): ' **'
+ 46.362084475 : invoking timer callback (null)
+ 46.363119288 : timer callback finished
+ 46.372556908 : looking for messages on channels
+ 46.373065415 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.383221045 RECV on 13(out): 'Extension'
+ 46.415217553 RECV on 13(out): ' Management'
+ 46.446556754 RECV on 13(out): ' System'
+ 46.464550209 : invoking timer callback (null)
+ 46.464871906 : timer callback finished
+ 46.468813969 RECV on 13(out): ' ('
+ 46.471756541 : looking for messages on channels
+ 46.472459535 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.494538728 RECV on 13(out): 'EMS'
+ 46.535523943 RECV on 13(out): ')**'
+ 46.563580480 RECV on 13(out): ':'
+ 46.564020676 : invoking timer callback (null)
+ 46.564300873 : timer callback finished
+ 46.574666176 : looking for messages on channels
+ 46.574965373 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.599667042 RECV on 13(out): ' Allows'
+ 46.626714388 RECV on 13(out): ' developers'
+ 46.656048413 RECV on 13(out): ' to'
+ 46.663958239 : invoking timer callback (null)
+ 46.664261236 : timer callback finished
+ 46.667703703 : looking for messages on channels
+ 46.668654895 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.683218258 RECV on 13(out): ' create'
+ 46.717804934 RECV on 13(out): ' and'
+ 46.741557011 RECV on 13(out): ' manage'
+ 46.764356397 : invoking timer callback (null)
+ 46.764756193 : timer callback finished
+ 46.773090415 : looking for messages on channels
+ 46.773397912 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.788852767 RECV on 13(out): ' extensions'
+ 46.829631285 RECV on 13(out): ' or'
+ 46.858513814 RECV on 13(out): ' plugins'
+ 46.864117861 : invoking timer callback (null)
+ 46.864425758 : timer callback finished
+ 46.869865807 : looking for messages on channels
+ 46.870412902 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.887017846 RECV on 13(out): ' for'
+ 46.936294884 RECV on 13(out): ' OC'
+ 46.964170423 : invoking timer callback (null)
+ 46.964599319 : timer callback finished
+ 46.967921088 : looking for messages on channels
+ 46.968113786 : SafeState: back to waiting, triggering SafeStateAgain
+ 46.977602197 RECV on 13(out): 'aml'
+ 47.002603962 RECV on 13(out): ','
+ 47.024618956 RECV on 13(out): ' enabling'
+ 47.047429442 RECV on 13(out): ' customization'
+ 47.064615081 : invoking timer callback (null)
+ 47.066615662 : timer callback finished
+ 47.071731414 : looking for messages on channels
+ 47.072054311 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.074854484 RECV on 13(out): ' of'
+ 47.136798203 RECV on 13(out): ' the'
+ 47.160121685 RECV on 13(out): ' language'
+ 47.166751723 : invoking timer callback (null)
+ 47.167170819 : timer callback finished
+ 47.171612777 : looking for messages on channels
+ 47.171900574 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.200821403 RECV on 13(out): '.
+
+'
+ 47.201339598 on 13: Invoking channel callback GotOutput
+ 47.203335380 on 13: Invoking channel callback GotOutput
+ 47.203701976 : setting timeout timer to 2 sec 0 nsec
+ 47.205356761 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.233944493 RECV on 13(out): '4'
+ 47.234384889 : looking for messages on channels
+ 47.238250952 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.258543262 RECV on 13(out): '.'
+ 47.267139782 : invoking timer callback (null)
+ 47.267444879 : timer callback finished
+ 47.269845956 : looking for messages on channels
+ 47.270169753 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.299365180 RECV on 13(out): ' **'
+ 47.335519941 RECV on 13(out): 'Performance'
+ 47.360117610 RECV on 13(out): '**:'
+ 47.366796248 : invoking timer callback (null)
+ 47.369469123 : timer callback finished
+ 47.375919162 : looking for messages on channels
+ 47.376237759 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.383253893 RECV on 13(out): ' Util'
+ 47.409606346 RECV on 13(out): 'izes'
+ 47.442722436 RECV on 13(out): ' JVM'
+ 47.471726364 : invoking timer callback (null)
+ 47.472153760 : timer callback finished
+ 47.474560638 : looking for messages on channels
+ 47.474753236 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.483516054 RECV on 13(out): ' bytecode'
+ 47.508843716 RECV on 13(out): ' for'
+ 47.562480614 RECV on 13(out): ' compiled'
+ 47.572178123 : invoking timer callback (null)
+ 47.572643218 : timer callback finished
+ 47.574687299 : looking for messages on channels
+ 47.574971297 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.586580788 RECV on 13(out): ' speed'
+ 47.606636100 RECV on 13(out): ','
+ 47.638045705 RECV on 13(out): ' offering'
+ 47.669602010 RECV on 13(out): ' significant'
+ 47.673123777 : invoking timer callback (null)
+ 47.673437674 : timer callback finished
+ 47.681411899 : looking for messages on channels
+ 47.683630378 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.692230398 RECV on 13(out): ' performance'
+ 47.715822576 RECV on 13(out): ' advantages'
+ 47.736294685 RECV on 13(out): ' over'
+ 47.772968141 : invoking timer callback (null)
+ 47.774486927 : timer callback finished
+ 47.779145483 RECV on 13(out): ' traditional'
+ 47.779488780 : looking for messages on channels
+ 47.779841876 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.819019209 RECV on 13(out): ' Java'
+ 47.847854739 RECV on 13(out): ' implementations'
+ 47.873976894 : invoking timer callback (null)
+ 47.874354691 : timer callback finished
+ 47.880662932 : looking for messages on channels
+ 47.880867130 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.891515830 RECV on 13(out): '.
+
+'
+ 47.892033425 on 13: Invoking channel callback GotOutput
+ 47.893301513 on 13: Invoking channel callback GotOutput
+ 47.902514827 : setting timeout timer to 2 sec 0 nsec
+ 47.905552298 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.923964426 RECV on 13(out): 'OC'
+ 47.924485621 : looking for messages on channels
+ 47.925102515 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.974053256 : invoking timer callback (null)
+ 47.974461752 : timer callback finished
+ 47.976829830 : looking for messages on channels
+ 47.977721622 : SafeState: back to waiting, triggering SafeStateAgain
+ 47.983799865 RECV on 13(out): 'aml'
+ 48.025315876 RECV on 13(out): ''s'
+ 48.069967957 RECV on 13(out): ' ecosystem'
+ 48.074556814 : invoking timer callback (null)
+ 48.074805212 : timer callback finished
+ 48.081281551 : looking for messages on channels
+ 48.084567720 : SafeState: back to waiting, triggering SafeStateAgain
+ 48.093180340 RECV on 13(out): ' includes'
+ 48.120381985 RECV on 13(out): ' tools'
+ 48.165235564 RECV on 13(out): ' like'
+ 48.174712176 : invoking timer callback (null)
+ 48.176143962 : timer callback finished
+ 48.178793937 : looking for messages on channels
+ 48.179110634 : SafeState: back to waiting, triggering SafeStateAgain
+ 48.193090003 RECV on 13(out): ' a'
+ 48.215628192 RECV on 13(out): ' plug'
+ 48.263209447 RECV on 13(out): '-in'
+ 48.277546413 : invoking timer callback (null)
+ 48.282108670 : timer callback finished
+ 48.288256612 RECV on 13(out): ' system'
+ 48.288635409 : looking for messages on channels
+ 48.288962706 : SafeState: back to waiting, triggering SafeStateAgain
+ 48.327594244 RECV on 13(out): ' for'
+ 48.368428661 RECV on 13(out): ' managing'
+ 48.382254432 : invoking timer callback (null)
+ 48.382580729 : timer callback finished
+ 48.389932960 : looking for messages on channels
+ 48.390214457 : SafeState: back to waiting, triggering SafeStateAgain
+ 48.409460977 RECV on 13(out): ' extensions'
+ 48.431290873 RECV on 13(out): ' and'
+ 48.459329710 RECV on 13(out): ' frameworks'
+ 48.482248696 : invoking timer callback (null)
+ 48.482865890 : timer callback finished
+ 48.483117487 RECV on 13(out): ' for'
+ 48.483728882 : looking for messages on channels
+ 48.485015870 : SafeState: back to waiting, triggering SafeStateAgain
+ 48.503094100 RECV on 13(out): ' web'
+ 48.524489200 RECV on 13(out): ' and'
+ 48.555662208 RECV on 13(out): ' game'
+ 48.582711255 : invoking timer callback (null)
+ 48.583072651 : timer callback finished
+ 48.584117742 RECV on 13(out): ' development'
+ 48.584422539 : looking for messages on channels
+ 48.585639027 : SafeState: back to waiting, triggering SafeStateAgain
+ 48.609353705 RECV on 13(out): ','
+ 48.677715465 RECV on 13(out): ' catering'
+ 48.683387012 : invoking timer callback (null)
+ 48.683708009 : timer callback finished
+ 48.689115458 : looking for messages on channels
+ 48.690233348 : SafeState: back to waiting, triggering SafeStateAgain
+ 48.698162074 RECV on 13(out): ' to'
+ 48.725454718 RECV on 13(out): ' various'
+ 48.749200096 RECV on 13(out): ' industries'
+ 48.783223777 : invoking timer callback (null)
+ 48.783758172 : timer callback finished
+ 48.784210968 RECV on 13(out): ' with'
+ 48.784795662 : looking for messages on channels
+ 48.785077460 : SafeState: back to waiting, triggering SafeStateAgain
+ 48.822516109 RECV on 13(out): ' its'
+ 48.848812663 RECV on 13(out): ' versatility'
+ 48.877345096 RECV on 13(out): ' in'
+ 48.883953034 : invoking timer callback (null)
+ 48.884230831 : timer callback finished
+ 48.888793888 : looking for messages on channels
+ 48.889212085 : SafeState: back to waiting, triggering SafeStateAgain
+ 48.901767767 RECV on 13(out): ' syntax'
+ 48.923559863 RECV on 13(out): ' and'
+ 48.954276375 RECV on 13(out): ' added'
+ 48.977216760 RECV on 13(out): ' features'
+ 48.985264185 : invoking timer callback (null)
+ 48.986322075 : timer callback finished
+ 48.991838723 : looking for messages on channels
+ 48.992165820 : SafeState: back to waiting, triggering SafeStateAgain
+ 49.000783640 RECV on 13(out): '.'
+ 49.027232892 RECV on 13(out): ' The'
+ 49.051592164 RECV on 13(out): ' language'
+ 49.086310339 : invoking timer callback (null)
+ 49.086684135 : timer callback finished
+ 49.091204393 RECV on 13(out): ' is'
+ 49.091865787 : looking for messages on channels
+ 49.092095185 : SafeState: back to waiting, triggering SafeStateAgain
+ 49.132053510 RECV on 13(out): ' supported'
+ 49.163822613 RECV on 13(out): ' by'
+ 49.186611900 : invoking timer callback (null)
+ 49.187016196 : timer callback finished
+ 49.195340718 : looking for messages on channels
+ 49.195640215 : SafeState: back to waiting, triggering SafeStateAgain
+ 49.198579588 RECV on 13(out): ' an'
+ 49.241126789 RECV on 13(out): ' active'
+ 49.272670194 RECV on 13(out): ' developer'
+ 49.286387166 : invoking timer callback (null)
+ 49.286805162 : timer callback finished
+ 49.295146784 RECV on 13(out): ' community'
+ 49.295603780 : looking for messages on channels
+ 49.295867977 : SafeState: back to waiting, triggering SafeStateAgain
+ 49.330785050 RECV on 13(out): ','
+ 49.364240937 RECV on 13(out): ' fostering'
+ 49.384891144 RECV on 13(out): ' continuous'
+ 49.385795136 : invoking timer callback (null)
+ 49.386185032 : timer callback finished
+ 49.396614835 : looking for messages on channels
+ 49.397133130 : SafeState: back to waiting, triggering SafeStateAgain
+ 49.407063937 RECV on 13(out): ' improvement'
+ 49.445828274 RECV on 13(out): ' and'
+ 49.485798900 : invoking timer callback (null)
+ 49.488242277 : timer callback finished
+ 49.488588474 RECV on 13(out): ' innovation'
+ 49.488933771 : looking for messages on channels
+ 49.489298967 : SafeState: back to waiting, triggering SafeStateAgain
+ 49.514981927 RECV on 13(out): '.'
+ 49.558368821 RECV on 13(out): '<EOT>
+'
+ 49.559148514 on 13: Invoking channel callback GotOutput
+ 49.559895907 : setting timeout timer to 2 sec 0 nsec
+ 49.561519991 : SafeState: back to waiting, triggering SafeStateAgain
+ 49.587908545 : invoking timer callback (null)
+ 49.588383540 : timer callback finished
+ 49.688897300 : invoking timer callback (null)
+ 49.689412195 : timer callback finished
+ 49.790035353 : invoking timer callback (null)
+ 49.790607448 : timer callback finished
+ 49.892360696 : invoking timer callback (null)
+ 49.892951190 : timer callback finished
+ 49.993639148 : invoking timer callback (null)
+ 49.994268342 : timer callback finished
+ 50.096022890 : invoking timer callback (null)
+ 50.096628584 : timer callback finished
+ 50.198376733 : invoking timer callback (null)
+ 50.198983727 : timer callback finished
+ 50.300816575 : invoking timer callback (null)
+ 50.301425469 : timer callback finished
+ 50.403232517 : invoking timer callback (null)
+ 50.403884811 : timer callback finished
+ 50.505597860 : invoking timer callback (null)
+ 50.506258654 : timer callback finished
+ 50.609035493 : invoking timer callback (null)
+ 50.609626687 : timer callback finished
+ 50.711356636 : invoking timer callback (null)
+ 50.711960931 : timer callback finished
+ 50.813683380 : invoking timer callback (null)
+ 50.814307374 : timer callback finished
+ 50.916079722 : invoking timer callback (null)
+ 50.916673617 : timer callback finished
+ 51.018572864 : invoking timer callback (null)
+ 51.019352257 : timer callback finished
+ 51.121142805 : invoking timer callback (null)
+ 51.121816499 : timer callback finished
+ 51.223508648 : invoking timer callback (null)
+ 51.224089043 : timer callback finished
+ 51.325848392 : invoking timer callback (null)
+ 51.326461086 : timer callback finished
+ 51.428317335 : invoking timer callback (null)
+ 51.428925229 : timer callback finished
+ 51.530709078 : invoking timer callback (null)
+ 51.531302273 : timer callback finished
+ 51.633023423 : invoking timer callback (null)
+ 51.633653017 : timer callback finished
+ 51.735500765 : invoking timer callback (null)
+ 51.736090760 : timer callback finished
+ 51.837831809 : invoking timer callback (null)
+ 51.838410404 : timer callback finished
+ 51.940151053 : invoking timer callback (null)
+ 51.940835047 : timer callback finished
+ 52.042583896 : invoking timer callback (null)
+ 52.043198791 : timer callback finished
+ 52.144841041 : invoking timer callback (null)
+ 52.145481835 : timer callback finished
+ 52.247222485 : invoking timer callback (null)
+ 52.247836779 : timer callback finished
+ 52.349632029 : invoking timer callback (null)
+ 52.350222624 : timer callback finished
+ 52.451966574 : invoking timer callback (null)
+ 52.452651367 : timer callback finished
+ 52.555414708 : invoking timer callback (null)
+ 52.555998103 : timer callback finished
+ 52.657714253 : invoking timer callback (null)
+ 52.658348847 : timer callback finished
+ 52.760091698 : invoking timer callback (null)
+ 52.760733492 : timer callback finished
+ 52.862528141 : invoking timer callback (null)
+ 52.863127036 : timer callback finished
+ 52.964812987 : invoking timer callback (null)
+ 52.965417181 : timer callback finished
+ 53.067187779 : invoking timer callback (null)
+ 53.067802682 : timer callback finished
+ 53.169494827 : invoking timer callback (null)
+ 53.170122030 : timer callback finished
+ 53.271747075 : invoking timer callback (null)
+ 53.272365478 : timer callback finished
+ 53.374057823 : invoking timer callback (null)
+ 53.374626026 : timer callback finished
+ 53.476376472 : invoking timer callback (null)
+ 53.477044475 : timer callback finished
+ 53.579768126 : invoking timer callback (null)
+ 53.580402729 : timer callback finished
+ 53.682136875 : invoking timer callback (null)
+ 53.682765578 : timer callback finished
+ 53.784512924 : invoking timer callback (null)
+ 53.785130927 : timer callback finished
+ 53.886897973 : invoking timer callback (null)
+ 53.887480776 : timer callback finished
+ 53.989206421 : invoking timer callback (null)
+ 53.989834624 : timer callback finished
+ 54.091627970 : invoking timer callback (null)
+ 54.092238973 : timer callback finished
+ 54.194053819 : invoking timer callback (null)
+ 54.194618222 : timer callback finished
+ 54.295332672 : invoking timer callback (null)
+ 54.295903468 : timer callback finished
+ 54.397769074 : invoking timer callback (null)
+ 54.398358269 : timer callback finished
+ 54.500126177 : invoking timer callback (null)
+ 54.500692072 : timer callback finished
+ 54.602409880 : invoking timer callback (null)
+ 54.603046575 : timer callback finished
+ 54.704783282 : invoking timer callback (null)
+ 54.705359878 : timer callback finished
+ 54.807132185 : invoking timer callback (null)
+ 54.807727080 : timer callback finished
+ 54.909605987 : invoking timer callback (null)
+ 54.910252382 : timer callback finished
+ 55.012049689 : invoking timer callback (null)
+ 55.012702684 : timer callback finished
+ 55.114468791 : invoking timer callback (null)
+ 55.115066086 : timer callback finished
+ 55.216828694 : invoking timer callback (null)
+ 55.217446489 : timer callback finished
+ 55.319189897 : invoking timer callback (null)
+ 55.319863992 : timer callback finished
+ 55.421576600 : invoking timer callback (null)
+ 55.422485793 : timer callback finished
+ 55.524223601 : invoking timer callback (null)
+ 55.524862396 : timer callback finished
+ 55.627589097 : invoking timer callback (null)
+ 55.628258392 : timer callback finished
+ 55.728889409 : invoking timer callback (null)
+ 55.729514304 : timer callback finished
+ 55.831269012 : invoking timer callback (null)
+ 55.831853107 : timer callback finished
+ 55.933697715 : invoking timer callback (null)
+ 55.934305410 : timer callback finished
+ 56.036010018 : invoking timer callback (null)
+ 56.036698213 : timer callback finished
+ 56.138360822 : invoking timer callback (null)
+ 56.138936417 : timer callback finished
+ 56.240704526 : invoking timer callback (null)
+ 56.241252421 : timer callback finished
+ 56.341970238 : invoking timer callback (null)
+ 56.342601233 : timer callback finished
+ 56.444453141 : invoking timer callback (null)
+ 56.445070937 : timer callback finished
+ 56.547914137 : invoking timer callback (null)
+ 56.548576332 : timer callback finished
+ 56.650284241 : invoking timer callback (null)
+ 56.650820337 : timer callback finished
+ 56.751428954 : invoking timer callback (null)
+ 56.752013950 : timer callback finished
+ 56.854334754 : invoking timer callback (null)
+ 56.854964649 : timer callback finished
+ 56.956694858 : invoking timer callback (null)
+ 56.957263754 : timer callback finished
+ 57.059030163 : invoking timer callback (null)
+ 57.059648958 : timer callback finished
+ 57.161351967 : invoking timer callback (null)
+ 57.161969962 : timer callback finished
+ 57.263702272 : invoking timer callback (null)
+ 57.264380567 : timer callback finished
+ 57.366155976 : invoking timer callback (null)
+ 57.366806871 : timer callback finished
+ 57.468611980 : invoking timer callback (null)
+ 57.469340875 : timer callback finished
+ 57.572188176 : invoking timer callback (null)
+ 57.572801971 : timer callback finished
+ 57.674559780 : invoking timer callback (null)
+ 57.675189176 : timer callback finished
+ 57.776920285 : invoking timer callback (null)
+ 57.777558180 : timer callback finished
+ 57.879417589 : invoking timer callback (null)
+ 57.880049984 : timer callback finished
+ 57.981758794 : invoking timer callback (null)
+ 57.982408689 : timer callback finished
+ 58.084219098 : invoking timer callback (null)
+ 58.084824394 : timer callback finished
+ 58.186557603 : invoking timer callback (null)
+ 58.187178098 : timer callback finished
+ 58.288887609 : invoking timer callback (null)
+ 58.289493404 : timer callback finished
+ 58.391258715 : invoking timer callback (null)
+ 58.391866410 : timer callback finished
+ 58.493632420 : invoking timer callback (null)
+ 58.494248515 : timer callback finished
+ 58.597023818 : invoking timer callback (null)
+ 58.597629713 : timer callback finished
+ 58.699403923 : invoking timer callback (null)
+ 58.700012819 : timer callback finished
+ 58.801767829 : invoking timer callback (null)
+ 58.802380424 : timer callback finished
+ 58.904163034 : invoking timer callback (null)
+ 58.904734630 : timer callback finished
+ 59.005432248 : invoking timer callback (null)
+ 59.006035044 : timer callback finished
+ 59.107953953 : invoking timer callback (null)
+ 59.108560648 : timer callback finished
+ 59.210326958 : invoking timer callback (null)
+ 59.210926054 : timer callback finished
+ 59.312645865 : invoking timer callback (null)
+ 59.313329360 : timer callback finished
+ 59.415130371 : invoking timer callback (null)
+ 59.415712466 : timer callback finished
+ 59.516417885 : invoking timer callback (null)
+ 59.517038480 : timer callback finished
+ 59.619730084 : invoking timer callback (null)
+ 59.620386279 : timer callback finished
+ 59.722152490 : invoking timer callback (null)
+ 59.722774085 : timer callback finished
+ 59.824499597 : invoking timer callback (null)
+ 59.825113492 : timer callback finished
+ 59.926939102 : invoking timer callback (null)
+ 59.927578598 : timer callback finished
+ 60.029326609 : invoking timer callback (null)
+ 60.029960704 : timer callback finished
+ 60.131710715 : invoking timer callback (null)
+ 60.132340610 : timer callback finished
+ 60.234115521 : invoking timer callback (null)
+ 60.234706217 : timer callback finished
+ 60.336415229 : invoking timer callback (null)
+ 60.337744319 : timer callback finished
+ 60.439499930 : invoking timer callback (null)
+ 60.440142825 : timer callback finished
+ 60.542794730 : invoking timer callback (null)
+ 60.543373326 : timer callback finished
+ 60.645070938 : invoking timer callback (null)
+ 60.645676233 : timer callback finished
+ 60.747401045 : invoking timer callback (null)
+ 60.748019541 : timer callback finished
+ 60.849744653 : invoking timer callback (null)
+ 60.850401348 : timer callback finished
+ 60.952103160 : invoking timer callback (null)
+ 60.952913454 : timer callback finished
+ 61.054685544 : invoking timer callback (null)
+ 61.055252339 : timer callback finished
+ 61.155924819 : invoking timer callback (null)
+ 61.156465814 : timer callback finished
+ 61.255506608 : raw key input: "/"
+ 61.256139603 : SafeState: reset: key typed
+ 61.260559767 : setting timeout timer to 2 sec 0 nsec
+ 61.263858540 : SafeState: Start triggering
+ 61.264327836 : looking for messages on channels
+ 61.264771832 : SafeState: back to waiting, triggering SafeStateAgain
+ 61.265225829 : invoking timer callback (null)
+ 61.265635425 : timer callback finished
+ 61.366232606 : invoking timer callback (null)
+ 61.366763902 : timer callback finished
+ 61.467329083 : invoking timer callback (null)
+ 61.467940578 : timer callback finished
+ 61.568669758 : looking for messages on channels
+ 61.569367753 : SafeState: back to waiting, triggering SafeStateAgain
+ 61.569817449 : SafeState: reset: key typed
+ 61.571409936 : SafeState: Start triggering
+ 61.571848233 : looking for messages on channels
+ 61.572248229 : SafeState: back to waiting, triggering SafeStateAgain
+ 61.572625626 : invoking timer callback (null)
+ 61.572988623 : timer callback finished
+ 61.646743323 : raw key input: "b"
+ 61.647322618 : SafeState: reset: key typed
+ 61.649781498 : setting timeout timer to 2 sec 0 nsec
+ 61.651698483 : SafeState: Start triggering
+ 61.652117779 : looking for messages on channels
+ 61.652638075 : SafeState: back to waiting, triggering SafeStateAgain
+ 61.672704112 : invoking timer callback (null)
+ 61.673331006 : timer callback finished
+ 61.775037378 : invoking timer callback (null)
+ 61.775663673 : timer callback finished
+ 61.792105640 : raw key input: "y"
+ 61.792433837 : SafeState: reset: key typed
+ 61.793407229 : setting timeout timer to 2 sec 0 nsec
+ 61.795232314 : SafeState: Start triggering
+ 61.795509412 : looking for messages on channels
+ 61.795872909 : SafeState: back to waiting, triggering SafeStateAgain
+ 61.875416261 : invoking timer callback (null)
+ 61.876021656 : timer callback finished
+ 61.977824528 : invoking timer callback (null)
+ 61.978431023 : timer callback finished
+ 62.014875226 : raw key input: "e"
+ 62.015437621 : SafeState: reset: key typed
+ 62.016695111 : setting timeout timer to 2 sec 0 nsec
+ 62.018636195 : SafeState: Start triggering
+ 62.019025192 : looking for messages on channels
+ 62.019294490 : SafeState: back to waiting, triggering SafeStateAgain
+ 62.078724306 : invoking timer callback (null)
+ 62.079337901 : timer callback finished
+ 62.181041273 : invoking timer callback (null)
+ 62.181655968 : timer callback finished
+ 62.190578996 : raw key input: ""
+ 62.190968993 : SafeState: reset: ins_typebuf()
+ 62.191548288 SEND on 13(in): '/bye
+'
+ 62.192040584 : setting timeout timer to 2 sec 0 nsec
+ 62.195753554 : SafeState: Start triggering
+ 62.196146250 : looking for messages on channels
+ 62.196525447 : SafeState: back to waiting, triggering SafeStateAgain
+ 62.197311141 RECV on 13(out): 'Exiting the chat.
+'
+ 62.197610839 on 13: Invoking channel callback GotOutput
+ 62.198135134 : setting timeout timer to 2 sec 0 nsec
+ 62.198906128 : SafeState: back to waiting, triggering SafeStateAgain
+ 62.281364157 : invoking timer callback (null)
+ 62.281950453 : timer callback finished
+ 62.325558398 on 13: channel_select_check(): Read EOF from ch_part[1], closing
+ 62.326227492 on 13: channel_select_check(): Read EOF from ch_part[2], closing
+ 62.327031586 : looking for messages on channels
+ 62.327307884 on 13: Closing channel because all readable fds are closed
+ 62.327580681 on 13: Closing channel
+ 62.328154677 on 13: Job ended
+ 62.328505174 on 13: Invoking exit callback JobExit
+ 62.329262968 : setting timeout timer to 2 sec 0 nsec
+ 62.330544757 : looking for messages on channels
+ 62.330887555 : SafeState: back to waiting, triggering SafeStateAgain
+ 62.382407935 : invoking timer callback (null)
+ 62.383010631 : timer callback finished
+ 62.484773003 : invoking timer callback (null)
+ 62.485445797 : timer callback finished
+ 62.499344884 : looking for messages on channels
+ 62.499836780 : SafeState: back to waiting, triggering SafeStateAgain
+ 62.500246477 : SafeState: reset: key typed
+ 63.570789173 : SafeState: Start triggering
+ 63.571187269 : SafeState: reset: key typed
+ 63.586761843 : SafeState: Start triggering
+ 63.587064040 : looking for messages on channels
+ 63.587317538 : SafeState: back to waiting, triggering SafeStateAgain
+ 63.687220127 : raw key input: ":"
+ 63.687708923 : SafeState: reset: key typed
+ 63.688169619 : SafeState: Start triggering
+ 63.688569616 : looking for messages on channels
+ 63.688828714 : SafeState: back to waiting, triggering SafeStateAgain
+ 63.769563557 : invoking timer callback <SNR>60_Lint
+ 64.025599477 : raw key input: "q"
+ 64.694819243 : raw key input: "!"
+ 64.814730469 : timer callback finished
+ 64.815043966 : SafeState: reset: key typed
+ 64.815372864 : SafeState: Start triggering
+ 64.815604562 : looking for messages on channels
+ 64.815828560 : SafeState: back to waiting, triggering SafeStateAgain
+ 65.038489252 : raw key input: "q"
+ 65.039074948 : SafeState: reset: key typed
+ 65.039600343 : SafeState: Start triggering
+ 65.040030440 : looking for messages on channels
+ 65.040403837 : SafeState: back to waiting, triggering SafeStateAgain
+ 65.614597378 : raw key input: ""
+ 65.615236573 : SafeState: reset: ins_typebuf()
+ 65.615624770 : SafeState: Start triggering
+ 65.615972467 : looking for messages on channels
+ 65.616248265 : SafeState: back to waiting, triggering SafeStateAgain
+ 65.806018726 : raw key input: ""
+ 65.806482122 : SafeState: reset: key typed
+ 65.816181443 : SafeState: Start triggering
+ 65.816501740 : setting timeout timer to 2 sec 0 nsec
+ 65.825097871 : looking for messages on channels
+ 65.825621467 : SafeState: back to waiting, triggering SafeStateAgain
+ 65.825921864 : invoking timer callback <SNR>61_ApplyPartialTimer
+ 65.826907956 : timer callback finished
+ 65.827144254 : invoking timer callback (null)
+ 65.829568934 : timer callback finished
+ 65.916140032 : invoking timer callback <SNR>77_ReceiveMessages
+ 65.917392122 : timer callback finished
+ 66.132174180 : looking for messages on channels
+ 66.132725475 : SafeState: back to waiting, triggering SafeStateAgain
+ 66.133203372 : SafeState: reset: key typed
+ 66.153240709 SEND on 1(in): 'Content-Length: 190
+
+{"method":"textDocument/hover","jsonrpc":"2.0","id":10,"params":{"textDocument":{"uri":"file:///mnt/c/users/ethan/documents/ocaml/semantics/bin/typ.ml"},"position":{"character":0,"line":6}}}'
+ 66.171779459 : SafeState: Start triggering
+ 66.172028057 : looking for messages on channels
+ 66.172974949 : SafeState: back to waiting, triggering SafeStateAgain
+ 66.173229647 RECV on 1(out): 'Content-Length: 39
+Content-Type: application/vscode-jsonrpc; charset=utf-8
+
+{"id":10,"jsonrpc":"2.0","result":null}'
+ 66.173464645 on 1: Invoking channel callback <SNR>69_VimOutputCallback
+ 66.174261839 : SafeState: back to waiting, triggering SafeStateAgain
+ 66.472885118 : looking for messages on channels
+ 66.473400514 : SafeState: back to waiting, triggering SafeStateAgain
+ 67.766491939 : raw key input: "Z"
+ 67.767006035 : SafeState: reset: key typed
+ 67.767354032 : looking for messages on channels
+ 67.998654659 : raw key input: "Z"
+ 67.999274454 : Exiting...
+ 68.057436583 : raw terminal output: "[71;1H[?1006;1000l[?1002l[?2004l[>4;m"
+ 68.057942279 : raw terminal output: "[m[71;1H[K[71;1H[?1004l[?2004l[?1l>"
