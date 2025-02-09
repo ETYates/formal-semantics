@@ -16,9 +16,9 @@ let rec print_tree ?(indent=0) tree =
   let spaces = String.make (2 * indent) ' ' in
   match tree.data with
   | Text { text; _ } ->
-      Printf.printf "%sText { text = \"%s\"; lf = \"%s\" }\n" spaces text (fmt_expr tree.lf)
+    Printf.printf "%s[ %s : %s ]\n" spaces text (fmt_expr tree.lf)
   | Trees (left, right) ->
-      Printf.printf "%sTrees lf = %s\n" spaces (fmt_expr tree.lf);
+      Printf.printf "%s%s : %s\n" spaces (fmt_cat tree.cat) (fmt_expr tree.lf);
       print_tree ~indent:(indent + 1) left;
       print_tree ~indent:(indent + 1) right
 
@@ -64,6 +64,17 @@ let merge t1 t2 =
     Some t
   else None
 
+(*
+let adjoin t1 t2 =
+  match t1.cat, t2.cat with
+  | V, R | R, V -> let cat = t1.cat in
+    let sel = t1.sel in
+    let data = Trees(t1, t2) in
+    let arity = t1.arity in
+    let lf = Lambda.Null in
+    {data; cat; sel; arity; lf}
+  | _ -> failwith "AdjunctionError: cannot adjoin element."
+*)
 let lex_to_tree lex =
   let {text; lemma; cat; sel} = lex in
   let data = Text {text; lemma} in
