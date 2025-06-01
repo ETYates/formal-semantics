@@ -18,6 +18,9 @@ and op = Not | And | Or | If
 (** Formats a binder as a string. *)
 val fmt_binder : binder -> string
 
+val add_e : expr -> expr
+val abstract_e : expr -> expr
+
 (** Formats a list of terms as a string. *)
 val fmt_terms : term list -> string
 
@@ -32,6 +35,7 @@ val fmt_expr : expr -> string
 
 (** Finds a free variable in an expression, if it exists. *)
 val free_var : expr -> term option
+val free_var' : expr -> term option
 
 (** Lifts a lambda binder in an expression. *)
 val lift_bind : expr -> expr

@@ -47,12 +47,13 @@ let rec fmt_expr (expr : expr) =
   | _ -> let err = Printf.sprintf "FORMAT ERROR: Cannot format lambda expressions of variant %s" (fmt_expr expr) in
     failwith err
 
-let rec free_var expr =
-  match expr with
-  | Bind bind -> free_var' bind.expr
-  | Op _ -> free_var' expr
-  | _ -> None
-and free_var' expr =
+(*
+let print_expr expr =
+  let expr_str = fmt_expr expr in
+  print_endline expr_str
+*)
+
+let rec free_var' expr =
   match expr with
   | Bind{binder=Lambda; var; _} -> Some var
   | Bind bind -> free_var' bind.expr
@@ -64,6 +65,46 @@ and free_var' expr =
      | [] -> None
      | _ -> failwith "Incorrect amount of free vars in Op.")
   | _ -> None
+
+let free_var expr =
+  match expr with
+  | Bind bind -> free_var' bind.expr
+  | Op _ -> free_var' expr
+  | _ -> None
+
+let free_vars expr = 
+  let rec free_vars' vars expr =
+    match expr with
+    | Bind {binder=Lambda; var; expr} -> let vars = vars@[var] in
+      free_vars' vars expr
+    | Bind {binder=_; var=_; expr} -> free_vars' vars expr
+    | Op (_, args) -> 
+      (match args with
+      | [arg] -> free_vars' vars arg
+      | [arg1; arg2] -> let vars1 = free_vars' [] arg1 in
+        let vars2 = free_vars' [] arg2 in
+        vars @ vars1 @ vars2
+      | _ -> failwith "Incorrect amount of args in Op.")
+    | _ -> vars
+  in free_vars' [] expr
+
+let rec add_e expr =
+  match expr with
+  | Bind bind -> Bind {bind with expr=add_e bind.expr}
+  | Op (op, args) -> let args = List.map add_e args in Op (op, args)
+  | Pred pred -> let args = pred.args@[Var "e"] in Pred {pred with args}
+  | _ -> expr
+
+let abstract_e expr =
+  match expr with
+  | Bind {binder=Lambda; var= Var "x"; expr} -> 
+    let expr = Bind {binder=Lambda; var = Var "e"; expr} in
+    Bind {binder=Lambda; var = Var "x"; expr}
+  | _ -> failwith "Should be a bind."
+
+let lambda_abstract var expr =
+  Bind{binder=Lambda; var; expr}
+
 
 let rec lift_bind expr = 
   match free_var expr with
@@ -83,13 +124,41 @@ and reduce_bind var expr =
     Op(op, args)
   | other -> other
 
+let lift_binds expr = 
+  let vars = free_vars expr in
+  let rec lift_binds' expr vars =
+  match vars with
+  | [] -> expr
+  | var::vars -> let expr = reduce_bind var expr in
+    let expr = lift_binds' expr vars in
+    lambda_abstract var expr
+  in lift_binds' expr vars
+(*
+let rec lift_binds expr = 
+  let var_opt = free_var expr in
+  match var_opt with
+  | Some _ -> let expr = lift_bind expr in
+    lift_binds expr
+  | None -> expr
+*)
 let subst_term v v' term =
   if v = term then v' else term
 
 let rec subst_terms v w expr =
   match expr with
-  | Bind{binder; var; expr} ->
+  | Bind{binder=Lambda; var; expr} ->
     if var = w then
+      let expr = alpha_conv var (Var "v") expr in
+      let expr = subst_terms v w expr in
+      let expr = alpha_conv (Var "v") v expr in
+      Bind{binder=Lambda; var=v; expr}
+    else if var = v then
+      Bind{binder=Lambda; var=w; expr=subst_terms v w expr}
+    else
+      Bind{binder=Lambda; var; expr=subst_terms v w expr}
+  | Bind{binder; var; expr} -> 
+    if var = v then Bind{binder; var; expr} 
+    else if var = w then
       let expr = alpha_conv var (Var "v") expr in
       let expr = subst_terms v w expr in
       let expr = alpha_conv (Var "v") v expr in
@@ -134,23 +203,55 @@ and apply (e1 : expr) (e2 : expr) =
   | Bind{binder=Lambda; var=Var "P"; expr}, Bind {binder=Lambda; var=Var "x"; _}  
   | Bind{binder=Lambda; var=Var "P"; expr}, Bind {binder=Lambda; var=Var "y"; _}  
   | Bind{binder=Lambda; var=Var "P"; expr}, Bind {binder=Lambda; var=Var "z"; _}  
-    -> let expr = subst_expr (Var "P") e2 expr in lift_bind expr
+  | Bind{binder=Lambda; var=Var "P"; expr}, Bind {binder=Lambda; var=Var "e"; _}  
+    -> let expr = subst_expr (Var "P") e2 expr in lift_binds expr
   | Bind{binder=Lambda; var=Var "Q"; expr}, Bind {binder=Lambda; var=Var "x"; _}  
   | Bind{binder=Lambda; var=Var "Q"; expr}, Bind {binder=Lambda; var=Var "y"; _}  
   | Bind{binder=Lambda; var=Var "Q"; expr}, Bind {binder=Lambda; var=Var "z"; _}  
-    -> let expr = subst_expr (Var "Q") e2 expr in lift_bind expr
+    -> let expr = subst_expr (Var "Q") e2 expr in lift_binds expr
   | Bind {binder=Lambda; var=Var "x"; _}, Bind{binder=Lambda; var=Var "P"; expr} 
   | Bind {binder=Lambda; var=Var "y"; _}, Bind{binder=Lambda; var=Var "P"; expr} 
   | Bind {binder=Lambda; var=Var "z"; _}, Bind{binder=Lambda; var=Var "P"; expr} 
-    -> let expr = subst_expr (Var "P") e1 expr in lift_bind expr
+  | Bind{binder=Lambda; var=Var "e"; _}, Bind {binder=Lambda; var=Var "P"; expr}  
+    -> let expr = subst_expr (Var "P") e1 expr in lift_binds expr
   | Bind {binder=Lambda; var=Var "x"; _}, Bind{binder=Lambda; var=Var "Q"; expr} 
   | Bind {binder=Lambda; var=Var "y"; _}, Bind{binder=Lambda; var=Var "Q"; expr} 
   | Bind {binder=Lambda; var=Var "z"; _}, Bind{binder=Lambda; var=Var "Q"; expr} 
-    -> let expr = subst_expr (Var "Q") e1 expr in lift_bind expr
+  | Bind{binder=Lambda; var=Var "e"; _}, Bind {binder=Lambda; var=Var "Q"; expr}  
+    -> let expr = subst_expr (Var "Q") e1 expr in lift_binds expr
+  | Bind {binder=Lambda; var=Var "x"; _}, Bind {binder=Lambda; var=Var "x"; _} 
+  | Bind {binder=Lambda; var=Var "x"; _}, Bind {binder=Lambda; var=Var "y"; _} 
+    -> modifier e1 e2
+  | Bind {binder=Lambda; var=Var "e"; _}, Bind {binder=Lambda; var=Var "e"; _} 
+    -> event_modifier e1 e2
   | Bind{binder=Lambda; var; expr}, (Term term) -> subst_terms var term expr
   | (Term term), Bind{binder=Lambda; var; expr} -> subst_terms var term expr
+  | Null, Null -> Null
+  | Null, _ -> e2
+  | _, Null -> e1
   | _, _ -> let str = Printf.sprintf "ApplicationError: Cannot apply %s to %s" (fmt_expr e1) (fmt_expr e2) in
     failwith str
+
+and modifier lf1 lf2 =
+  let lf = 
+    Bind{binder=Lambda; var = Var "P"; expr=
+    Bind{binder=Lambda; var = Var "Q"; expr =
+      Op(And, [ Pred{name=Var"P"; args=[Var "x"]}
+              ; Pred{name=Var"Q"; args=[Var "x"]}
+              ])}} in
+  let lf = apply lf1 lf in
+  let lf = apply lf2 lf in
+  Bind{binder=Lambda; var=Var "x"; expr=lf}
+and event_modifier lf1 lf2 =
+  let lf = 
+    Bind{binder=Lambda; var = Var "P"; expr=
+    Bind{binder=Lambda; var = Var "Q"; expr =
+      Op(And, [ Pred{name=Var"P"; args=[Var "e"]}
+              ; Pred{name=Var"Q"; args=[Var "e"]}
+              ])}} in
+  let lf = apply lf1 lf in
+  let lf = apply lf2 lf in
+  Bind{binder=Lambda; var=Var "e"; expr=lf}
 
 let test = Bind{binder=Exists; 
                 var=Var "y"; 

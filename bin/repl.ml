@@ -9,8 +9,8 @@ let rec run () =
     | raw_input -> let tokens = Token.tokenize raw_input in
       let lexes = Lexer.lexify tokens in
       let tree, _ = Parser.parse lexes in
-      (* let lf_str = Lambda.fmt_expr tree.lf in *)
-      Parser.print_tree tree;
+      let lf = tree.lf in
+      print_endline (Lambda.fmt_expr lf);
       run ()
 
 

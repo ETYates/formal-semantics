@@ -1,12 +1,12 @@
 (** Type representing lexical categories. *)
-type cat = N | V | D | B | J | R | M | P | X | Conj
+type cat = N | V | D | J | R | M | P | S | T | B | H | X | W | C | Conj
 
 (** Type representing lexical entries. *)
 type lex = { 
   text : string;
   lemma : string;
   cat : cat;
-  sel : cat list 
+  sel : cat list;
 }
 
 (** Formats a lexical category as a string. *)
