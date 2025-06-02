@@ -1,6 +1,6 @@
-type term = Const of string | Var of string
+type term = Const of string | Var of string | Expr of expr
 
-type expr = Pred of { name : term 
+and expr = Pred of { name : term 
                  ; args : term list}
        | Bind of { binder : binder
                           ; var : term
@@ -12,9 +12,16 @@ and binder = Lambda | ForAll | Exists | Unique
 
 and op = Not | And | Or | If
 
+and statement = Decl of expr | Query of expr
+
 let fmt_binder = function
   | Lambda -> "\\" | ForAll -> "@"
-  | Exists -> "#"  | Unique -> "!"
+  | Exists -> "#"  | Unique -> "~"
+
+let fmt_op (op : op) =
+  match op with
+  | Not -> "~" | And -> "&"
+  | Or -> "|"  | If -> "->"
 
 let rec fmt_terms terms = 
   let term_strs = List.map fmt_term terms in
@@ -22,17 +29,13 @@ let rec fmt_terms terms =
 and fmt_term = function
   | Var x -> x 
   | Const a -> a
+  | Expr expr -> fmt_expr expr
 
-let fmt_op (op : op) =
-  match op with
-  | Not -> "~" | And -> "&"
-  | Or -> "|"  | If -> "->"
-
-let rec fmt_expr (expr : expr) = 
+and fmt_expr (expr : expr) = 
   match expr with
-  | Term(Const x) | Term(Var x) -> x
+  | Term term -> fmt_term term
   | Pred{name; args} -> let s = 
-    match name with Const s | Var s -> s in
+    match name with Const s | Var s -> s | Expr _ -> failwith "Pred name should not be expr." in
     let terms_str = fmt_terms args in
     Printf.sprintf "%s(%s)" s terms_str
   | Bind{binder; var=Var x; expr} -> let b = fmt_binder binder in
@@ -185,6 +188,7 @@ and subst_expr v w expr =
       expr
   | Op(op, args) -> let args = List.map (subst_expr v w) args in
     Op(op, args)
+  | Term (Expr expr) -> Term (Expr (subst_expr v w expr))
   | other -> other
 
 and alpha_conv v w expr = 
@@ -261,3 +265,7 @@ let test = Bind{binder=Exists;
                   expr=
                 Pred{name=Const "P"; 
                      args=[Var "x"; Var "y"]}}}
+
+let unique = Bind{binder=Lambda; var = Var "P"; expr=
+             Term (Expr (Bind{binder=Unique; var = Var "x"; expr=
+             Pred{name=Var"P"; args=[Var "x"]}}))}

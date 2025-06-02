@@ -36,5 +36,5 @@ val set_lf : tree -> tree
 val parse_trees : tree list -> tree * tree list
 
 (** Parses a list of lexical entries into a parse tree. *)
-val parse : lex list -> tree * tree list
+val parse : lex list -> Lambda.statement * tree
 

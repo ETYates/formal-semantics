@@ -2,5 +2,5 @@
 val prompt : string
 
 (** Starts the interactive REPL loop. *)
-val run : unit -> unit
+val run : Logic.model -> unit
 

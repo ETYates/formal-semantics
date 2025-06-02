@@ -1,8 +1,8 @@
 (** Type representing a term, which can be a constant or a variable. *)
-type term = Const of string | Var of string
+type term = Const of string | Var of string | Expr of expr
 
 (** Type representing an expression in the formal system. *)
-type expr =
+and expr =
   | Pred of { name : term; args : term list }
   | Bind of { binder : binder; var : term; expr : expr }
   | Op of op * expr list
@@ -15,6 +15,7 @@ and binder = Lambda | ForAll | Exists | Unique
 (** Type representing logical operators. *)
 and op = Not | And | Or | If
 
+and statement = Decl of expr | Query of expr
 (** Formats a binder as a string. *)
 val fmt_binder : binder -> string
 
@@ -58,3 +59,4 @@ val apply : expr -> expr -> expr
 (** Test expression example. *)
 val test : expr
 
+val unique : expr

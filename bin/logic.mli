@@ -1,18 +1,27 @@
 (** Type representing an entity. *)
-type e = string
+type e = Named of string | Anon of string
 
 (** Type representing truth values including an undefined state. *)
-type t = True | False | Undef
+type t = True | False | Unk
+type tau = Entity of e | Entities of e list | Truth of t
 
-(** Type representing different semantic categories. *)
-type sem = 
-  | Entity of e 
-  | Truth of t
-  | Unary of (e -> t) 
-  | Binary of (e -> (e -> t))
-  | Monadic of ((e -> t) -> t)
-  | Dyadic of ((e -> t) -> ((e -> t) -> t))
-  | Iotic of ((e -> t) -> e)
+type model = {entities : e list
+             ; unaries : (string * (e * bool) list) list
+             ; binaries : (string * (e * (e * bool) list) list) list}
+
+type execution = Model of model | Tau of tau
+
+type env = (Lambda.term * e) list
+
+val m : model
+
+val fmt_entity : e -> string
+
+val fmt_entities : e list -> string
+
+val fmt_model : model -> string
+
+val eval : model -> Lambda.statement -> execution
 
 (** Conjunction operation on truth values. *)
 val conj : t -> t -> t
@@ -23,3 +32,4 @@ val disj : t -> t -> t
 (** Implication operation on truth values. *)
 val impl : t -> t -> t
 
+val query : model -> env -> Lambda.expr -> tau

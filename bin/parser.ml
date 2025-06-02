@@ -112,7 +112,7 @@ let rec set_lf (tree : tree) =
     match lemma with
     | "a" -> make_bind Exists And
     | "an" -> make_bind Exists And
-    | "the" -> make_bind Unique And
+    | "the" -> Lambda.unique
     | "every" -> make_bind ForAll If
     | "some" -> make_bind Exists And
     | _ -> let name = String.lowercase_ascii lemma in 
@@ -311,6 +311,8 @@ let rec merge t1 t2 =
       | Text{text=_; lemma=_} -> 
         let t1 = {t1 with cat=V; sel=[D]; lf=Lambda.Null} in
         merge t1 t2)
+    | B, P -> let t1 = {t1 with cat=V; sel=[P; D]; lf=Lambda.Null} in
+      merge t1 t2
     | B, J -> let t1 = {t1 with cat=V; sel=[J; D]; lf=Lambda.Null} in
       merge t1 t2
 
@@ -523,5 +525,6 @@ let parse lexes =
   let tree = set_v_lf tree in
   let tree = evaluate tree in
   match stack with
-  | [] -> tree, stack
-  | _ -> tree, stack (* failwith "Syntax error." *)
+  | [{data=Text{text=_; lemma="."}; cat=S; _}] -> Decl tree.lf, tree
+  | [{data=Text{text=_; lemma="?"}; cat=S; _}] -> Query tree.lf, tree
+  | _ -> failwith "Syntax error." (* failwith "Syntax error." *)
