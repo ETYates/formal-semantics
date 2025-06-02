@@ -8,8 +8,7 @@ let rec run model =
     | "Quit!" -> ()
     | raw_input -> let tokens = Token.tokenize raw_input in
       let lexes = Lexer.lexify tokens in
-      let statement, tree = Parser.parse lexes in
-      Parser.print_tree tree;
+      let statement, _ = Parser.parse lexes in
       let execution = Logic.eval model statement in
       match execution with
       | Logic.Model m -> run m
