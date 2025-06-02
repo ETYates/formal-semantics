@@ -141,6 +141,11 @@ let rec set_lf (tree : tree) =
     {tree with lf}
   | T, Text{text=_; lemma=_} -> {tree with lf=event_lf}
   | W, Text{text=_; lemma=_} -> {tree with lf=Term (Var "x1")}
+  | X, Text{text=_; lemma=_} -> 
+    let lf = Bind{binder=Lambda; var= Var "P"; expr=
+             Bind{binder=Exists; var = Var "x";expr=
+             Pred{name=Var "P"; args=[Var "x"]}}} in
+    {tree with lf}
   | _ -> tree
 
 and make_bind binder op =

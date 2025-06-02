@@ -1,6 +1,6 @@
 open Lambda
 
-type e = Named of string | Anon of string
+type e = Named of string | Anon of string | Undef
 type t = True | False | Unk
 type tau = Entity of e | Entities of e list | Truth of t 
 
@@ -20,17 +20,10 @@ let m = { entities =[]
 let add_env var e env =
   (var, e)::env
 
-let get_env env term =
-  match term with
-  | Const c -> Named c
-  | Var _ -> List.assoc term env
-  | _ -> failwith "TODO: implement definite description"
-
 let bool_to_truth b =
   match b with true -> True | false -> False
 
-let fmt_entity e = match e with Named s -> s | Anon s -> s
-
+let fmt_entity e = match e with Named s -> s | Anon s -> s | Undef -> "?"
 let rec fmt_entities es =
   let str = fmt_entities' es in
   Printf.sprintf "<%s>" str
@@ -199,10 +192,20 @@ let rec decl m value env expr =
     let env = add_env var e env in
     decl m value env expr
   | Bind{binder=ForAll; var; expr} -> assign m.entities var m value env expr
-  | Pred{name; args} -> let get_env' = get_env env in
+  | Bind{binder=Unique; var; expr} -> let es = assign' m.entities var m env expr in
+    (match es with
+    | [] -> let e = make_entity var in
+      let m = add_entity m e in
+      let env = add_env var e env in
+      decl m value env expr
+    | [_] -> m
+    | _::_ -> failwith "plural definite description not implemented.")
+  | Pred{name; args} -> let m = decl_args m value env args in
+    let get_env' = get_env m env in
     let args = List.map get_env' args in
-    let m = add_entities m args in
-    add_pred m (fmt_term name) args value
+    if List.mem Undef args then m
+    else let m = add_entities m args in
+      add_pred m (fmt_term name) args value
   | Op (op, args) -> 
     (match op, args with
      | Not, [arg] -> let value = false in
@@ -211,13 +214,23 @@ let rec decl m value env expr =
      | And, [arg1; arg2] -> let m = decl m value env arg1 in
        decl m value env arg2
      | If, [Pred{name=Const name; args}; arg2] -> 
-       let get_env' = get_env env in
+       let get_env' = get_env m env in
        let args = List.map get_env' args in
        if (query_pred name args m) = Truth True then
          decl m value env arg2
        else m
      | _ -> failwith "Incorrect amount of args")
   | _ -> failwith "" 
+
+and decl_arg m value env arg =
+  match arg with
+  | Expr expr -> decl m value env expr
+  | _ -> m
+and decl_args m value env args =
+  match args with
+  | arg::args -> let m = decl_arg m value env arg in
+    decl_args m value env args
+  | [] -> m
 
 and assign entities var m value env expr =
   match entities with
@@ -226,14 +239,27 @@ and assign entities var m value env expr =
     let m = decl m value env expr in
     assign entities var m value env expr
 
+and get_env m env term =
+  match term with
+  | Const c -> Named c
+  | Var _ -> List.assoc term env
+  | Expr expr ->  
+    match expr with
+    | Bind{binder=Unique; var; expr} -> let es = assign' m.entities var m env expr in
+      (match es with
+       | [e] -> e
+       | [] -> Undef
+       | _::_ -> Undef)
+    | _ -> failwith "Arg must be iota statement."
 
-let rec query m (env : env) expr =
+
+and query m (env : env) expr =
   match expr with
   | Bind{binder=Lambda; var; expr} -> Entities (assign' m.entities var m env expr)
   | Bind{binder=ForAll; var; expr} -> Truth (assign_forall m.entities var m env expr)
   | Bind{binder=Exists; var; expr} -> Truth (assign_exists m.entities var m env expr)
   | Op (op, args) -> query_op op args m env
-  | Pred{name=Const name; args} -> let get_env' = get_env env in
+  | Pred{name=Const name; args} -> let get_env' = get_env m env in
     let args = List.map get_env' args in
     query_pred name args m
   | _ -> failwith ""
