@@ -61,7 +61,8 @@ let adjoin_left t1 t2 =
   let lf = Lambda.Null in
   Some {data; cat; sel; arity; lf}
 
-let event_lf = 
+let event_lf = Lambda.Null 
+  (*
   Bind { binder = Lambda
        ; var = Var "P"
        ; expr = Bind { binder = Exists
@@ -70,7 +71,7 @@ let event_lf =
                                    ; args = [Var "e"]
                                    }
                      }
-       }
+       }*)
 
 
 let rec set_lf (tree : tree) =
@@ -88,19 +89,16 @@ let rec set_lf (tree : tree) =
     let lf = (match !arity with
 
       | 0 ->  Bind{binder = Lambda; var = Var "x"; expr=
-              Bind{binder=Lambda; var = Var "e"; expr=
-              Pred{name=Const lemma; args=[Var "x"; Var "e"]}}}
+              Pred{name=Const lemma; args=[Var "x"]}}
 
       | 1 ->  Bind{binder = Lambda; var = Var "y"; expr = 
               Bind{binder = Lambda; var = Var "x"; expr=
-              Bind{binder = Lambda; var = Var "e"; expr = 
-              Pred{name=Const lemma; args=[Var "x"; Var "y"; Var "e"]}}}}
+              Pred{name=Const lemma; args=[Var "x"; Var "y"]}}}
 
       | 2 ->  Bind{binder=Lambda; var=Var "z"; expr = 
               Bind{binder= Lambda; var = Var "y"; expr=
               Bind{ binder = Lambda; var = Var "x"; expr=
-              Bind{binder = Lambda; var = Var "e"; expr=
-              Pred{ name=Const lemma; args=[Var "x"; Var "y"; Var "z"; Var "e"]}}}}}
+              Pred{ name=Const lemma; args=[Var "x"; Var "y"; Var "z"]}}}}
 
       | _ -> failwith "Arity of verb is > 3.") 
     in {tree with lf}
@@ -182,7 +180,7 @@ let rec set_v_lf t =
     let t2 = set_v_lf t2 in
     let data = Trees(t1, t2) in
     {t with data}
-  | {data = Text _; cat = V; _} -> set_lf t
+  | {data = Text {text=_; lemma}; cat = V; _} -> if lemma = "be" then t else set_lf t
   | {data = Text _; _} -> t
 
 let lex_to_tree lex =
@@ -303,9 +301,16 @@ let rec merge t1 t2 =
       let arity = ref 0 in let lf = Lambda.Null in
       Some {data; cat; sel; arity; lf}
 
-    | H, D
-    | B, D -> let t1 = {t1 with cat=V; sel=[D]; lf=Lambda.Null} in 
-      merge t1 t2
+    | H, D -> let t1 = {t1 with cat=V; sel=[D]; lf=Lambda.Null} in merge t1 t2
+    | B, D -> 
+      (match t2.data with
+      | Trees(t3,t4) -> let t1 = {t1 with cat=V; sel=[D]; lf=Lambda.Null} in 
+        let t3 = {t3 with lf=Lambda.Null} in
+        let t2 = {t2 with data=Trees(t3,t4)} in
+        merge t1 t2
+      | Text{text=_; lemma=_} -> 
+        let t1 = {t1 with cat=V; sel=[D]; lf=Lambda.Null} in
+        merge t1 t2)
     | B, J -> let t1 = {t1 with cat=V; sel=[J; D]; lf=Lambda.Null} in
       merge t1 t2
 
@@ -469,6 +474,7 @@ let rec evaluate t =
     let t1 = evaluate t1 in
     let t2 = evaluate t2 in
     (match t1.cat, t2.cat with
+    (*
     | V, P -> let var_opt = free_var' t2.lf in
       (match var_opt with
       | Some var -> let lf = subst_terms var (Var "e") t2.lf in
@@ -476,7 +482,7 @@ let rec evaluate t =
         let lf = Lambda.apply t1.lf lf in
         {data=Trees(t1,t2); cat=t.cat; sel=t.sel; arity=t.arity; lf}
       | None -> let lf = Lambda.apply t1.lf t2.lf in
-        {data=Trees(t1,t2); cat=t.cat; sel=t.sel; arity=t.arity; lf})
+        {data=Trees(t1,t2); cat=t.cat; sel=t.sel; arity=t.arity; lf})*)
     | W, _ -> (match t1.lf with
                | Term (Var x) -> let var = Var x in 
                  let lf = Bind{binder=Lambda; var=var; expr=t2.lf} in
@@ -484,9 +490,9 @@ let rec evaluate t =
                | _ -> failwith "Wh should be var.")
     | V, J -> (match t1.data with
               | Text{text=_; lemma="be"} ->
-                let lf = Lambda.add_e t2.lf in
-                let lf = Lambda.abstract_e lf in
-                {data=Trees(t1,t2); cat=t.cat; sel=t.sel; arity=t.arity; lf}
+                (*let lf = Lambda.add_e t2.lf in
+                let lf = Lambda.abstract_e lf in*)
+                {data=Trees(t1,t2); cat=t.cat; sel=t.sel; arity=t.arity; lf=t2.lf}
               | _ -> let lf = Lambda.apply t1.lf t2.lf in
                 let data = Trees(t1,t2) in 
                 {t with data; lf})
