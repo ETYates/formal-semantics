@@ -77,12 +77,12 @@ let rec fmt_triples ts =
 let fmt_unary (unary : string * ('a list)) =
   let name, pairs = unary in
   let args_str = fmt_pairs pairs in
-  Printf.sprintf "%s -> %s" name args_str
+  Printf.sprintf "%s : %s" name args_str
 
 let fmt_binary (binary : string * ('a list)) =
   let name, triples = binary in
   let args_str = fmt_triples triples in
-  Printf.sprintf "%s -> %s" name args_str
+  Printf.sprintf "%s : %s" name args_str
 
 let rec fmt_unaries unaries =
   match unaries with
