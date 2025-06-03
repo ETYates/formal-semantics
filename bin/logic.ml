@@ -20,20 +20,33 @@ let m = { entities =[]
 let add_env var e env =
   (var, e)::env
 
+let fmt_truth t =
+  match t with
+  | True -> "Yes"
+  | False -> "No"
+  | Unk -> "Unknown"
+
 let bool_to_truth b =
   match b with true -> True | false -> False
 
-let fmt_entity e = match e with Named s -> s | Anon s -> s | Undef -> "?"
+let fmt_entity e = match e with Named s -> String.capitalize_ascii s | Anon s -> s | Undef -> "?"
+
 let rec fmt_entities es =
   let str = fmt_entities' es in
-  Printf.sprintf "<%s>" str
-
+  Printf.sprintf "%s" str
 and fmt_entities' es = 
   match es with
   | [] -> ""
   | [e] -> fmt_entity e
+  | [e; e'] -> Printf.sprintf "%s and %s" (fmt_entity e) (fmt_entity e')
   | e::es -> let e_str = fmt_entity e in
     Printf.sprintf "%s, %s" e_str (fmt_entities' es)
+
+let fmt_tau tau =
+  match tau with
+  | Entity e -> fmt_entity e
+  | Entities es -> fmt_entities es
+  | Truth t -> fmt_truth t
 
 let fmt_pair (p : e * bool) =
   let (entity, value) = p in
@@ -86,7 +99,7 @@ let rec fmt_binaries binaries =
     Printf.sprintf "%s\n%s" binary_str (fmt_binaries binaries)
 
 let fmt_model (m : model) =
-  let entities_str = fmt_entities m.entities in
+  let entities_str = Printf.sprintf "<%s>" (fmt_entities m.entities) in
   let unaries_str = fmt_unaries m.unaries in
   let binaries_str = fmt_binaries m.binaries in
   Printf.sprintf "%s\n%s\n%s" entities_str unaries_str binaries_str
@@ -220,7 +233,7 @@ let rec decl m value env expr =
          decl m value env arg2
        else m
      | _ -> failwith "Incorrect amount of args")
-  | _ -> failwith "" 
+  | _ -> let message = Printf.sprintf "DeclError: Lambda.expr %s cannot be declared." (Lambda.fmt_expr expr) in failwith message 
 
 and decl_arg m value env arg =
   match arg with
@@ -262,7 +275,7 @@ and query m (env : env) expr =
   | Pred{name=Const name; args} -> let get_env' = get_env m env in
     let args = List.map get_env' args in
     query_pred name args m
-  | _ -> failwith ""
+  | _ -> let message = Printf.sprintf "QueryError: cannot query Lambda.expr %s" (Lambda.fmt_expr expr) in failwith message
 and query_op op args m env =
   let query' = query m env in
   let args = List.map query' args in

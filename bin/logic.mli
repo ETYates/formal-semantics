@@ -21,6 +21,8 @@ val fmt_entities : e list -> string
 
 val fmt_model : model -> string
 
+val fmt_tau : tau -> string
+
 val eval : model -> Lambda.statement -> execution
 
 (** Conjunction operation on truth values. *)
