@@ -127,13 +127,13 @@ let rec set_lf (tree : tree) =
                    ; args=[Var "x"]}
         } in {tree with lf}
 
-  | R, Text{text=_; lemma} ->
-    let lf = Bind{ binder=Lambda
-                 ; var = Var "e"
-                 ; expr=Pred{name=Const lemma
-                             ; args=[Var "e"]}
-                 } in {tree with lf}
-
+  | R, Text{text=_; lemma} -> 
+    if lemma = "not" then 
+      let lf = Bind{binder=Lambda; var=Var "p"; expr=
+      Op(Not, [Term (Var "p")])} in
+      {tree with lf}                                  
+    else 
+      {tree with lf=Lambda.Null}
   | P, Text{text=_; lemma} ->
     let lf = Bind { binder = Lambda; var = Var "y"; expr=
              Bind { binder = Lambda; var = Var "x"; expr=
@@ -218,6 +218,24 @@ let make_trace d =
     delete_lfs d
   | _ -> failwith "Failed to make trace. Not a determiner."
 
+let rec get_v_lemma t =
+  match t.data, t.cat with
+  | Trees(t1,t2), _ -> if t1.cat = V then get_v_lemma t1 else
+                       if t2.cat = V then get_v_lemma t2 else
+                       ""
+  | Text{text=_; lemma}, V -> lemma
+  | Text{text=_; lemma=_}, _ -> ""
+
+let rec get_sel (t : tree) =
+  match t with
+  | {data=Text _; cat=V; _} -> t.sel
+  | {data=Text _; _} -> []
+  | {data=Trees(_,_); cat=V; _} -> t.sel
+  | {data=Trees(t1,t2); _} -> 
+    let sel = get_sel t1 in
+    match sel with
+    | [] -> get_sel t2
+    | _ -> sel
 
 let rec merge t1 t2 =
   let tl = function [] -> [] | _::t -> t in
@@ -225,8 +243,21 @@ let rec merge t1 t2 =
     match t1.cat, t2.cat with
     | V, D -> 
       if t2.sel = [] then
-        let c = if (t1.cat = V) && (t2.cat = D) then 1 else 0 in
-        let arity = t1.arity in arity := !arity + c;
+        if get_v_lemma t1 = "be" then
+          let t2 = match t2.data with
+                   | Trees(t3,t4) -> let t3 = {t3 with lf=Lambda.Null} in
+                     let data = Trees(t3,t4) in 
+                     {t2 with data; lf=Lambda.Null}
+                   | Text{text=_; lemma=_} -> t2
+          in let arity = t1.arity in arity := !arity + 1;
+          Some { data=Trees(t1,t2)
+                 ; cat = t1.cat
+                 ; sel = t1.sel
+                 ; arity
+                 ; lf = Lambda.Null}
+
+        else
+        let arity = t1.arity in arity := !arity + 1;
         let t = { data = Trees(t1, t2)
                 ; cat = t1.cat
                 ; sel = if t1.cat = V then t1.sel else tl t1.sel
@@ -308,18 +339,31 @@ let rec merge t1 t2 =
 
     | H, D -> let t1 = {t1 with cat=V; sel=[D]; lf=Lambda.Null} in merge t1 t2
     | B, D -> 
-      (match t2.data with
-      | Trees(t3,t4) -> let t1 = {t1 with cat=V; sel=[D]; lf=Lambda.Null} in 
-        let t3 = {t3 with lf=Lambda.Null} in
-        let t2 = {t2 with data=Trees(t3,t4)} in
-        merge t1 t2
-      | Text{text=_; lemma=_} -> 
-        let t1 = {t1 with cat=V; sel=[D]; lf=Lambda.Null} in
-        merge t1 t2)
+      let t2 = match t2.data with
+               | Text _ -> t2
+               | Trees(t3,t4) -> let t3 = {t3 with lf=Lambda.Null} in
+                 let data = Trees(t3,t4) in
+                 {t2 with data}
+      in
+      if is_terminal t1 then
+        let t3 = {data=Text{text=""; lemma="be"}; cat=V; sel=[D]; arity = ref 0; lf = Lambda.Null} in
+        (match merge t3 t2 with
+         | Some t3 -> merge t1 t3
+         | None -> failwith "Could not merge verb trace with object.")
+      else
+        Some (insert_object t2 t1)
+    | B, R -> let t3 = {data=Text{text=""; lemma="be"}; cat=V; sel=[D]; arity = ref 0; lf = Lambda.Null} in
+      let t2_opt = merge t2 t3 in
+      (match t2_opt with
+       | Some t2 -> merge t1 t2
+       | None -> failwith "Could not merge B with verb phrase.")
     | B, P -> let t1 = {t1 with cat=V; sel=[P; D]; lf=Lambda.Null} in
       merge t1 t2
-    | B, J -> let t1 = {t1 with cat=V; sel=[J; D]; lf=Lambda.Null} in
-      merge t1 t2
+    | B, J -> let t3 = {data=Text{text=""; lemma="be"}; cat=V; sel=[J]; arity = ref 0; lf = Lambda.Null} in
+      let t2_opt = merge t3 t2 in
+      (match t2_opt with
+       | Some t2 -> merge t1 t2
+       | None -> failwith "Could not merge B with verb phrase.")
 
     | X, V -> let t1 = {t1 with cat=D} in 
       let arity = t2.arity in arity := !arity - 1;
@@ -338,6 +382,30 @@ let rec merge t1 t2 =
         ; arity = t2.arity
         ; lf = Lambda.Null} in Some t
       | _ -> None)
+
+    | W, B -> 
+      let trace = {data=Text{text="";lemma=""}
+                  ;cat = D
+                  ;sel = []
+                  ;arity = ref 0
+                  ; lf = Term (Var "x1")} in
+      let c = { data= Text {text=""; lemma=""}
+              ; cat = C
+              ; sel =[T; W]
+              ; arity = ref 0
+              ; lf=Lambda.Null} in 
+      (match get_sel t2 with
+       | [D] -> let t2 = insert_trace' trace t2 in
+         let t2 = change_cats t2 t2.cat T in
+         (match merge c t2 with
+          | Some t2 -> merge t1 t2
+          | None -> None)
+       | [] -> let t2 = insert_object trace t2 in
+         let t2 = change_cats t2 t2.cat T in
+         (match merge c t2 with
+          | Some t2 -> merge t1 t2
+          | None -> None)
+       | _ -> failwith "Incorrect selection in B.")
 
     | W, V -> if t2.sel = [D] then
       let trace = {data=Text{text="";lemma=""}

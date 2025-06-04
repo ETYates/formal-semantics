@@ -20,7 +20,7 @@ let fmt_binder = function
 
 let fmt_op (op : op) =
   match op with
-  | Not -> "~" | And -> "&"
+  | Not -> "!" | And -> "&"
   | Or -> "|"  | If -> "->"
 
 let rec fmt_terms terms = 
@@ -189,6 +189,7 @@ and subst_expr v w expr =
   | Op(op, args) -> let args = List.map (subst_expr v w) args in
     Op(op, args)
   | Term (Expr expr) -> Term (Expr (subst_expr v w expr))
+  | Term var -> if v = var then w else Term var
   | other -> other
 
 and alpha_conv v w expr = 
@@ -230,6 +231,8 @@ and apply (e1 : expr) (e2 : expr) =
     -> event_modifier e1 e2
   | Bind{binder=Lambda; var; expr}, (Term term) -> subst_terms var term expr
   | (Term term), Bind{binder=Lambda; var; expr} -> subst_terms var term expr
+  | Bind{binder=Lambda; var=Var "p"; expr}, Pred _ ->
+    let expr = subst_expr (Var "p") e2 expr in lift_binds expr
   | Null, Null -> Null
   | Null, _ -> e2
   | _, Null -> e1

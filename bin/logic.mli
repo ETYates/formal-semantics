@@ -7,7 +7,8 @@ type tau = Entity of e | Entities of e list | Truth of t
 
 type model = {entities : e list
              ; unaries : (string * (e * bool) list) list
-             ; binaries : (string * (e * (e * bool) list) list) list}
+             ; binaries : (string * (e * (e * bool) list) list) list
+             ; theory : Lambda.expr list}
 
 type execution = Model of model | Tau of tau
 

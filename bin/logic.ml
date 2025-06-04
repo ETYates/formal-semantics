@@ -6,7 +6,8 @@ type tau = Entity of e | Entities of e list | Truth of t
 
 type model = { entities : e list
              ; unaries : (string * (e * bool) list) list
-             ; binaries : (string * (e * (e * bool) list) list) list}
+             ; binaries : (string * (e * (e * bool) list) list) list
+             ; theory : expr list}
 
 type execution = Model of model | Tau of tau
 
@@ -15,6 +16,7 @@ type env = (term * e) list
 let m = { entities =[]
         ; unaries  =[]
         ; binaries =[]
+        ; theory = []
         }
 
 let add_env var e env =
@@ -98,11 +100,17 @@ let rec fmt_binaries binaries =
   | binary::binaries -> let binary_str = fmt_binary binary in
     Printf.sprintf "%s\n%s" binary_str (fmt_binaries binaries)
 
+let fmt_theory theory =
+  let theory_str = List.map Lambda.fmt_expr theory in
+  let str = String.concat ", " theory_str in
+  Printf.sprintf "{%s}" str
+
 let fmt_model (m : model) =
   let entities_str = Printf.sprintf "<%s>" (fmt_entities m.entities) in
   let unaries_str = fmt_unaries m.unaries in
   let binaries_str = fmt_binaries m.binaries in
-  Printf.sprintf "%s\n%s\n%s" entities_str unaries_str binaries_str
+  let theory_str = fmt_theory m.theory in
+  Printf.sprintf "%s\n%s\n%s\n%s" entities_str unaries_str binaries_str theory_str
 
 let conj = fun x -> fun y ->
   match x, y with
@@ -121,6 +129,12 @@ let impl = fun x -> fun y ->
   | True, True -> True | False, True -> True
   | True, False -> False | False, False -> True
   | _ -> Unk
+
+let neg = fun x ->
+  match x with
+  | True -> False
+  | False -> True
+  | Unk -> Unk
 
 let add_pred m (name : string) (args : e list) (value : bool) =
   match args with
@@ -286,6 +300,7 @@ and query_op op args m env =
     Truth value
   | If, [Truth arg1; Truth arg2] -> let value = impl arg1 arg2 in
     Truth value
+  | Not, [Truth arg] -> let value = neg arg in Truth value
   | _ -> failwith "Incorrect arguments."
 
 and assign' entities var m env expr =
@@ -332,6 +347,7 @@ and assign_exists entities var m env expr =
 let eval m statement =
   match statement with
   | Decl expr -> let value = true in
+    let m = {m with theory=expr::m.theory} in
     let env = [] in
     Model (decl m value env expr)
   | Query expr -> let env = [] in
