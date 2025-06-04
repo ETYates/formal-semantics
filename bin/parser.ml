@@ -17,19 +17,12 @@ let rec print_tree ?(indent=0) tree =
   match tree.data with
   | Text { text; _ } ->
     (match text with
-    | "" -> Printf.printf "%s[ %s : %s ]\n" spaces (fmt_cat tree.cat) (Lambda.fmt_expr tree.lf)
-    | _ -> Printf.printf "%s[ %s : %s %s ]\n" spaces text (fmt_cat tree.cat) (Lambda.fmt_expr tree.lf))
+    | "" -> Printf.printf "%s[ %s %s : %s ]\n" spaces (fmt_cat tree.cat) (fmt_sel tree.sel) (Lambda.fmt_expr tree.lf)
+    | _ -> Printf.printf "%s[ %s : %s %s %s ]\n" spaces text (fmt_cat tree.cat) (fmt_sel tree.sel) (Lambda.fmt_expr tree.lf))
   | Trees (left, right) -> Printf.printf "%s%s [ %s\n" spaces (fmt_cat tree.cat) (Lambda.fmt_expr tree.lf);
       print_tree ~indent:(indent + 1) left;
       print_tree ~indent:(indent + 1) right;
       print_endline (Printf.sprintf "%s]" spaces)
-
-let rec fmt_tree tree =
-  let {data; cat; sel; arity=_; lf=_} = tree in 
-  match data with
-  | Text {text; _} -> Printf.sprintf "(%s: %s %s)" text (fmt_cat cat) (fmt_sel sel) 
-  | Trees(left, right) -> Printf.sprintf "(%s %s: %s%s)" (fmt_cat cat) (fmt_sel sel) 
-    (fmt_tree left) (fmt_tree right)
 
 and fmt_sel sel =
   match sel with
@@ -317,6 +310,8 @@ let rec merge t1 t2 =
 
     | N, P | V, R -> adjoin_right t1 t2
 
+    | N, C -> adjoin_right t1 t2
+
     | R, V | R, T | R, B | R, H | J, N -> adjoin_left t1 t2
 
     | D, H
@@ -359,7 +354,7 @@ let rec merge t1 t2 =
        | None -> failwith "Could not merge B with verb phrase.")
     | B, P -> let t1 = {t1 with cat=V; sel=[P; D]; lf=Lambda.Null} in
       merge t1 t2
-    | B, J -> let t3 = {data=Text{text=""; lemma="be"}; cat=V; sel=[J]; arity = ref 0; lf = Lambda.Null} in
+    | B, J -> let t3 = {data=Text{text=""; lemma="be"}; cat=V; sel=[J; D]; arity = ref 0; lf = Lambda.Null} in
       let t2_opt = merge t3 t2 in
       (match t2_opt with
        | Some t2 -> merge t1 t2

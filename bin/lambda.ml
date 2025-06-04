@@ -220,11 +220,13 @@ and apply (e1 : expr) (e2 : expr) =
   | Bind{binder=Lambda; var=Var "e"; _}, Bind {binder=Lambda; var=Var "P"; expr}  
     -> let expr = subst_expr (Var "P") e1 expr in lift_binds expr
   | Bind {binder=Lambda; var=Var "x"; _}, Bind{binder=Lambda; var=Var "Q"; expr} 
+  | Bind {binder=Lambda; var=Var "x1"; _}, Bind{binder=Lambda; var=Var "Q"; expr} 
   | Bind {binder=Lambda; var=Var "y"; _}, Bind{binder=Lambda; var=Var "Q"; expr} 
   | Bind {binder=Lambda; var=Var "z"; _}, Bind{binder=Lambda; var=Var "Q"; expr} 
   | Bind{binder=Lambda; var=Var "e"; _}, Bind {binder=Lambda; var=Var "Q"; expr}  
     -> let expr = subst_expr (Var "Q") e1 expr in lift_binds expr
   | Bind {binder=Lambda; var=Var "x"; _}, Bind {binder=Lambda; var=Var "x"; _} 
+  | Bind {binder=Lambda; var=Var "x"; _}, Bind {binder=Lambda; var=Var "x1"; _} 
   | Bind {binder=Lambda; var=Var "x"; _}, Bind {binder=Lambda; var=Var "y"; _} 
     -> modifier e1 e2
   | Bind {binder=Lambda; var=Var "e"; _}, Bind {binder=Lambda; var=Var "e"; _} 

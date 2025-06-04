@@ -17,9 +17,6 @@ and tree = {
 (** Prints a tree with indentation for structure visualization. *)
 val print_tree : ?indent:int -> tree -> unit
 
-(** Formats a tree as a string. *)
-val fmt_tree : tree -> string
-
 (** Determines if the first tree selects the second. *)
 val selects : tree -> tree -> bool
 
