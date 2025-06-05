@@ -17,13 +17,14 @@ let rec print_tree ?(indent=0) tree =
   match tree.data with
   | Text { text; _ } ->
     (match text with
-    | "" -> Printf.printf "%s[ %s %s : %s ]\n" spaces (fmt_cat tree.cat) (fmt_sel tree.sel) (Lambda.fmt_expr tree.lf)
-    | _ -> Printf.printf "%s[ %s : %s %s %s ]\n" spaces text (fmt_cat tree.cat) (fmt_sel tree.sel) (Lambda.fmt_expr tree.lf))
-  | Trees (left, right) -> Printf.printf "%s%s [ %s\n" spaces (fmt_cat tree.cat) (Lambda.fmt_expr tree.lf);
+    | "" -> Printf.printf "%s[ %s |- %s : %s ]\n" spaces (fmt_cat tree.cat) (Lambda.fmt_expr tree.lf) (Lambda.fmt_typ tree.lf)
+    | _ -> Printf.printf "%s[ %s : %s %s : %s ]\n" spaces text (fmt_cat tree.cat) (Lambda.fmt_expr tree.lf) (Lambda.fmt_typ tree.lf))
+  | Trees (left, right) -> Printf.printf "%s%s [ %s : %s\n" spaces (fmt_cat tree.cat) (Lambda.fmt_expr tree.lf) (Lambda.fmt_typ tree.lf);
       print_tree ~indent:(indent + 1) left;
       print_tree ~indent:(indent + 1) right;
       print_endline (Printf.sprintf "%s]" spaces)
 
+(*
 and fmt_sel sel =
   match sel with
   | [] -> ""
@@ -31,6 +32,7 @@ and fmt_sel sel =
   | sel -> let sel_strs = List.map fmt_cat sel in
     let str = String.concat "," sel_strs in
     Printf.sprintf "=[%s]" str
+*)
 
 let selects t1 t2 =
   match t1.sel with

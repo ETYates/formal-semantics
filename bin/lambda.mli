@@ -34,6 +34,8 @@ val fmt_op : op -> string
 (** Formats an expression as a string. *)
 val fmt_expr : expr -> string
 
+val fmt_typ : expr -> string
+
 (** Finds a free variable in an expression, if it exists. *)
 val free_var : expr -> term option
 val free_var' : expr -> term option

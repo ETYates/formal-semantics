@@ -50,6 +50,27 @@ and fmt_expr (expr : expr) =
   | _ -> let err = Printf.sprintf "FORMAT ERROR: Cannot format lambda expressions of variant %s" (fmt_expr expr) in
     failwith err
 
+let rec fmt_typ expr = 
+  match expr with
+  | Bind{binder=Lambda; var; expr} ->
+    let str = match var with
+      | Var "P" | Var "Q" -> "(e -> t)"
+      | Var "x" | Var "y" | Var "z" -> "e" 
+      | Var "p" | Var "q" -> "t" 
+      | _ -> "e" in
+    let typ_str = fmt_typ expr in
+    let str = match typ_str with
+    | "" -> Printf.sprintf "%s" str
+    | _ -> Printf.sprintf "%s -> %s" str typ_str in
+    str
+  | Bind{binder=Unique; var=_; expr=_} -> "e"
+  | Bind{binder=Exists; var=_; expr=_} -> "t"
+  | Bind{binder=ForAll; var=_; expr=_} -> "t"
+  | Pred _ -> "t"
+  | Term _ -> "e"
+  | Op _ -> "t"
+  | Null -> ""
+
 (*
 let print_expr expr =
   let expr_str = fmt_expr expr in
