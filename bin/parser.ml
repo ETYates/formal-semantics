@@ -362,23 +362,10 @@ let rec merge t1 t2 =
        | Some t2 -> merge t1 t2
        | None -> failwith "Could not merge B with verb phrase.")
 
-    | X, V -> let t1 = {t1 with cat=D} in 
-      let arity = t2.arity in arity := !arity - 1;
-      let t2 = {t2 with sel=[]; arity} in
-      let t3 = { data = Text {text=""; lemma=""}
-               ; cat = T
-               ; sel = [V; D]
-               ; arity=ref 0
-               ; lf=event_lf} in
-      let t_opt = merge t3 t2 in
-      (match t_opt with
-      | Some t2 -> let t = 
-        {data = Trees(t1,t2)
-        ; cat = t2.cat
-        ; sel = []
-        ; arity = t2.arity
-        ; lf = Lambda.Null} in Some t
-      | _ -> None)
+    | X, B -> let t1 = {t1 with cat=D} in 
+      let t2 = {t2 with sel=[D]} in
+      let t2 = change_cats t2 t2.cat T in
+      merge t1 t2
 
     | W, B -> 
       let trace = {data=Text{text="";lemma=""}

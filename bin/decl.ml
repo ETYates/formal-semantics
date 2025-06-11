@@ -41,12 +41,12 @@ let add_pred m name arity =
 
 let counter = ref 0
 
-let new_entity = counter := (!counter) + 1;
+let new_entity () = counter := (!counter) + 1;
   let name = "x" ^ (string_of_int !counter) in
   Anon name
 
 let decl_exists m =
-  fun p -> let e = new_entity in
+  fun p -> let e = new_entity () in
   let m = add_entity m e in
   let m = p e m in
   m
