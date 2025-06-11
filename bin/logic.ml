@@ -1,26 +1,30 @@
 open Lambda
 
 type e = Named of string | Anon of string | Undef
-type t = True | False | Unk
-type tau = Entity of e | Entities of e list | Truth of t 
+and t = True | False | Unk
+and tau = Entity of e 
+        | Entities of e list
+        | Truth of t 
+        | Unary of (e -> t)
+        | Binary of (e -> (e -> t))
+        | Trinary of (e -> (e -> (e -> t)))
+        | Quant of ((e -> t) -> t)
+        | Iota of ((e -> t) -> e)
+        | UnOp of (t -> t)
+        | BinOp of (t -> (t -> t))
 
-type model = { entities : e list
+type m = { entities : e list
              ; unaries : (string * (e * bool) list) list
              ; binaries : (string * (e * (e * bool) list) list) list
              ; theory : expr list}
 
-type execution = Model of model | Tau of tau
-
-type env = (term * e) list
+type execution = Model of m | Tau of tau
 
 let m = { entities =[]
         ; unaries  =[]
         ; binaries =[]
         ; theory = []
         }
-
-let add_env var e env =
-  (var, e)::env
 
 let fmt_truth t =
   match t with
@@ -30,6 +34,11 @@ let fmt_truth t =
 
 let bool_to_truth b =
   match b with true -> True | false -> False
+
+let t_to_bool t = 
+  match t with 
+  | True -> true
+  | Unk | False -> false
 
 let fmt_entity e = match e with Named s -> String.capitalize_ascii s | Anon s -> s | Undef -> "?"
 
@@ -49,6 +58,13 @@ let fmt_tau tau =
   | Entity e -> fmt_entity e
   | Entities es -> fmt_entities es
   | Truth t -> fmt_truth t
+  | Unary _ -> "e -> t"
+  | Binary _ -> "e -> (e -> t)"
+  | Trinary _ -> "(e -> (e -> (e -> t)))"
+  | Quant _ -> "((e -> t) -> t)"
+  | Iota _ -> "((e -> t) -> e)"
+  | UnOp _ -> "(t -> t)"
+  | BinOp _ -> "(t -> (t -> t))"
 
 let fmt_pair (p : e * bool) =
   let (entity, value) = p in
@@ -105,250 +121,149 @@ let fmt_theory theory =
   let str = String.concat ", " theory_str in
   Printf.sprintf "{%s}" str
 
-let fmt_model (m : model) =
+let fmt_model (m : m) =
   let entities_str = Printf.sprintf "<%s>" (fmt_entities m.entities) in
   let unaries_str = fmt_unaries m.unaries in
   let binaries_str = fmt_binaries m.binaries in
   let theory_str = fmt_theory m.theory in
   Printf.sprintf "%s\n%s\n%s\n%s" entities_str unaries_str binaries_str theory_str
 
-let conj = fun x -> fun y ->
+let assoc (k : 'a) (lst : ('a * 'b list) list) : 'b list =
+  match List.assoc_opt k lst with
+  | Some value -> value
+  | None -> []
+
+let add_assoc (k : 'a) (value : 'b) (l : ('a * 'b) list) : ('a * 'b) list = 
+  let l = List.remove_assoc k l in (k, value)::l
+
+let rec conj = fun x -> fun y ->
   match x, y with
   | True, True -> True | True, False -> False
   | False, True -> False | False, False -> False
   | _ -> Unk
 
-let disj = fun x -> fun y ->
+and disj = fun x -> fun y ->
   match x, y with
   | True, True -> True | True, False -> True
   | False, True -> True | False, False -> False
   | _ -> Unk
 
-let impl = fun x -> fun y -> 
+and impl = fun x -> fun y -> 
   match x, y with
   | True, True -> True | False, True -> True
   | True, False -> False | False, False -> True
   | _ -> Unk
 
-let neg = fun x ->
+and neg = fun x ->
   match x with
   | True -> False
   | False -> True
   | Unk -> Unk
 
-let add_pred m (name : string) (args : e list) (value : bool) =
+and exists m =
+  let f p x = t_to_bool (p x) in
+  fun p -> bool_to_truth (List.exists (f p) m.entities)
+    
+and forall m =
+  let f p x = t_to_bool (p x) in
+  fun p -> bool_to_truth (List.for_all (f p) m.entities)
+
+and unique m =
+  let f p x = t_to_bool (p x) in
+  fun p -> 
+  match List.filter (f p) m.entities with
+  | [] -> Undef
+  | [e] -> e
+  | _ -> Undef
+
+and pred m name args = 
   match args with
-  | [arg] -> let es = List.assoc_opt name m.unaries in
-    (match es with
-    | Some es -> let es = (arg, value)::es in
-      let unary = (name, es) in
-      let unaries = List.remove_assoc name m.unaries in
-      let unaries = unary::unaries in
-      {m with unaries}
-    | None -> let unary = (name, [(arg, value)]) in
-      let unaries = unary::m.unaries in
-      {m with unaries})
-  | [arg1; arg2] -> let es = List.assoc_opt name m.binaries in
-    (match es with
-    | Some es ->
-      (match List.assoc_opt arg1 es with
-      | Some es' -> let es' = (arg2,value)::es' in
-        let es = List.remove_assoc arg1 es in
-        let es = (arg1,es')::es in
-        let binary = (name, es) in                             
-        let binaries = List.remove_assoc name m.binaries in
-        let binaries = binary::binaries in
-        {m with binaries}
-      | None -> let es = (arg1, [(arg2, value)])::es in
-        let binary = (name, es) in
-        let binaries = List.remove_assoc name m.binaries in
-        let binaries = binary::binaries in
-        {m with binaries})
-    | None -> let binary = (name, [(arg1, [(arg2, value)])]) in
-      let binaries = binary::m.binaries in
-      {m with binaries})
-  | _ -> failwith "too many or too little args"
-
-let add_entity m e = 
-  if List.mem e m.entities then m
-  else let entities = e::m.entities in
-    {m with entities}
-
-let rec add_entities m es =
-  match es with
-  | [] -> m
-  | [e] -> add_entity m e
-  | e::es -> let m = add_entity m e in
-    add_entities m es
-
-let counter = ref 0
-
-let make_entity term =
-  match term with
-  | Const name -> Named name
-  | Var _ -> counter := (!counter) + 1;
-    let name = "x" ^ (string_of_int !counter) in
-    Anon name
-  | Expr _ -> failwith "definite description not implemented"
-
-let query_pred name args m =
-  match args with
-  | [arg] -> let pairs = List.assoc_opt name m.unaries in
-    (match pairs with
-     | Some pairs -> 
-       (match List.assoc_opt arg pairs with
-       | Some value -> Truth (bool_to_truth value)
-       | None -> Truth Unk) 
+  | [Anon _] -> let i = assoc name m.unaries in 
+    let f = fun x -> 
+    (match List.assoc_opt x i with
+     | Some t -> bool_to_truth t
+     | None -> Unk) in Unary f
+  | [Named c] -> let i = assoc name m.unaries in 
+    let e = Named c in
+    (match List.assoc_opt e i with
+     | Some t -> Truth (bool_to_truth t)
      | None -> Truth Unk)
-  | [arg1; arg2] -> let triples = List.assoc_opt name m.binaries in
-    (match triples with 
-     | Some triples -> 
-       (match List.assoc_opt arg1 triples with
-        | Some pairs -> 
-          (match List.assoc_opt arg2 pairs with
-           | Some value -> Truth (bool_to_truth value)
-           | None -> Truth Unk)
-        | None -> Truth Unk)
-     | None -> Truth Unk)
-  | _ -> failwith "Incorrect ARGS"
+  | [Anon _; Anon _] -> let i = assoc name m.binaries in
+    let f = fun y -> fun x -> 
+    let i' = assoc x i in
+    (match List.assoc_opt y i' with
+     | Some t -> bool_to_truth t
+     | None -> Unk) in Binary f
+  | [Named c; Anon _] -> let i = assoc name m.binaries in
+    let e = Named c in
+    let f = fun x -> fun y -> 
+    let i' = assoc x i in
+    (match List.assoc_opt y i' with
+     | Some t -> bool_to_truth t
+     | None -> Unk) in Unary (f e)
+  | [Anon _; Named c] -> let i = assoc name m.binaries in
+    let e = Named c in
+    let f = fun y -> fun x -> 
+    let i' = assoc x i in
+    (match List.assoc_opt y i' with
+     | Some t -> bool_to_truth t
+     | None -> Unk) in Unary (f e)
+  | [Named c1; Named c2] -> let i = assoc name m.binaries in
+    let e1 = Named c1 in let e2 = Named c2 in
+    let f = fun y -> fun x -> 
+    let i' = assoc x i in
+    (match List.assoc_opt y i' with
+     | Some t -> bool_to_truth t
+     | None -> Unk) in Truth (f e1 e2)
+  | _ -> failwith "Incorrect arity in predicate."
 
-let rec decl m value env expr =
+and binop_to_func op =
+  match op with
+  | And -> conj
+  | Or -> disj
+  | If -> impl
+  | _ -> failwith "BinOp only."
+
+and eval m expr =
   match expr with
-  | Bind{binder=Exists; var; expr} -> let e = make_entity var in
-    let m = add_entity m e in
-    let env = add_env var e env in
-    decl m value env expr
-  | Bind{binder=ForAll; var; expr} -> assign m.entities var m value env expr
-  | Bind{binder=Unique; var; expr} -> let es = assign' m.entities var m env expr in
-    (match es with
-    | [] -> let e = make_entity var in
-      let m = add_entity m e in
-      let env = add_env var e env in
-      decl m value env expr
-    | [_] -> m
-    | _::_ -> failwith "plural definite description not implemented.")
-  | Pred{name; args} -> let m = decl_args m value env args in
-    let get_env' = get_env m env in
-    let args = List.map get_env' args in
-    if List.mem Undef args then m
-    else let m = add_entities m args in
-      add_pred m (fmt_term name) args value
-  | Op (op, args) -> 
-    (match op, args with
-     | Not, [arg] -> let value = false in
-       decl m value env arg
-     | Or, [arg1; arg2]
-     | And, [arg1; arg2] -> let m = decl m value env arg1 in
-       decl m value env arg2
-     | If, [Pred{name=Const name; args}; arg2] -> 
-       let get_env' = get_env m env in
-       let args = List.map get_env' args in
-       if (query_pred name args m) = Truth True then
-         decl m value env arg2
-       else m
-     | _ -> failwith "Incorrect amount of args")
-  | _ -> let message = Printf.sprintf "DeclError: Lambda.expr %s cannot be declared." (Lambda.fmt_expr expr) in failwith message 
+  | Bind{binder=ForAll; var=_; expr} -> 
+    let quant = Quant (forall m) in
+    let value = eval m expr in
+    app quant value 
+  | Bind{binder=Exists; var=_; expr} ->
+    let quant = Quant (exists m) in
+    let value = eval m expr in
+    app quant value
+  | Bind{binder=Unique; var=_; expr} ->
+    let iota = Iota (unique m) in
+    let value = eval m expr in
+    app iota value
+  | Bind{binder=Lambda; var=_; expr} ->
+    eval m expr
+  | Pred{name=Const name; args} -> let args = List.map (eval_term m) args in pred m name args
+  | Op(op, args) -> let args = List.map (eval m) args in
+    let f = binop_to_func op in
+    (match args with 
+    | [Truth t1; Truth t2] -> Truth (f t1 t2)
+    | [Unary p1; Unary p2] -> Unary (fun x -> f (p1 x)(p2 x))
+    | [Truth t] -> if op = Not then Truth (neg t) 
+                   else failwith "Not is the only UnOp."
+    | _ -> failwith "Incorrect args for op.")
+  | _ -> failwith ""
 
-and decl_arg m value env arg =
-  match arg with
-  | Expr expr -> decl m value env expr
-  | _ -> m
-and decl_args m value env args =
-  match args with
-  | arg::args -> let m = decl_arg m value env arg in
-    decl_args m value env args
-  | [] -> m
-
-and assign entities var m value env expr =
-  match entities with
-  | [] -> m
-  | e::entities -> let env = add_env var e env in
-    let m = decl m value env expr in
-    assign entities var m value env expr
-
-and get_env m env term =
+and eval_term m term =
   match term with
   | Const c -> Named c
-  | Var _ -> List.assoc term env
-  | Expr expr ->  
-    match expr with
-    | Bind{binder=Unique; var; expr} -> let es = assign' m.entities var m env expr in
-      (match es with
-       | [e] -> e
-       | [] -> Undef
-       | _::_ -> Undef)
-    | _ -> failwith "Arg must be iota statement."
+  | Var _ -> Anon ""
+  | Expr expr -> 
+    match eval m expr with
+    | Entity e -> e
+    | _ -> failwith "Expression as argument of predicate must evaluate to a truth value."
 
-
-and query m (env : env) expr =
-  match expr with
-  | Bind{binder=Lambda; var; expr} -> Entities (assign' m.entities var m env expr)
-  | Bind{binder=ForAll; var; expr} -> Truth (assign_forall m.entities var m env expr)
-  | Bind{binder=Exists; var; expr} -> Truth (assign_exists m.entities var m env expr)
-  | Op (op, args) -> query_op op args m env
-  | Pred{name=Const name; args} -> let get_env' = get_env m env in
-    let args = List.map get_env' args in
-    query_pred name args m
-  | _ -> let message = Printf.sprintf "QueryError: cannot query Lambda.expr %s" (Lambda.fmt_expr expr) in failwith message
-and query_op op args m env =
-  let query' = query m env in
-  let args = List.map query' args in
-  match op, args with
-  | And, [Truth arg1; Truth arg2] -> let value = conj arg1 arg2 in
-    Truth value
-  | Or, [Truth arg1; Truth arg2] -> let value = disj arg1 arg2 in
-    Truth value
-  | If, [Truth arg1; Truth arg2] -> let value = impl arg1 arg2 in
-    Truth value
-  | Not, [Truth arg] -> let value = neg arg in Truth value
-  | _ -> failwith "Incorrect arguments."
-
-and assign' entities var m env expr =
-  match entities with
-  | [] -> []
-  | [e] -> let env = add_env var e env in
-    let value = query m env expr in
-    if value = Truth True then [e] else []
-  | e::entities -> let env = add_env var e env in
-    let value = query m env expr in
-    if value = Truth True then
-      e::(assign' entities var m env expr)
-    else
-      assign' entities var m env expr
-
-and assign_forall entities var m env expr =
-  match entities with
-  | [] -> Unk
-  | [e] -> let env = add_env var e env in
-    let value = query m env expr in
-    (match value with
-    | Truth value -> value
-    | _ -> failwith "should be a truth value.")
-  | e::es -> let env = add_env var e env in
-    let value' = query m env expr in
-    (match value' with
-     | Truth value' -> conj value' (assign_forall es var m env expr)
-     | _ -> failwith "should be truth value")
-
-and assign_exists entities var m env expr =
-  match entities with
-  | [] -> Unk
-  | [e] -> let env = add_env var e env in
-    let value = query m env expr in
-    (match value with
-    | Truth value -> value
-    | _ -> failwith "should be a truth value.")
-  | e::es -> let env = add_env var e env in
-    let value' = query m env expr in
-    (match value' with
-     | Truth value' -> disj value' (assign_exists es var m env expr)
-     | _ -> failwith "should be truth value")
-
-let eval m statement =
-  match statement with
-  | Decl expr -> let value = true in
-    let m = {m with theory=expr::m.theory} in
-    let env = [] in
-    Model (decl m value env expr)
-  | Query expr -> let env = [] in
-    Tau (query m env expr)
+and app arg1 arg2 =
+  match arg1, arg2 with
+  | Quant q, Unary p -> Truth (q p)
+  | Iota q, Unary p -> Entity (q p)
+  | Entity e, Unary p -> Truth (p e)
+  | Entity e, Binary p -> Unary (p e)
+  | _ -> failwith "Function application error."

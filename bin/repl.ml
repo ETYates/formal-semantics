@@ -29,10 +29,18 @@ let rec run model =
     | raw_input -> let tokens = Token.tokenize raw_input in
       let lexes = Lexer.lexify tokens in
       let statement, tree = Parser.parse lexes in
-      let execution = Logic.eval model statement in
-      match execution with
-      | Logic.Model model -> exec_flag flag tree model; run model
-      | Logic.Tau tau -> exec_flag flag tree model; 
-        print_endline (Logic.fmt_tau tau); run model
-
+      match statement with
+      | Query expr -> let tau = Logic.eval model expr in
+        exec_flag flag tree model; 
+        (match tau with
+        | Unary p -> let f p x = Logic.t_to_bool (p x) in
+          let es = List.filter (f p) model.entities in
+          print_endline (Logic.fmt_entities es); run model
+        | Logic.Truth _ -> print_endline (Logic.fmt_tau tau); run model
+        | _ -> failwith "Queries should only return truth values and unary predicates.")
+      | Decl expr ->                    
+        match Decl.decl model true expr with
+        | Model model -> exec_flag flag tree model; run model
+        | Single q -> let model = q model in exec_flag flag tree model; run model
+        | other -> print_endline (Decl.fmt_decl other); failwith "Failed declaration. Final value is not a model."
 let _ = run Logic.m 
