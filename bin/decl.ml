@@ -63,12 +63,12 @@ let decl_forall m =
 
 let pred name args value =
   match args with
-  | [Anon _] -> let f = (fun x -> fun m -> 
+  | [Empty] -> let f = (fun x -> fun m -> 
     let i = assoc name m.unaries in
     let i = add_assoc x value i in
     let unaries = add_assoc name i m.unaries in
     {m with unaries}) in Monadic f
-  | [Anon _; Anon _] ->
+  | [Empty; Empty] ->
     let f = (fun y -> fun x -> fun m -> 
     let i = assoc name m.binaries in
     let i' = assoc x i in
@@ -78,7 +78,7 @@ let pred name args value =
     {m with binaries}) in Dyadic f
   | [_; Undef] -> Model m
   | [Undef; _] -> Model m
-  | [Anon _; e] -> let f = (fun x -> fun m -> 
+  | [Empty; e] -> let f = (fun x -> fun m -> 
     let i = assoc name m.binaries in
     let i' = assoc x i in
     let m = add_entity m e in
@@ -86,7 +86,7 @@ let pred name args value =
     let i = add_assoc x i' i in
     let binaries = add_assoc name i m.binaries in
     {m with binaries}) in Monadic f
-  | [e; Anon _] -> let f = (fun x -> fun m -> 
+  | [e; Empty] -> let f = (fun x -> fun m -> 
     let i = assoc name m.binaries in
     let i' = assoc e i in
     let m = add_entity m e in
@@ -148,7 +148,7 @@ and cond m value expr1 expr2 =
   | Truth True, Monadic q -> Monadic q
   | Unary p, Monadic q -> let f = fun x -> fun m -> 
     if p x = True then q x m else m in Monadic f
-  | _ -> failwith "CondError."                                                                  
+  | _ -> failwith (Printf.sprintf "CondError. %s and %s" (fmt_tau p) (fmt_decl q))                                                                 
 
 and app v1 v2 =
   match v1, v2 with                                                          

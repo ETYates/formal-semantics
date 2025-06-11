@@ -1,6 +1,6 @@
 open Lambda
 
-type e = Named of string | Anon of string | Undef
+type e = Named of string | Anon of string | Undef | Empty
 and t = True | False | Unk
 and tau = Entity of e 
         | Entities of e list
@@ -40,7 +40,7 @@ let t_to_bool t =
   | True -> true
   | Unk | False -> false
 
-let fmt_entity e = match e with Named s -> String.capitalize_ascii s | Anon s -> s | Undef -> "?"
+let fmt_entity e = match e with Named s -> String.capitalize_ascii s | Anon s -> s | Undef -> "?" | Empty -> ""
 
 let rec fmt_entities es =
   let str = fmt_entities' es in
@@ -178,38 +178,34 @@ and unique m =
 
 and pred m name args = 
   match args with
-  | [Anon _] -> let i = assoc name m.unaries in 
+  | [Empty] -> let i = assoc name m.unaries in 
     let f = fun x -> 
     (match List.assoc_opt x i with
      | Some t -> bool_to_truth t
      | None -> Unk) in Unary f
-  | [Named c] -> let i = assoc name m.unaries in 
-    let e = Named c in
-    (match List.assoc_opt e i with
-     | Some t -> Truth (bool_to_truth t)
-     | None -> Truth Unk)
-  | [Anon _; Anon _] -> let i = assoc name m.binaries in
+  | [Empty; Empty] -> let i = assoc name m.binaries in
     let f = fun y -> fun x -> 
     let i' = assoc x i in
     (match List.assoc_opt y i' with
      | Some t -> bool_to_truth t
      | None -> Unk) in Binary f
-  | [Named c; Anon _] -> let i = assoc name m.binaries in
-    let e = Named c in
+  | [e] -> let i = assoc name m.unaries in 
+    (match List.assoc_opt e i with
+     | Some t -> Truth (bool_to_truth t)
+     | None -> Truth Unk)
+  | [e; Empty] -> let i = assoc name m.binaries in
     let f = fun x -> fun y -> 
     let i' = assoc x i in
     (match List.assoc_opt y i' with
      | Some t -> bool_to_truth t
      | None -> Unk) in Unary (f e)
-  | [Anon _; Named c] -> let i = assoc name m.binaries in
-    let e = Named c in
+  | [Empty; e] -> let i = assoc name m.binaries in
     let f = fun y -> fun x -> 
     let i' = assoc x i in
     (match List.assoc_opt y i' with
      | Some t -> bool_to_truth t
      | None -> Unk) in Unary (f e)
-  | [Named c1; Named c2] -> let i = assoc name m.binaries in
-    let e1 = Named c1 in let e2 = Named c2 in
+  | [e1; e2] -> let i = assoc name m.binaries in
     let f = fun y -> fun x -> 
     let i' = assoc x i in
     (match List.assoc_opt y i' with
@@ -254,7 +250,7 @@ and eval m expr =
 and eval_term m term =
   match term with
   | Const c -> Named c
-  | Var _ -> Anon ""
+  | Var _ -> Empty
   | Expr expr -> 
     match eval m expr with
     | Entity e -> e

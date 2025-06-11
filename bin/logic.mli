@@ -1,5 +1,5 @@
 (** Type representing an entity. *)
-type e = Named of string | Anon of string | Undef
+type e = Named of string | Anon of string | Undef | Empty
 
 (** Type representing truth values including an undefined state. *)
 type t = True | False | Unk

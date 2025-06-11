@@ -40,7 +40,10 @@ let rec run model =
         | _ -> failwith "Queries should only return truth values and unary predicates.")
       | Decl expr ->                    
         match Decl.decl model true expr with
-        | Model model -> exec_flag flag tree model; run model
-        | Single q -> let model = q model in exec_flag flag tree model; run model
+        | Model model -> let model = {model with theory=expr::model.theory} in
+          exec_flag flag tree model; run model 
+        | Single q -> let model = q model in 
+          let model = {model with theory=expr::model.theory} in 
+          exec_flag flag tree model; run model
         | other -> print_endline (Decl.fmt_decl other); failwith "Failed declaration. Final value is not a model."
 let _ = run Logic.m 
