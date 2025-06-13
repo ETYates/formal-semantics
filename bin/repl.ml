@@ -26,7 +26,8 @@ let rec run model =
   match raw_input with
     | "Quit!" -> ()
     | "Show model!" -> print_endline (Logic.fmt_model model); run model
-    | raw_input -> let tokens = Token.tokenize raw_input in
+    | raw_input -> try 
+      let tokens = Token.tokenize raw_input in
       let lexes = Lexer.lexify tokens in
       let statement, tree = Parser.parse lexes in
       match statement with
@@ -46,4 +47,6 @@ let rec run model =
           let model = {model with theory=expr::model.theory} in 
           exec_flag flag tree model; run model
         | other -> print_endline (Decl.fmt_decl other); failwith "Failed declaration. Final value is not a model."
+      with | exn -> Printf.printf "%s\n" (Printexc.to_string exn); run model
+
 let _ = run Logic.m 
