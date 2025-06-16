@@ -17,7 +17,7 @@ Tokenization is performed by integration with SpaCy via the pyml module.
 ```
 > Socrates is a man.
 > Every man is mortal.
-? Is Socrates mortal?
+> Is Socrates mortal?
 Yes
 > Who is mortal?
 Socrates
