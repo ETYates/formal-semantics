@@ -1,5 +1,5 @@
 
-let prompt = "|- "
+let prompt = "> "
 
 let proc_flag raw_input =
   let strs = String.split_on_char '-' raw_input in
@@ -13,7 +13,7 @@ let proc_flag raw_input =
 let exec_flag flag (tree : Parser.tree) model =
   match flag with
   | "" -> ()
-  | "--show-lf" -> print_endline (Lambda.fmt_expr tree.lf)
+  | "--show-lf" -> print_endline (Printf.sprintf "%s : %s" (Lambda.fmt_expr tree.lf) (Lambda.fmt_typ tree.lf))
   | "--show-model" -> print_endline (Logic.fmt_model model)
   | "--show-tree" -> Parser.print_tree tree
   | _ -> let message = Printf.sprintf "Invalid cli-flag: %s" flag in
