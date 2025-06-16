@@ -15,11 +15,11 @@ Tokenization is performed by integration with SpaCy via the pyml module.
 
 ## Example
 ```
-|- Socrates is a man.
-|- Every man is mortal.
-|- Is Socrates mortal?
+> Socrates is a man.
+> Every man is mortal.
+? Is Socrates mortal?
 Yes
-|- Who is mortal?
+> Who is mortal?
 Socrates
 ```
 
