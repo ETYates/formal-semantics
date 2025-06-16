@@ -13,7 +13,7 @@ Tokenization is performed by integration with SpaCy via the pyml module.
 - Interactive REPL and file mode
 - Integration with spaCy for robust tokenization
 
-## Example
+## Usage
 
 Sentences are interpreted as predicates interpreted against a model. 
 
@@ -126,7 +126,7 @@ cd formal-semantics
 dune build
 ```
 
-## Usage 
+## Running
 
 ### Start the REPL
 ```
