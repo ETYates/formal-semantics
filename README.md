@@ -39,4 +39,11 @@ dune build
 ### Start the REPL
 ```
 dune exec bin/main.exe
+
+|- Socrates is a man.
+|- Every man is mortal.
+|- Is Socrates mortal?
+Yes
+|- Who is mortal?
+Socrates
 ```
