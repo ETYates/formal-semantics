@@ -17,10 +17,10 @@ Tokenization is performed by integration with SpaCy via the pyml module.
 
 Sentences are interpreted as predicates interpreted against a model. 
 
-A sentence ending with a period is a *declaration* that will modify the model
+A sentence ending with a period is a **declaration** that will modify the model
 so that the sentence is true when interpreted against the model. 
 
-A sentence ending with a question mark is a *query* that will return the truth
+A sentence ending with a question mark is a **query** that will return the truth
 value or denotation of a sentence without modifying the model.
 
 The interpreter can reason with syllogisms:
@@ -34,7 +34,7 @@ Yes
 Socrates
 ```
 
-Additionaly, it is possible to reference entities with definite description.
+Additionally, it is possible to reference entities with definite description.
 
 ```
 > Aristotle is a philosopher.
