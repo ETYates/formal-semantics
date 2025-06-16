@@ -13,6 +13,16 @@ Tokenization is performed by integration with SpaCy via the pyml module.
 - Interactive REPL and file mode
 - Integration with spaCy for robust tokenization
 
+## Example
+```
+|- Socrates is a man.
+|- Every man is mortal.
+|- Is Socrates mortal?
+Yes
+|- Who is mortal?
+Socrates
+```
+
 ## Installation
 
 ### 1. Install OCaml and Dune
@@ -39,11 +49,4 @@ dune build
 ### Start the REPL
 ```
 dune exec bin/main.exe
-
-|- Socrates is a man.
-|- Every man is mortal.
-|- Is Socrates mortal?
-Yes
-|- Who is mortal?
-Socrates
 ```
